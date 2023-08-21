@@ -55,8 +55,8 @@ export default function Home1Section() {
       <div className="product-item fix">
         <div className="product-thumb">
           <a href="product-details.html">
-            <img src="assets/img/product/product-img1.jpg" className="img-pri" alt />
-            <img src="assets/img/product/product-img2.jpg" className="img-sec" alt />
+            <img width={"100%"} style={{height:"30vh"}} src="assets/img/product/product-img1.jpg" className="img-pri" alt />
+            <img width={"100%"} style={{height:"30vh"}} src="assets/img/product/product-img2.jpg" className="img-sec" alt />
           </a>
           <div className="product-label">
             <span>hot</span>
@@ -91,8 +91,8 @@ export default function Home1Section() {
       <div className="product-item fix">
         <div className="product-thumb">
           <a href="product-details.html">
-            <img width={"100%"} style={{height:"40vh"}} src="assets/img/product/product-img3.jpg" className="img-pri" alt />
-            <img width={"100%"} style={{height:"40vh"}} src="assets/img/product/product-img4.jpg" className="img-sec" alt />
+            <img width={"100%"} style={{height:"30vh"}} src="assets/img/product/product-img3.jpg" className="img-pri" alt />
+            <img width={"100%"} style={{height:"30vh"}} src="assets/img/product/product-img4.jpg" className="img-sec" alt />
           </a>
           <div className="product-label">
             <span>hot</span>
@@ -129,8 +129,8 @@ export default function Home1Section() {
       <div className="product-item fix">
         <div className="product-thumb">
           <a href="product-details.html">
-            <img src="assets/img/product/product-img5.jpg" className="img-pri" alt />
-            <img src="assets/img/product/product-img6.jpg" className="img-sec" alt />
+            <img width={"100%"} style={{height:"30vh"}} src="assets/img/product/product-img5.jpg" className="img-pri" alt />
+            <img width={"100%"} style={{height:"30vh"}} src="assets/img/product/product-img6.jpg" className="img-sec" alt />
           </a>
           <div className="product-label">
             <span>hot</span>
@@ -165,8 +165,8 @@ export default function Home1Section() {
       <div className="product-item fix">
         <div className="product-thumb">
           <a href="product-details.html">
-            <img src="assets/img/product/product-img7.jpg" className="img-pri" alt />
-            <img src="assets/img/product/product-img8.jpg" className="img-sec" alt />
+            <img width={"100%"} style={{height:"30vh"}} src="assets/img/product/product-img7.jpg" className="img-pri" alt />
+            <img width={"100%"} style={{height:"30vh"}} src="assets/img/product/product-img8.jpg" className="img-sec" alt />
           </a>
           <div className="product-label">
             <span>hot</span>
@@ -203,8 +203,8 @@ export default function Home1Section() {
       <div className="product-item fix">
         <div className="product-thumb">
           <a href="product-details.html">
-            <img src="assets/img/product/product-img9.jpg" className="img-pri" alt />
-            <img src="assets/img/product/product-img10.jpg" className="img-sec" alt />
+            <img width={"100%"} style={{height:"30vh"}} src="assets/img/product/product-img9.jpg" className="img-pri" alt />
+            <img width={"100%"} style={{height:"30vh"}} src="assets/img/product/product-img10.jpg" className="img-sec" alt />
           </a>
           <div className="product-label">
             <span>hot</span>
@@ -239,8 +239,8 @@ export default function Home1Section() {
       <div className="product-item fix">
         <div className="product-thumb">
           <a href="product-details.html">
-            <img src="assets/img/product/product-img11.jpg" className="img-pri" alt />
-            <img src="assets/img/product/product-img12.jpg" className="img-sec" alt />
+            <img width={"100%"} style={{height:"30vh"}} src="assets/img/product/product-img11.jpg" className="img-pri" alt />
+            <img  width={"100%"} style={{height:"30vh"}} src="assets/img/product/product-img12.jpg" className="img-sec" alt />
           </a>
           <div className="product-label">
             <span>hot</span>

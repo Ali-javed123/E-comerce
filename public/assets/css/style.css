@@ -7555,3 +7555,22 @@ body.image-bg.layout-boxed {
 body.image-bg .wrapper {
     background-color: #fff;
 }
+.custom-prev,
+.custom-next {
+  position: absolute;
+  /* top: 50%; */
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: #ccc;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.custom-prev {
+  left: 0;
+}
+
+.custom-next {
+  right: 0;
+}

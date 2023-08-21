@@ -66,8 +66,8 @@ export default function Home1() {
       <Home1Hero/>
       <Home1Section/>
       {/* <Home1Section2/> */}
-      {/* <Home1Section3/> */}
-      {/* <Home1Section4/> */}
+      <Home1Section3/>
+      <Home1Section4/>
       {/* <Home1Section5/> */}
       {/* <Home1Section6/> */}
       <Footer/>

@@ -1,5 +1,13 @@
 import React from 'react'
+import { Swiper, SwiperSlide } from "swiper/react";
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+
+// import required modules
+import { Autoplay, EffectFade, Navigation, Pagination} from "swiper/modules";
 export default function Home1Hero() {
   return (
     <>
@@ -9,8 +17,27 @@ export default function Home1Hero() {
   <div className="row">
     <div className="col-lg-12">
       <div className="slider-wrapper-area">
-        <div className="hero-slider-active hero__1 slick-dot-style hero-dot">
-          <div className="single-slider" style={{backgroundImage: 'url(assets/img/slider/slider11_bg.jpg)'}}>
+        <Swiper     spaceBetween={30}
+            effect={"fade"}
+            speed={600}
+            parallax={true}
+            navigation={true}
+            scrollbar={{ draggable: true }}
+            // onSwiper={(swiper) => console.log(swiper)}
+            // onSlideChange={() => console.log('slide change')}
+            pagination={{
+              clickable: true,
+              // dynamicBullets: true,
+
+            }}
+
+            centeredSlides={true}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
+            modules={[EffectFade, Autoplay, Navigation, Pagination]}  className="hero-slider-active hero__1 slick-dot-style hero-dot">
+          <SwiperSlide className="single-slider" style={{backgroundImage: 'url(assets/img/slider/slider11_bg.jpg)'}}>
             <div className="container p-0">
               <div className="slider-main-content">
                 <div className="slider-content-img">
@@ -27,8 +54,8 @@ export default function Home1Hero() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="single-slider" style={{backgroundImage: 'url(assets/img/slider/slider12_bg.jpg)'}}>
+          </SwiperSlide>
+          <SwiperSlide className="single-slider" style={{backgroundImage: 'url(assets/img/slider/slider12_bg.jpg)'}}>
             <div className="container p-0">
               <div className="slider-main-content">
                 <div className="slider-content-img">
@@ -45,9 +72,12 @@ export default function Home1Hero() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
+      
+
+  
     </div>
   </div>
 </div>

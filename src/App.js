@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Home1 from './pages/Home1';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 function App() {
   return (
     <div className="App">

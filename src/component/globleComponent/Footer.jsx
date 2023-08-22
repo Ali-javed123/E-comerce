@@ -6,7 +6,7 @@ export default function Footer() {
 {/* footer area start */}
 <footer>
   {/* footer top start */}
-  <div className="footer-top bg-black pt-14 pb-14">
+  <div className="footer-top bg-black pt-14 pb-14 justify-content-center">
     <div className="container">
       <div className="footer-top-wrapper">
         <div className="newsletter__wrap">
@@ -47,13 +47,13 @@ export default function Footer() {
   {/* footer main start */}
   <div className="footer-widget-area pt-40 pb-38 pb-sm-10">
     <div className="container">
-      <div className="row">
+      <div className="row justify-content-center">
         <div className="col-md-3 col-sm-6">
           <div className="footer-widget mb-sm-30">
             <div className="widget-title mb-10 mb-sm-6">
-              <h4>contact us</h4>
+              <h4 style={{textAlign:"start"}}>contact us</h4>
             </div>
-            <div className="widget-body">
+            <div className="widget-body justify-content-center">
               <ul className="location">
                 <li><i className="fa fa-envelope" />support@galio.com</li>
                 <li><i className="fa fa-phone" />(800) 0123 456 789</li>

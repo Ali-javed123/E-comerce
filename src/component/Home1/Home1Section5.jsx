@@ -1,5 +1,13 @@
 import React from 'react'
+import { Swiper, SwiperSlide } from "swiper/react";
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+
+// import required modules
+import { Autoplay, Pagination ,Navigation} from "swiper/modules";
 export default function Home1Section5() {
   return (
     <>
@@ -13,8 +21,35 @@ export default function Home1Section5() {
       <h3>latest product</h3>
     </div> {/* section title end */}
     {/* featured category start */}
-    <div className="latest-product-active slick-padding slick-arrow-style">
+    <Swiper slidesPerView={1}
+        loop={true}
+        autoplay={{
+            delay: 2000,
+            disableOnInteraction: false
+        }}
+        spaceBetween={10}
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        }}
+
+        modules={[Pagination,Autoplay]} className="latest-product-active slick-padding slick-arrow-style">
       {/* product single item start */}
+      <SwiperSlide>
+
       <div className="product-item fix">
         <div className="product-thumb">
           <a href="product-details.html">
@@ -49,8 +84,9 @@ export default function Home1Section5() {
           </div>
         </div>
       </div>
-      {/* product single item end */}
-      {/* product single item start */}
+      </SwiperSlide>
+      <SwiperSlide>
+
       <div className="product-item fix">
         <div className="product-thumb">
           <a href="product-details.html">
@@ -85,8 +121,9 @@ export default function Home1Section5() {
           </div>
         </div>
       </div>
-      {/* product single item end */}
-      {/* product single item start */}
+      </SwiperSlide>
+      <SwiperSlide>
+
       <div className="product-item fix">
         <div className="product-thumb">
           <a href="product-details.html">
@@ -121,8 +158,9 @@ export default function Home1Section5() {
           </div>
         </div>
       </div>
-      {/* product single item end */}
-      {/* product single item start */}
+      </SwiperSlide>
+      <SwiperSlide>
+
       <div className="product-item fix">
         <div className="product-thumb">
           <a href="product-details.html">
@@ -157,8 +195,8 @@ export default function Home1Section5() {
           </div>
         </div>
       </div>
-      {/* product single item end */}
-      {/* product single item start */}
+      </SwiperSlide>
+      <SwiperSlide>
       <div className="product-item fix">
         <div className="product-thumb">
           <a href="product-details.html">
@@ -193,8 +231,9 @@ export default function Home1Section5() {
           </div>
         </div>
       </div>
-      {/* product single item end */}
-      {/* product single item start */}
+
+      </SwiperSlide>
+      <SwiperSlide>
       <div className="product-item fix">
         <div className="product-thumb">
           <a href="product-details.html">
@@ -229,8 +268,20 @@ export default function Home1Section5() {
           </div>
         </div>
       </div>
+
+      </SwiperSlide>
       {/* product single item end */}
-    </div>
+      {/* product single item start */}
+      {/* product single item end */}
+      {/* product single item start */}
+      {/* product single item end */}
+      {/* product single item start */}
+      {/* product single item end */}
+      {/* product single item start */}
+      {/* product single item end */}
+      {/* product single item start */}
+      {/* product single item end */}
+    </Swiper>
     {/* featured category end */}
   </div>
 </div>

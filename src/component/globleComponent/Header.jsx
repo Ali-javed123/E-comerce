@@ -1,6 +1,7 @@
-import React from 'react'
-
+import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 export default function Header() {
+  const [Show,SetShow]=useState(false)
   return (
     <>
 {/* header area start */}
@@ -162,10 +163,10 @@ export default function Header() {
               <div className="category-toggle">
                 category
                 <div className="cat-icon">
-                  <i className="fa fa-angle-down" />
+                  <i className="fa fa-angle-down" onClick={()=>SetShow(!Show)} />
                 </div>
               </div>
-              <nav className="category-menu hm-1">
+              <nav className="category-menu hm-1" style={{display:Show?"block":"none"}}>
                 <ul>
                   <li><a href="shop-grid-left-sidebar.html"><i className="fa fa-desktop" />
                       computer</a></li>
@@ -277,8 +278,8 @@ export default function Header() {
                 <ul>
                   <li className="active"><a href="#"><i className="fa fa-home" />Home <i className="fa fa-angle-down" /></a>
                     <ul className="dropdown">
-                      <li><a href="index.html">Home version 01</a></li>
-                      <li><a href="index-2.html">Home version 02</a></li>
+                      <li><NavLink to="/">Home version 01</NavLink></li>
+                      <li><NavLink to="/home2">Home version 02</NavLink></li>
                       <li><a href="index-3.html">Home version 03</a></li>
                       <li><a href="index-4.html">Home version 04</a></li>
                     </ul>

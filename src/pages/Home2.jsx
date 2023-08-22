@@ -1,18 +1,13 @@
 import React from 'react'
+import Home2Hero from '../component/Home2/Home2Hero'
 import Header from '../component/globleComponent/Header'
-import Home1Section from '../component/Home1/Home1Section'
-import Home1Section2 from '../component/Home1/Home1Section2'
-import Home1Section3 from '../component/Home1/Home1Section3'
-import Home1Section4 from '../component/Home1/Home1Section4'
-import Home1Section5 from '../component/Home1/Home1Section5'
-import Home1Section6 from '../component/Home1/Home1Section6'
-import Footer from '../component/globleComponent/Footer'
-import Home1Hero from '../component/Home1/Home1Hero'
-export default function Home1() {
+import Home1Section2 from '../component/Home2/Home2Section1'
+import Home2Section2 from '../component/Home2/Home2Section2'
+import Home2Section3 from '../component/Home2/Home2Section3'
+export default function Home2() {
   return (
     <>
- {/* color switcher start */}
-<div className="color-switcher">
+    <div className="color-switcher">
   <div className="color-switcher-inner">
     <div className="switcher-icon">
       <i className="fa fa-cog fa-spin" />
@@ -59,25 +54,15 @@ export default function Home1() {
     </div>
   </div>
 </div>
-{/* color switcher end */}
+<div class="wrapper box-layout">
+    <Header/>
+    <Home2Hero/>
+    <Home1Section2/>
+    <Home2Section2/>
+    <Home2Section3/>
 
-      <div class="wrapper">
-      <Header/>
-      <Home1Hero/>
-      <Home1Section/>
-      {/* <Home1Section2/> */}
-      <Home1Section3/>
-      <Home1Section4/>
-      <Home1Section5/>
-      <Home1Section6/>
-      <Footer/>
-      </div>
-{/* Scroll to top start */}
-<div className="scroll-top not-visible">
-  <i className="fa fa-angle-up" />
 </div>
-{/* Scroll to Top End */}
-
+    
     </>
   )
 }

@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Autoplay, Pagination ,Navigation,Scrollbar, A11y} from "swiper/modules";
+import { SwiperButtun } from '../globleComponent/SwiperButtun';
 export default function Home1Section4() {
   return (
     <>
@@ -24,8 +25,9 @@ export default function Home1Section4() {
               <h3>hot deals</h3>
               <div className="slick-append" />
             </div> {/* section title end */}
-            <Swiper className="deals-carousel-active slick-padding slick-arrow-style">
+            <Swiper loop className="deals-carousel-active slick-padding slick-arrow-style">
               {/* product single item start */}
+              <SwiperButtun/>
               <SwiperSlide>
 
               <div className="product-item fix">
@@ -398,7 +400,9 @@ export default function Home1Section4() {
               <div className="category-append" />
             </div> {/* section title end */}
             {/* blog wrapper start */}
-            <div className="blog-carousel-active">
+            <Swiper  loop   modules={[Pagination,Autoplay,Navigation,Pagination]} className="blog-carousel-active">
+              <SwiperSlide>
+
               <div className="blog-item">
                 <div className="blog-thumb img-full fix">
                   <a href="blog-details.html">
@@ -416,6 +420,8 @@ export default function Home1Section4() {
                 </div>
                 <a href="blog-details.html">read more <i className="fa fa-long-arrow-right" /></a>
               </div> {/* end single blog item */}
+              </SwiperSlide>
+              <SwiperSlide>
               <div className="blog-item">
                 <div className="blog-thumb img-full fix">
                   <a href="blog-details.html">
@@ -433,7 +439,10 @@ export default function Home1Section4() {
                 </div>
                 <a href="blog-details.html">read more <i className="fa fa-long-arrow-right" /></a>
               </div> {/* end single blog item */}
-            </div>
+
+              </SwiperSlide>
+              <SwiperButtun/>
+            </Swiper>
             {/* blog wrapper end */}
           </div>
           {/* blog area end */}
@@ -442,7 +451,8 @@ export default function Home1Section4() {
             <div className="section-title-2 mb-28">
               <h3>Clients Say</h3>
             </div> {/* section title end */}
-            <Swiper  navigation={true}  modules={[Pagination,Autoplay,Navigation,Pagination]} className="testimonial-carousel-active slick-dot-style">
+            <Swiper  loop   modules={[Pagination,Autoplay,Navigation,Pagination]} className="testimonial-carousel-active slick-dot-style">
+              <SwiperButtun/>
               <SwiperSlide>
 
               <div className="testimonial-item text-center">

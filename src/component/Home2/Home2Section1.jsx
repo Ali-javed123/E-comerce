@@ -10,19 +10,19 @@ export default function Home2Section1() {
       <div className="col-lg-3 col-md-3 col-sm-5 order-1">
         <div className="img-container img-full fix">
           <a href="#">
-            <img src="assets/img/banner/banner_left.jpg" alt />
+            <img className='img-fluid' width={"100%"} src="assets/img/banner/banner_left.jpg" alt />
           </a>
         </div>
       </div>
       <div className="col-lg-5 col-md-5 order-sm-3 mt-sm-30">
         <div className="img-container img-full fix mb-30">
           <a href="#">
-            <img src="assets/img/banner/banner_static_top1.jpg" alt />
+            <img className='img-fluid' width={"100%"} src="assets/img/banner/banner_static_top1.jpg" alt />
           </a>
         </div>
         <div className="img-container img-full fix mb-30">
           <a href="#">
-            <img src="assets/img/banner/banner_static_top2.jpg" alt />
+            <img className='img-fluid' width={"100%"} src="assets/img/banner/banner_static_top2.jpg" alt />
           </a>
         </div>
       </div>

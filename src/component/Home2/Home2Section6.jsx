@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay, Pagination ,Navigation} from "swiper/modules";
 import { SwiperButtun } from '../globleComponent/SwiperButtun';
-export default function Home1Section6() {
+export default function Home2Section6() {
   return (
     <>
  {/* brand area start */}
@@ -27,16 +27,14 @@ export default function Home1Section6() {
     </div>
     <div className="row">
       <div className="col-12">
-        <Swiper navigation={true}  slidesPerView={1}
-        loop={true}
+        <Swiper   
+        loop
         autoplay={{
             delay: 2000,
             disableOnInteraction: false
         }}
         spaceBetween={10}
-        pagination={{
-          clickable: true,
-        }}
+      
         breakpoints={{
           640: {
             slidesPerView: 2,
@@ -52,7 +50,7 @@ export default function Home1Section6() {
           },
         }}
 
-        modules={[Autoplay,Navigation]} className="brand-active slick-padding slick-arrow-style">
+        modules={[Autoplay,Navigation]}  className="brand-active slick-padding slick-arrow-style">
           <SwiperSlide>
 
           <div className="brand-item text-center">

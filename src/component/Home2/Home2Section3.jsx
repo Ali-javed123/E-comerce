@@ -312,7 +312,9 @@ export default function Home2Section3() {
           <div className="section-title-2 mb-28">
             <h3>Clients Say</h3>
           </div> {/* section title end */}
-          <div className="testimonial-carousel-active slick-dot-style">
+          <Swiper loop modules={[Autoplay,Navigation]} className="testimonial-carousel-active slick-dot-style">
+            <SwiperSlide>
+
             <div className="testimonial-item text-center">
               <div className="testimonial-thumb">
                 <img src="assets/img/testimonial/team_member1.jpg" alt />
@@ -322,6 +324,9 @@ export default function Home2Section3() {
                 <p>Etiam rhoncus congue arcu sed interdum. Cras dolor diam, accumsan eu aliquam eu, luctus vehicula velit. Nam eget tortor ut felis fermentum sodales ac eu lacus</p>
               </div>
             </div> {/* end single testimonial item */}
+            </SwiperSlide>
+            <SwiperSlide>
+
             <div className="testimonial-item text-center">
               <div className="testimonial-thumb">
                 <img src="assets/img/testimonial/team_member2.jpg" alt />
@@ -331,6 +336,9 @@ export default function Home2Section3() {
                 <p>Etiam rhoncus congue arcu sed interdum. Cras dolor diam, accumsan eu aliquam eu, luctus vehicula velit. Nam eget tortor ut felis fermentum sodales ac eu lacus</p>
               </div>
             </div> {/* end single testimonial item */}
+            </SwiperSlide>
+            <SwiperSlide>
+
             <div className="testimonial-item text-center">
               <div className="testimonial-thumb">
                 <img src="assets/img/testimonial/team_member3.jpg" alt />
@@ -340,7 +348,9 @@ export default function Home2Section3() {
                 <p>Etiam rhoncus congue arcu sed interdum. Cras dolor diam, accumsan eu aliquam eu, luctus vehicula velit. Nam eget tortor ut felis fermentum sodales ac eu lacus</p>
               </div>
             </div> {/* end single testimonial item */}
-          </div>
+            </SwiperSlide>
+            <SwiperButtun/>
+          </Swiper>
         </div>
         {/* testimonial area end */}
       </div>
@@ -425,8 +435,9 @@ export default function Home2Section3() {
                   </div>
                 </div>
               </div>
-              {/* product single item end */}
-              {/* product single item start */}
+           
+              </SwiperSlide>
+              <SwiperSlide>
               <div className="col">
                 <div className="product-item fix mb-30">
                   <div className="product-thumb">
@@ -462,8 +473,8 @@ export default function Home2Section3() {
                   </div>
                 </div>
               </div>
-              {/* product single item end */}
-              {/* product single item start */}
+              </SwiperSlide>
+              <SwiperSlide>
               <div className="col">
                 <div className="product-item fix mb-30">
                   <div className="product-thumb">
@@ -540,6 +551,12 @@ export default function Home2Section3() {
               </div>
               {/* product single item end */}
               {/* product single item start */}
+            
+              {/* product single item end */}
+              {/* product single item start */}
+              {/* product single item end */}
+              </SwiperSlide>
+              <SwiperSlide>
               <div className="col">
                 <div className="product-item fix mb-30">
                   <div className="product-thumb">
@@ -575,44 +592,6 @@ export default function Home2Section3() {
                   </div>
                 </div>
               </div>
-              {/* product single item end */}
-              {/* product single item start */}
-              <div className="col">
-                <div className="product-item fix mb-30">
-                  <div className="product-thumb">
-                    <a href="product-details.html">
-                      <img src="assets/img/product/product-img11.jpg" className="img-pri" alt />
-                      <img src="assets/img/product/product-img12.jpg" className="img-sec" alt />
-                    </a>
-                    <div className="product-label">
-                      <span>hot</span>
-                    </div>
-                    <div className="product-action-link">
-                      <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></a>
-                    </div>
-                  </div>
-                  <div className="product-content">
-                    <h4><a href="product-details.html">affiliate product</a></h4>
-                    <div className="pricebox">
-                      <span className="regular-price">$70.00</span>
-                      <div className="ratings">
-                        <span className="good"><i className="fa fa-star" /></span>
-                        <span className="good"><i className="fa fa-star" /></span>
-                        <span className="good"><i className="fa fa-star" /></span>
-                        <span className="good"><i className="fa fa-star" /></span>
-                        <span><i className="fa fa-star" /></span>
-                        <div className="pro-review">
-                          <span>1 review(s)</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* product single item end */}
               </SwiperSlide>
               <SwiperSlide>
 
@@ -634,43 +613,6 @@ export default function Home2Section3() {
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">simple product 10</a></h4>
-                    <div className="pricebox">
-                      <span className="regular-price">$70.00</span>
-                      <div className="ratings">
-                        <span className="good"><i className="fa fa-star" /></span>
-                        <span className="good"><i className="fa fa-star" /></span>
-                        <span className="good"><i className="fa fa-star" /></span>
-                        <span className="good"><i className="fa fa-star" /></span>
-                        <span><i className="fa fa-star" /></span>
-                        <div className="pro-review">
-                          <span>1 review(s)</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* product single item end */}
-              {/* product single item start */}
-              <div className="col">
-                <div className="product-item fix mb-30">
-                  <div className="product-thumb">
-                    <a href="product-details.html">
-                      <img src="assets/img/product/product-img13.jpg" className="img-pri" alt />
-                      <img src="assets/img/product/product-img14.jpg" className="img-sec" alt />
-                    </a>
-                    <div className="product-label">
-                      <span>hot</span>
-                    </div>
-                    <div className="product-action-link">
-                      <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></a>
-                    </div>
-                  </div>
-                  <div className="product-content">
                     <h4><a href="product-details.html">affiliate product</a></h4>
                     <div className="pricebox">
                       <span className="regular-price">$70.00</span>
@@ -688,6 +630,13 @@ export default function Home2Section3() {
                   </div>
                 </div>
               </div>
+              </SwiperSlide>
+              <SwiperSlide>
+
+             
+              {/* product single item end */}
+              {/* product single item start */}
+          
               {/* product single item end */}
               {/* product single item start */}
               <div className="col">
@@ -725,6 +674,83 @@ export default function Home2Section3() {
                   </div>
                 </div>
               </div>
+          
+              </SwiperSlide>
+              <SwiperSlide>
+              <div className="col">
+                <div className="product-item fix mb-30">
+                  <div className="product-thumb">
+                    <a href="product-details.html">
+                      <img src="assets/img/product/product-img13.jpg" className="img-pri" alt />
+                      <img src="assets/img/product/product-img14.jpg" className="img-sec" alt />
+                    </a>
+                    <div className="product-label">
+                      <span>hot</span>
+                    </div>
+                    <div className="product-action-link">
+                      <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </a>
+                      <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></a>
+                      <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></a>
+                      <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></a>
+                    </div>
+                  </div>
+                  <div className="product-content">
+                    <h4><a href="product-details.html">affiliate product</a></h4>
+                    <div className="pricebox">
+                      <span className="regular-price">$70.00</span>
+                      <div className="ratings">
+                        <span className="good"><i className="fa fa-star" /></span>
+                        <span className="good"><i className="fa fa-star" /></span>
+                        <span className="good"><i className="fa fa-star" /></span>
+                        <span className="good"><i className="fa fa-star" /></span>
+                        <span><i className="fa fa-star" /></span>
+                        <div className="pro-review">
+                          <span>1 review(s)</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </SwiperSlide>
+              <SwiperSlide>
+              <div className="col">
+                <div className="product-item fix mb-30">
+                  <div className="product-thumb">
+                    <a href="product-details.html">
+                      <img src="assets/img/product/product-img11.jpg" className="img-pri" alt />
+                      <img src="assets/img/product/product-img12.jpg" className="img-sec" alt />
+                    </a>
+                    <div className="product-label">
+                      <span>hot</span>
+                    </div>
+                    <div className="product-action-link">
+                      <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </a>
+                      <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></a>
+                      <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></a>
+                      <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></a>
+                    </div>
+                  </div>
+                  <div className="product-content">
+                    <h4><a href="product-details.html">simple product 10</a></h4>
+                    <div className="pricebox">
+                      <span className="regular-price">$70.00</span>
+                      <div className="ratings">
+                        <span className="good"><i className="fa fa-star" /></span>
+                        <span className="good"><i className="fa fa-star" /></span>
+                        <span className="good"><i className="fa fa-star" /></span>
+                        <span className="good"><i className="fa fa-star" /></span>
+                        <span><i className="fa fa-star" /></span>
+                        <div className="pro-review">
+                          <span>1 review(s)</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </SwiperSlide>
+              <SwiperSlide>
               <div className="col">
                 <div className="product-item fix mb-30">
                   <div className="product-thumb">
@@ -761,6 +787,7 @@ export default function Home2Section3() {
                 </div>
               </div>
               </SwiperSlide>
+              <SwiperButtun/>
               {/* product single item end */}
               {/* product single item start */}
               {/* product single item end */}

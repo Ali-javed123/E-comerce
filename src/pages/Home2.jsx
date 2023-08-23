@@ -4,6 +4,10 @@ import Header from '../component/globleComponent/Header'
 import Home1Section2 from '../component/Home2/Home2Section1'
 import Home2Section2 from '../component/Home2/Home2Section2'
 import Home2Section3 from '../component/Home2/Home2Section3'
+import Home2Section4 from '../component/Home2/Home2Section4'
+import Home2Section5 from '../component/Home2/Home2Section5'
+import Home1Section6 from '../component/Home2/Home2Section6'
+import Footer from '../component/globleComponent/Footer'
 export default function Home2() {
   return (
     <>
@@ -60,6 +64,10 @@ export default function Home2() {
     <Home1Section2/>
     <Home2Section2/>
     <Home2Section3/>
+    <Home2Section4/>
+    <Home2Section5/>
+    <Home1Section6/>
+    <Footer/>
 
 </div>
     

@@ -280,7 +280,7 @@ export default function Header() {
                     <ul className="dropdown">
                       <li><NavLink to="/">Home version 01</NavLink></li>
                       <li><NavLink to="/home2">Home version 02</NavLink></li>
-                      <li><a href="index-3.html">Home version 03</a></li>
+                      <li><NavLink to="/home3">Home version 03</NavLink></li>
                       <li><a href="index-4.html">Home version 04</a></li>
                     </ul>
                   </li>

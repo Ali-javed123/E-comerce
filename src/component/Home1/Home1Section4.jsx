@@ -149,7 +149,9 @@ export default function Home1Section4() {
               <h3>best seller</h3>
               <div className="category-append" />
             </div> {/* section title end */}
-            <div className="category-carousel-active row" data-row={4}>
+            <Swiper loop modules={[Pagination,Autoplay,Navigation]} className="category-carousel-active row" >
+              <SwiperSlide>
+
               <div className="col">
                 <div className="category-item">
                   <div className="category-thumb">
@@ -270,6 +272,9 @@ export default function Home1Section4() {
                   </div>
                 </div> {/* end single item */}
               </div> {/* end single item column */}
+              </SwiperSlide>
+              <SwiperSlide>
+
               <div className="col">
                 <div className="category-item">
                   <div className="category-thumb">
@@ -390,7 +395,10 @@ export default function Home1Section4() {
                   </div>
                 </div> {/* end single item */}
               </div> {/* end single item column */}
-            </div>
+              </SwiperSlide>
+
+              <SwiperButtun/>
+            </Swiper>
           </div>
           {/* best seller area end */}
           {/* blog area start */}
@@ -1065,7 +1073,9 @@ export default function Home1Section4() {
                   <h3>New Products</h3>
                   <div className="category-append" />
                 </div> {/* section title end */}
-                <div className="category-carousel-active row" data-row={4}>
+                <Swiper loop modules={[Pagination,Autoplay,Navigation]} className="category-carousel-active row" >
+                  <SwiperSlide>
+
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
@@ -1186,6 +1196,9 @@ export default function Home1Section4() {
                       </div>
                     </div> {/* end single item */}
                   </div> {/* end single item column */}
+                  </SwiperSlide>
+                  <SwiperSlide>
+
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
@@ -1306,7 +1319,9 @@ export default function Home1Section4() {
                       </div>
                     </div> {/* end single item */}
                   </div> {/* end single item column */}
-                </div>
+                  </SwiperSlide>
+                  <SwiperButtun/>
+                </Swiper>
               </div>
             </div>
             {/* New Products area end */}
@@ -1317,7 +1332,9 @@ export default function Home1Section4() {
                   <h3>Most viewed</h3>
                   <div className="category-append" />
                 </div> {/* section title end */}
-                <div className="category-carousel-active row" data-row={4}>
+                <Swiper loop modules={[Pagination,Autoplay,Navigation]} className="category-carousel-active row" >
+                  <SwiperSlide>
+
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
@@ -1438,6 +1455,9 @@ export default function Home1Section4() {
                       </div>
                     </div> {/* end single item */}
                   </div> {/* end single item column */}
+                  </SwiperSlide>
+                  <SwiperSlide>
+
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
@@ -1558,7 +1578,9 @@ export default function Home1Section4() {
                       </div>
                     </div> {/* end single item */}
                   </div> {/* end single item column */}
-                </div>
+                  </SwiperSlide>
+                  <SwiperButtun/>
+                </Swiper>
               </div>
             </div>
             {/* Most viewed area end */}
@@ -1569,7 +1591,9 @@ export default function Home1Section4() {
                   <h3>hot sale</h3>
                   <div className="category-append" />
                 </div> {/* section title end */}
-                <div className="category-carousel-active row" data-row={4}>
+                <Swiper loop modules={[Pagination,Autoplay,Navigation]} className="category-carousel-active row" >
+                  <SwiperSlide>
+
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
@@ -1690,6 +1714,9 @@ export default function Home1Section4() {
                       </div>
                     </div> {/* end single item */}
                   </div> {/* end single item column */}
+                  </SwiperSlide>
+                  <SwiperSlide>
+
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
@@ -1810,7 +1837,9 @@ export default function Home1Section4() {
                       </div>
                     </div> {/* end single item */}
                   </div> {/* end single item column */}
-                </div>
+                  </SwiperSlide>
+                  <SwiperButtun/>
+                </Swiper>
               </div>
             </div>
             {/* Most viewed area end */}

@@ -2,7 +2,9 @@ import React from 'react'
 import Header from '../component/globleComponent/Header'
 import Home3Hero from '../component/Home3/Home3Hero'
 import Home3Sectin1 from '../component/Home3/Home3Sectin1'
-import Home1Section3 from '../component/Home3/Home3Section2'
+import Home3Section2 from '../component/Home3/Home3Section2'
+import Home3Section3 from '../component/Home3/Home3Section3'
+import Home3Section4 from '../component/Home3/Home3Section4'
 export default function Home3() {
   return (
     <>
@@ -57,7 +59,9 @@ export default function Home3() {
 <Header/>
 <Home3Hero/>
 <Home3Sectin1/>
-<Home1Section3/>
+<Home3Section2/>
+<Home3Section3/>
+<Home3Section4/>
 </div>
       
     </>

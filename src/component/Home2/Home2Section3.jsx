@@ -23,7 +23,11 @@ export default function Home2Section3() {
             <h3>best seller</h3>
             <div className="category-append" />
           </div> {/* section title end */}
-          <Swiper loop modules={[Pagination,Autoplay,Navigation]} className="category-carousel-active row" >
+          <Swiper  loop   autoplay={{
+            delay: 2000,
+            disableOnInteraction: false
+        }}
+         modules={[Autoplay,Navigation]} className="category-carousel-active row" >
             <SwiperSlide>
 
             <div className="col">
@@ -312,7 +316,11 @@ export default function Home2Section3() {
           <div className="section-title-2 mb-28">
             <h3>Clients Say</h3>
           </div> {/* section title end */}
-          <Swiper loop modules={[Autoplay,Navigation]} className="testimonial-carousel-active slick-dot-style">
+          <Swiper  loop   autoplay={{
+            delay: 2000,
+            disableOnInteraction: false
+        }}
+         modules={[Autoplay,Navigation]} className="testimonial-carousel-active slick-dot-style">
             <SwiperSlide>
 
             <div className="testimonial-item text-center">

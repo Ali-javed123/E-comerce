@@ -22,7 +22,11 @@ export default function Home3Section3() {
             <h3>best seller</h3>
             <div className="category-append" />
           </div> {/* section title end */}
-          <Swiper loop className="category-carousel-active row">
+          <Swiper  loop   autoplay={{
+            delay: 2000,
+            disableOnInteraction: false
+        }}
+       modules={[Autoplay,Navigation]} className="category-carousel-active row">
             <SwiperSlide>
 
             <div className="col">
@@ -339,17 +343,7 @@ export default function Home3Section3() {
         <div className="tab-content pb-md-20 pb-sm-20">
           <div className="tab-pane fade show active" id="tab_one">
             <div className="feature-category-carousel-wrapper">
-              <Swiper slidesPerView={1}
-        loop={true}
-        autoplay={{
-            delay: 2000,
-            disableOnInteraction: false
-        }}
-        spaceBetween={10}
-        pagination={{
-          clickable: true,
-        }}
-        breakpoints={{
+              <Swiper breakpoints={{
           640: {
             slidesPerView: 2,
             spaceBetween: 20,
@@ -362,9 +356,11 @@ export default function Home3Section3() {
             slidesPerView: 4,
             spaceBetween: 50,
           },
+        }} loop   autoplay={{
+            delay: 2000,
+            disableOnInteraction: false
         }}
-
-        modules={[Autoplay]}  className="featured-carousel-active slick-padding slick-arrow-style arrow-space">
+        spaceBetween={10} modules={[Autoplay,Navigation]}  className="featured-carousel-active slick-padding slick-arrow-style arrow-space">
 
                 {/* product single item start */}
                 <SwiperSlide>

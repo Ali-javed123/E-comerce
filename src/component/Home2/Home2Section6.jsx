@@ -28,13 +28,6 @@ export default function Home2Section6() {
     <div className="row">
       <div className="col-12">
         <Swiper   
-        loop
-        autoplay={{
-            delay: 2000,
-            disableOnInteraction: false
-        }}
-        spaceBetween={10}
-      
         breakpoints={{
           640: {
             slidesPerView: 2,
@@ -48,9 +41,11 @@ export default function Home2Section6() {
             slidesPerView: 5,
             spaceBetween: 50,
           },
+        }} loop   autoplay={{
+            delay: 2000,
+            disableOnInteraction: false
         }}
-
-        modules={[Autoplay,Navigation]}  className="brand-active slick-padding slick-arrow-style">
+        spaceBetween={10} modules={[Autoplay,Navigation]} className="brand-active slick-padding slick-arrow-style">
           <SwiperSlide>
 
           <div className="brand-item text-center">

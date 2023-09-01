@@ -281,15 +281,15 @@ export default function Header() {
                       <li><NavLink to="/">Home version 01</NavLink></li>
                       <li><NavLink to="/home2">Home version 02</NavLink></li>
                       <li><NavLink to="/home3">Home version 03</NavLink></li>
-                      <li><a href="index-4.html">Home version 04</a></li>
+                      <li><NavLink to="/home4">Home version 04</NavLink></li>
                     </ul>
                   </li>
                   <li className="static"><a href="#">pages <i className="fa fa-angle-down" /></a>
                     <ul className="megamenu dropdown">
                       <li className="mega-title"><a href="#">column 01</a>
                         <ul>
-                          <li><a href="shop-grid-left-sidebar.html">shop grid left
-                              sidebar</a></li>
+                          <li><NavLink to="/ShopGirdLeftSidebar">shop grid left
+                              sidebar</NavLink></li>
                           <li><a href="shop-grid-right-sidebar.html">shop grid right
                               sidebar</a></li>
                           <li><a href="shop-grid-full-3-col.html">shop grid full 3

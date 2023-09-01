@@ -25,7 +25,11 @@ export default function Home1Section4() {
               <h3>hot deals</h3>
               <div className="slick-append" />
             </div> {/* section title end */}
-            <Swiper loop className="deals-carousel-active slick-padding slick-arrow-style">
+            <Swiper  loop   autoplay={{
+            delay: 2000,
+            disableOnInteraction: false
+        }}
+      modules={[Autoplay,Navigation]} className="deals-carousel-active slick-padding slick-arrow-style">
               {/* product single item start */}
               <SwiperButtun/>
               <SwiperSlide>

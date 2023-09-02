@@ -292,36 +292,36 @@ export default function Header() {
                               sidebar</NavLink></li>
                           <li><NavLink to="/ShopGirdRightSidebar">shop grid right
                               sidebar</NavLink></li>
-                          <li><NavLink to="/ShopGirdFull3Col">shop grid full 3
+                          <li><NavLink to="/ShopGirdFullCol3">shop grid full 3
                               column</NavLink></li>
-                          <li><a href="shop-grid-full-4-col.html">shop grid full 4
-                              column</a></li>
+                          <li><NavLink to="/ShopGirdFullCol4">shop grid full 4
+                              column</NavLink></li>
                         </ul>
                       </li>
                       <li className="mega-title"><a href="#">column 02</a>
                         <ul>
-                          <li><a href="product-details.html">product details</a></li>
-                          <li><a href="product-details-affiliate.html">product
+                          <li><NavLink to="/ProductDetail">product details</NavLink></li>
+                          <li><NavLink to="/product-details-affiliate">product
                               details
-                              affiliate</a></li>
-                          <li><a href="product-details-variable.html">product details
-                              variable</a></li>
-                          <li><a href="product-details-group.html">product details
-                              group</a></li>
+                              affiliate</NavLink></li>
+                          <li><NavLink to="/product-details-variable">product details
+                              variable</NavLink></li>
+                          <li><NavLink to="/ProductDetailGroup">product details
+                              group</NavLink></li>
                         </ul>
                       </li>
                       <li className="mega-title"><a href="#">column 03</a>
                         <ul>
-                          <li><a href="cart.html">cart</a></li>
-                          <li><a href="checkout.html">checkout</a></li>
-                          <li><a href="compare.html">compare</a></li>
-                          <li><a href="wishlist.html">wishlist</a></li>
+                          <li><NavLink to="/Cart">cart</NavLink></li>
+                          <li><NavLink to="/Checkout">checkout</NavLink></li>
+                          <li><NavLink to="/Compare">compare</NavLink></li>
+                          <li><NavLink to="/Whislist">wishlist</NavLink></li>
                         </ul>
                       </li>
                       <li className="mega-title"><a href="#">column 04</a>
                         <ul>
-                          <li><a href="my-account.html">my-account</a></li>
-                          <li><a href="login-register.html">login-register</a></li>
+                          <li><NavLink to="/MyAcccount">my-account</NavLink></li>
+                          <li><NavLink to="/LoginRegister">login-register</NavLink></li>
                           <li><a href="about-us.html">about us</a></li>
                           <li><a href="contact-us.html">contact us</a></li>
                         </ul>

@@ -210,7 +210,11 @@ export default function Home2Section2() {
             <h3>Most viewed</h3>
             <div className="category-append" />
           </div> {/* section title end */}
-          <Swiper loop modules={[Pagination,Autoplay,Navigation]} className="category-carousel-active row" >
+          <Swiper loop={true}
+        autoplay={{
+            delay: 2000,
+            disableOnInteraction: false
+        }} modules={[Pagination,Autoplay,Navigation]} className="category-carousel-active row" >
             <SwiperSlide>
 
             <div className="col">

@@ -7644,3 +7644,9 @@ body.image-bg .wrapper {
 /* header{
     overflow-x: hidden !important;
 } */
+.text-start{
+    text-align: start;
+}
+*{
+    list-style: name;
+}

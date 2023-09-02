@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import { NavLink } from 'react-router-dom'
-export default function ShopGirdFull3ColSection() {
+export default function ShopGirdFull4ColSection() {
     const [mode,setmode]=useState("")
 
   return (
@@ -49,7 +49,7 @@ export default function ShopGirdFull3ColSection() {
           {/* shop product top wrap start */}
           {/* product item start */}
           <div className={mode=="list"?"shop-product-wrap row list":"shop-product-wrap grid row "}>
-            <div className="col-lg-4 col-md-4 col-sm-6">
+            <div className="col-lg-3 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -124,7 +124,7 @@ export default function ShopGirdFull3ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-4 col-md-4 col-sm-6">
+            <div className="col-lg-3 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -199,7 +199,7 @@ export default function ShopGirdFull3ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-4 col-md-4 col-sm-6">
+            <div className="col-lg-3 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -274,7 +274,7 @@ export default function ShopGirdFull3ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-4 col-md-4 col-sm-6">
+            <div className="col-lg-3 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -348,7 +348,7 @@ export default function ShopGirdFull3ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-4 col-md-4 col-sm-6">
+            <div className="col-lg-3 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -423,7 +423,7 @@ export default function ShopGirdFull3ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-4 col-md-4 col-sm-6">
+            <div className="col-lg-3 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -498,7 +498,7 @@ export default function ShopGirdFull3ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-4 col-md-4 col-sm-6">
+            <div className="col-lg-3 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -573,7 +573,7 @@ export default function ShopGirdFull3ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-4 col-md-4 col-sm-6">
+            <div className="col-lg-3 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -648,7 +648,7 @@ export default function ShopGirdFull3ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-4 col-md-4 col-sm-6">
+            <div className="col-lg-3 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -723,7 +723,7 @@ export default function ShopGirdFull3ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-4 col-md-4 col-sm-6">
+            <div className="col-lg-3 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -798,7 +798,7 @@ export default function ShopGirdFull3ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-4 col-md-4 col-sm-6">
+            <div className="col-lg-3 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -873,7 +873,7 @@ export default function ShopGirdFull3ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-4 col-md-4 col-sm-6">
+            <div className="col-lg-3 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -948,7 +948,7 @@ export default function ShopGirdFull3ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-4 col-md-4 col-sm-6">
+            <div className="col-lg-3 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -1023,7 +1023,7 @@ export default function ShopGirdFull3ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-4 col-md-4 col-sm-6">
+            <div className="col-lg-3 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -1098,7 +1098,7 @@ export default function ShopGirdFull3ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-4 col-md-4 col-sm-6">
+            <div className="col-lg-3 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -1147,6 +1147,81 @@ export default function ShopGirdFull3ColSection() {
                 </div>
                 <div className="product-list-content">
                   <h3><a href="product-details.html">simple product 02</a></h3>
+                  <div className="ratings">
+                    <span className="good"><i className="fa fa-star" /></span>
+                    <span className="good"><i className="fa fa-star" /></span>
+                    <span className="good"><i className="fa fa-star" /></span>
+                    <span className="good"><i className="fa fa-star" /></span>
+                    <span><i className="fa fa-star" /></span>
+                    <div className="pro-review">
+                      <span>1 review(s)</span>
+                    </div>
+                  </div>
+                  <div className="pricebox">
+                    <span className="regular-price">$70.00</span>
+                    <span className="old-price"><del>$90.00</del></span>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                  <p>Phasellus id nisi quis justo tempus mollis sed et dui. In hac habitasse platea dictumst. Suspendisse ultrices mauris diam. Nullam sed aliquet elit. Mauris consequat nisi ut mauris efficitur lacinia.</p>
+                  <div className="product-list-action-link">
+                    <a className="buy-btn" href="#" data-toggle="tooltip" data-placement="top" title="Add to cart">go to buy <i className="fa fa-shopping-cart" /> </a>
+                    <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="top" title="Quick view"><i className="fa fa-search" /></span> </a>
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Wishlist"><i className="fa fa-heart-o" /></a>
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i className="fa fa-refresh" /></a>
+                  </div>
+                </div>
+              </div>
+              {/* product single list item start */}
+            </div> {/* product single column end */}
+            <div className="col-lg-3 col-md-4 col-sm-6">
+              {/* product single grid item start */}
+              <div className="product-item fix mb-30">
+                <div className="product-thumb">
+                  <a href="product-details.html">
+                    <img src="assets/img/product/product-img4.jpg" className="img-pri" alt />
+                    <img src="assets/img/product/product-img6.jpg" className="img-sec" alt />
+                  </a>
+                  <div className="product-label">
+                    <span>hot</span>
+                  </div>
+                  <div className="product-action-link">
+                    <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </a>
+                    <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></a>
+                    <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></a>
+                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></a>
+                  </div>
+                </div>
+                <div className="product-content">
+                  <h4><a href="product-details.html">vertual product 01</a></h4>
+                  <div className="pricebox">
+                    <span className="regular-price">$70.00</span>
+                    <div className="ratings">
+                      <span className="good"><i className="fa fa-star" /></span>
+                      <span className="good"><i className="fa fa-star" /></span>
+                      <span className="good"><i className="fa fa-star" /></span>
+                      <span className="good"><i className="fa fa-star" /></span>
+                      <span><i className="fa fa-star" /></span>
+                      <div className="pro-review">
+                        <span>1 review(s)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* product single grid item end */}
+              {/* product single list item start */}
+              <div className="product-list-item mb-30">
+                <div className="product-thumb">
+                  <a href="product-details.html">
+                    <img src="assets/img/product/product-img8.jpg" className="img-pri" alt />
+                    <img src="assets/img/product/product-img8.jpg" className="img-sec" alt />
+                  </a>
+                  <div className="product-label">
+                    <span>hot</span>
+                  </div>
+                </div>
+                <div className="product-list-content">
+                  <h3><a href="product-details.html">virtual product 02</a></h3>
                   <div className="ratings">
                     <span className="good"><i className="fa fa-star" /></span>
                     <span className="good"><i className="fa fa-star" /></span>

@@ -8,6 +8,8 @@ import 'swiper/css/pagination';
 import Home3 from './pages/Home3';
 import Home4 from './pages/Home4';
 import ShopGirdLeftSidebar from './pages/ShopGirdLeftSidebar';
+import ShopGirdRightSidebar from './pages/ShopGirdRightSidebar';
+import ShopGirdFull3Col from './pages/ShopGirdFull3Col';
 function App() {
   return (
     <div className="App">
@@ -19,6 +21,10 @@ function App() {
         <Route exact path="/home3" element={< Home3/>}></Route>
         <Route exact path="/home4" element={< Home4/>}></Route>
         <Route exact path="/ShopGirdLeftSidebar" element={< ShopGirdLeftSidebar/>}></Route>
+        <Route exact path="/ShopGirdRightSidebar" element={< ShopGirdRightSidebar/>}></Route>
+        <Route exact path="/ShopGirdFull3Col" element={< ShopGirdFull3Col/>}></Route>
+
+        
 
         
         </Routes>

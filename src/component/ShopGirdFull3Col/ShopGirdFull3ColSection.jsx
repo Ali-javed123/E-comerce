@@ -1,120 +1,14 @@
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
-export default function ShopGirdLeftSidebarSection1() {
+import React,{useState} from 'react'
+
+export default function ShopGirdFull3ColSection() {
     const [mode,setmode]=useState("")
-    const [range,setrange]=useState("")
-console.log('range',range)
+
   return (
-    <>
-{/* page wrapper start */}
 <div className="page-main-wrapper">
   <div className="container">
     <div className="row">
-      {/* sidebar start */}
-      <div className="col-lg-3 order-2 order-lg-1">
-        <div className="shop-sidebar-wrap mt-md-28 mt-sm-28">
-          {/* sidebar categorie start */}
-          <div className="sidebar-widget mb-30">
-            <div className="sidebar-category">
-              <ul>
-                <li className="title"><i className="fa fa-bars" /> categories</li>
-                <li><NavLink to="#">books</NavLink><span>(10)</span></li>
-                <li><NavLink to="#">camera</NavLink><span>(12)</span></li>
-                <li><NavLink to="#">computer</NavLink><span>(08)</span></li>
-                <li><NavLink to="#">electronic</NavLink><span>(16)</span></li>
-                <li><NavLink to="#">Necklaces</NavLink><span>(11)</span></li>
-                <li><NavLink to="#">Rugby</NavLink><span>(20)</span></li>
-                <li><NavLink to="#">smart phones</NavLink><span>(15)</span></li>
-                <li><NavLink to="#">tablet</NavLink><span>(12)</span></li>
-                <li><NavLink to="#">watch</NavLink><span>(10)</span></li>
-              </ul>
-            </div>
-          </div>
-          {/* sidebar categorie start */}
-          {/* manufacturer start */}
-          <div className="sidebar-widget mb-30">
-            <div className="sidebar-title mb-10">
-              <h3>Manufacturers</h3>
-            </div>
-            <div className="sidebar-widget-body">
-              <ul>
-                <li><i className="fa fa-angle-right" /><a href="#">calvin klein</a><span>(10)</span></li>
-                <li><i className="fa fa-angle-right" /><a href="#">diesel</a><span>(12)</span></li>
-                <li><i className="fa fa-angle-right" /><a href="#">polo</a><span>(20)</span></li>
-                <li><i className="fa fa-angle-right" /><a href="#">Tommy Hilfiger</a><span>(12)</span></li>
-                <li><i className="fa fa-angle-right" /><a href="#">Versace</a><span>(16)</span></li>
-              </ul>
-            </div>
-          </div>
-          {/* manufacturer end */}
-          {/* pricing filter start */}
-          <div className="sidebar-widget mb-30">
-            <div className="sidebar-title mb-10">
-              <h3>filter by price</h3>
-            </div>
-            <div className="sidebar-widget-body">
-              <div className="price-range-wrap">
-                {/* <div className="price-range" data-min={50} data-max={400} /> */}
-                <input onChange={(e)=>setrange(e)} minLength={50} maxLength={400}  type="range" name="" id="" />
-                <div className="range-slider">
-                  <form action="#" className="d-flex justify-content-between">
-                    <button className="filter-btn">filter</button>
-                    <div className="price-input d-flex align-items-center">
-                      <label htmlFor="amount">Price: </label>
-                      <input type="text" id="amount" />
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* pricing filter end */}
-          {/* product size start */}
-          <div className="sidebar-widget mb-30">
-            <div className="sidebar-title mb-10">
-              <h3>size</h3>
-            </div>
-            <div className="sidebar-widget-body">
-              <ul>
-                <li><i className="fa fa-angle-right" /><a href="#">s</a><span>(10)</span></li>
-                <li><i className="fa fa-angle-right" /><a href="#">m</a><span>(12)</span></li>
-                <li><i className="fa fa-angle-right" /><a href="#">l</a><span>(20)</span></li>
-                <li><i className="fa fa-angle-right" /><a href="#">XL</a><span>(12)</span></li>
-              </ul>
-            </div>
-          </div>
-          {/* product size end */}
-          {/* product tag start */}
-          <div className="sidebar-widget mb-30">
-            <div className="sidebar-title mb-10">
-              <h3>tags</h3>
-            </div>
-            <div className="sidebar-widget-body">
-              <div className="product-tag">
-                <a href="#">camera</a>
-                <a href="#">computer</a>
-                <a href="#">tablet</a>
-                <a href="#">watch</a>
-                <a href="#">smart phones</a>
-                <a href="#">handbag</a>
-                <a href="#">shoe</a>
-                <a href="#">men</a>
-              </div>
-            </div>
-          </div>
-          {/* product tag end */}
-          {/* sidebar banner start */}
-          <div className="sidebar-widget mb-30">
-            <div className="img-container fix img-full">
-              <a href="#"><img src="assets/img/banner/banner_shop.jpg" alt /></a>
-            </div>
-          </div>
-          {/* sidebar banner end */}
-        </div>
-      </div>
-      {/* sidebar end */}
       {/* product main wrap start */}
-      <div className="col-lg-9 order-1 order-lg-2">
+      <div className="col-12">
         <div className="shop-banner img-full">
           <img src="assets/img/banner/banner_static1.jpg" alt />
         </div>
@@ -126,8 +20,8 @@ console.log('range',range)
               <div className="col-lg-7 col-md-6">
                 <div className="top-bar-left">
                   <div className="product-view-mode mr-70 mr-sm-0">
-                    <NavLink onClick={()=>setmode("gird")} className="active" to="#" data-target="grid"><i className="fa fa-th" /></NavLink>
-                    <NavLink onClick={()=>setmode("list")} to="#" data-target="list"><i className="fa fa-list" /></NavLink>
+                    <a className="active" href="#" data-target="grid"><i className="fa fa-th" /></a>
+                    <a href="#" data-target="list"><i className="fa fa-list" /></a>
                   </div>
                   <div className="product-amount">
                     <p>Showing 1–16 of 21 results</p>
@@ -154,10 +48,9 @@ console.log('range',range)
           </div>
           {/* shop product top wrap start */}
           {/* product item start */}
-          <div className={mode=="list"?"shop-product-wrap row list":"shop-product-wrap grid row "}>
-            <div className="col-lg-3 col-md-4 col-sm-6">
+          <div className="shop-product-wrap grid row">
+            <div className="col-lg-4 col-md-4 col-sm-6">
               {/* product single grid item start */}
-
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
                   <a href="product-details.html">
@@ -191,6 +84,8 @@ console.log('range',range)
                   </div>
                 </div>
               </div>
+              {/* product single grid item end */}
+              {/* product single list item start */}
               <div className="product-list-item mb-30">
                 <div className="product-thumb">
                   <a href="product-details.html">
@@ -227,11 +122,9 @@ console.log('range',range)
                   </div>
                 </div>
               </div>
-              {/* product single grid item end */}
-              {/* product single list item start */}
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className="col-lg-4 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -306,7 +199,7 @@ console.log('range',range)
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className="col-lg-4 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -381,7 +274,7 @@ console.log('range',range)
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className="col-lg-4 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -455,7 +348,7 @@ console.log('range',range)
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className="col-lg-4 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -530,7 +423,7 @@ console.log('range',range)
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className="col-lg-4 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -605,7 +498,7 @@ console.log('range',range)
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className="col-lg-4 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -680,7 +573,7 @@ console.log('range',range)
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className="col-lg-4 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -755,7 +648,7 @@ console.log('range',range)
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className="col-lg-4 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -830,7 +723,7 @@ console.log('range',range)
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className="col-lg-4 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -905,7 +798,7 @@ console.log('range',range)
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className="col-lg-4 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -980,7 +873,7 @@ console.log('range',range)
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className="col-lg-4 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -1055,7 +948,7 @@ console.log('range',range)
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className="col-lg-4 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -1130,7 +1023,7 @@ console.log('range',range)
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className="col-lg-4 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -1205,7 +1098,7 @@ console.log('range',range)
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className="col-lg-4 col-md-4 col-sm-6">
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -1280,81 +1173,6 @@ console.log('range',range)
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
-              {/* product single grid item start */}
-              <div className="product-item fix mb-30">
-                <div className="product-thumb">
-                  <a href="product-details.html">
-                    <img src="assets/img/product/product-img4.jpg" className="img-pri" alt />
-                    <img src="assets/img/product/product-img6.jpg" className="img-sec" alt />
-                  </a>
-                  <div className="product-label">
-                    <span>hot</span>
-                  </div>
-                  <div className="product-action-link">
-                    <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></a>
-                  </div>
-                </div>
-                <div className="product-content">
-                  <h4><a href="product-details.html">vertual product 01</a></h4>
-                  <div className="pricebox">
-                    <span className="regular-price">$70.00</span>
-                    <div className="ratings">
-                      <span className="good"><i className="fa fa-star" /></span>
-                      <span className="good"><i className="fa fa-star" /></span>
-                      <span className="good"><i className="fa fa-star" /></span>
-                      <span className="good"><i className="fa fa-star" /></span>
-                      <span><i className="fa fa-star" /></span>
-                      <div className="pro-review">
-                        <span>1 review(s)</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* product single grid item end */}
-              {/* product single list item start */}
-              <div className="product-list-item mb-30">
-                <div className="product-thumb">
-                  <a href="product-details.html">
-                    <img src="assets/img/product/product-img8.jpg" className="img-pri" alt />
-                    <img src="assets/img/product/product-img8.jpg" className="img-sec" alt />
-                  </a>
-                  <div className="product-label">
-                    <span>hot</span>
-                  </div>
-                </div>
-                <div className="product-list-content">
-                  <h3><a href="product-details.html">virtual product 02</a></h3>
-                  <div className="ratings">
-                    <span className="good"><i className="fa fa-star" /></span>
-                    <span className="good"><i className="fa fa-star" /></span>
-                    <span className="good"><i className="fa fa-star" /></span>
-                    <span className="good"><i className="fa fa-star" /></span>
-                    <span><i className="fa fa-star" /></span>
-                    <div className="pro-review">
-                      <span>1 review(s)</span>
-                    </div>
-                  </div>
-                  <div className="pricebox">
-                    <span className="regular-price">$70.00</span>
-                    <span className="old-price"><del>$90.00</del></span>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                  <p>Phasellus id nisi quis justo tempus mollis sed et dui. In hac habitasse platea dictumst. Suspendisse ultrices mauris diam. Nullam sed aliquet elit. Mauris consequat nisi ut mauris efficitur lacinia.</p>
-                  <div className="product-list-action-link">
-                    <a className="buy-btn" href="#" data-toggle="tooltip" data-placement="top" title="Add to cart">go to buy <i className="fa fa-shopping-cart" /> </a>
-                    <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="top" title="Quick view"><i className="fa fa-search" /></span> </a>
-                    <a href="#" data-toggle="tooltip" data-placement="top" title="Wishlist"><i className="fa fa-heart-o" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i className="fa fa-refresh" /></a>
-                  </div>
-                </div>
-              </div>
-              {/* product single list item start */}
-            </div> {/* product single column end */}
           </div>
           {/* product item end */}
         </div>
@@ -1379,8 +1197,6 @@ console.log('range',range)
     </div>
   </div>
 </div>
-{/* page wrapper end */}
 
-    </>
   )
 }

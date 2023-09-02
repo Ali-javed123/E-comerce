@@ -290,10 +290,10 @@ export default function Header() {
                         <ul>
                           <li><NavLink to="/ShopGirdLeftSidebar">shop grid left
                               sidebar</NavLink></li>
-                          <li><a href="shop-grid-right-sidebar.html">shop grid right
-                              sidebar</a></li>
-                          <li><a href="shop-grid-full-3-col.html">shop grid full 3
-                              column</a></li>
+                          <li><NavLink to="/ShopGirdRightSidebar">shop grid right
+                              sidebar</NavLink></li>
+                          <li><NavLink to="/ShopGirdFull3Col">shop grid full 3
+                              column</NavLink></li>
                           <li><a href="shop-grid-full-4-col.html">shop grid full 4
                               column</a></li>
                         </ul>

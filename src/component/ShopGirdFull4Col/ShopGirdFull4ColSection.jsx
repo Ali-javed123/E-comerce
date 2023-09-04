@@ -20,8 +20,9 @@ export default function ShopGirdFull4ColSection() {
               <div className="col-lg-7 col-md-6">
                 <div className="top-bar-left">
                 <div className="product-view-mode mr-70 mr-sm-0">
-                    <NavLink onClick={()=>setmode("gird")} className="active" to="#" data-target="grid"><i className="fa fa-th" /></NavLink>
+                <NavLink onClick={()=>setmode("col-4")} className="active" to="#" data-target="col-4"><i className="fa fa-th" /></NavLink>
                     <NavLink onClick={()=>setmode("list")} to="#" data-target="list"><i className="fa fa-list" /></NavLink>
+                  <NavLink onClick={()=>setmode("col-3")} className="active" to="#" data-target="col-3"><i className="fa fa-th" /></NavLink>
                   </div>
                   <div className="product-amount">
                     <p>Showing 1–16 of 21 results</p>
@@ -49,7 +50,7 @@ export default function ShopGirdFull4ColSection() {
           {/* shop product top wrap start */}
           {/* product item start */}
           <div className={mode=="list"?"shop-product-wrap row list":"shop-product-wrap grid row "}>
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -124,7 +125,7 @@ export default function ShopGirdFull4ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -199,7 +200,7 @@ export default function ShopGirdFull4ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -274,7 +275,7 @@ export default function ShopGirdFull4ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -348,7 +349,7 @@ export default function ShopGirdFull4ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -423,7 +424,7 @@ export default function ShopGirdFull4ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -498,7 +499,7 @@ export default function ShopGirdFull4ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -573,7 +574,7 @@ export default function ShopGirdFull4ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -648,7 +649,7 @@ export default function ShopGirdFull4ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -723,7 +724,7 @@ export default function ShopGirdFull4ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -798,7 +799,7 @@ export default function ShopGirdFull4ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -873,7 +874,7 @@ export default function ShopGirdFull4ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -948,7 +949,7 @@ export default function ShopGirdFull4ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -1023,7 +1024,7 @@ export default function ShopGirdFull4ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -1098,7 +1099,7 @@ export default function ShopGirdFull4ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -1173,7 +1174,7 @@ export default function ShopGirdFull4ColSection() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">

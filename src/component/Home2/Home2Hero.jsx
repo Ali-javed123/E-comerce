@@ -33,7 +33,7 @@ export default function Home2Hero() {
 
             centeredSlides={true}
             autoplay={{
-              delay: 5000,
+              delay: 2000,
               disableOnInteraction: false,
             }}
             modules={[EffectFade, Autoplay, Navigation, Pagination]} className="hero-slider-active hero__2 slick-dot-style hero-dot">

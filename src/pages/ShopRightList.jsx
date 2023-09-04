@@ -1,18 +1,14 @@
 import React from 'react'
-import Header from '../component/globleComponent/Header'
+import Header from '../component/globleComponent/Header' 
+import ShopRightListBreadcum from '../component/ShopRightList/ShopRightListBreadcum'
+import ShopRightListSection from '../component/ShopRightList/ShopRightListSection'
 import Footer from '../component/globleComponent/Footer'
-import Home3Hero from '../component/Home3/Home3Hero'
-import Home3Sectin1 from '../component/Home3/Home3Sectin1'
-import Home3Section2 from '../component/Home3/Home3Section2'
-import Home3Section3 from '../component/Home3/Home3Section3'
-import Home3Section4 from '../component/Home3/Home3Section4'
-import Home3Section5 from '../component/Home3/Home3Section5'
-import Home3Section6 from '../component/Home3/Home3Section6'
-import Home2Section6 from '../component/Home2/Home2Section6'
-export default function Home3() {
+import Home2Section6 from '../component/Home1/Home1Section6'
+export default function ShopRightList() {
   return (
     <>
-        <div className="color-switcher">
+{/* color switcher start */}
+<div className="color-switcher">
   <div className="color-switcher-inner">
     <div className="switcher-icon">
       <i className="fa fa-cog fa-spin" />
@@ -59,19 +55,16 @@ export default function Home3() {
     </div>
   </div>
 </div>
-<div class="wrapper box-layout">
+{/* color switcher end */}
+<div className='wrapper box-layout'>
 <Header/>
-<Home3Hero/>
-<Home3Sectin1/>
-<Home3Section2/>
-<Home3Section3/>
-<Home3Section4/>
-<Home3Section5/>
-<Home3Section6/>
-<Home2Section6/>
+<ShopRightListBreadcum/>
+<ShopRightListSection/>
+{/* <ShopGirdLeftSidebarSection2/> */}
+< Home2Section6/>
 <Footer/>
 </div>
-      
+
     </>
   )
 }

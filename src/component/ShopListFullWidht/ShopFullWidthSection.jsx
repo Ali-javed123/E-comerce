@@ -1,32 +1,29 @@
-import React, { useState } from 'react'
+import React,{useState} from 'react'
 import { NavLink } from 'react-router-dom'
-export default function ShopGirdLeftSidebarSection1() {
+export default function ShopFullWidthSection() {
     const [mode,setmode]=useState("")
-    const [range,setrange]=useState("")
-    console.log('range',range)
+
   return (
-    <>
-{/* page wrapper start */}
 <div className="page-main-wrapper">
   <div className="container">
     <div className="row">
       {/* sidebar start */}
-      <div className="col-lg-3 order-2 order-lg-1">
+      <div className="col-lg-3 order-2">
         <div className="shop-sidebar-wrap mt-md-28 mt-sm-28">
           {/* sidebar categorie start */}
           <div className="sidebar-widget mb-30">
             <div className="sidebar-category">
               <ul>
                 <li className="title"><i className="fa fa-bars" /> categories</li>
-                <li><NavLink to="#">books</NavLink><span>(10)</span></li>
-                <li><NavLink to="#">camera</NavLink><span>(12)</span></li>
-                <li><NavLink to="#">computer</NavLink><span>(08)</span></li>
-                <li><NavLink to="#">electronic</NavLink><span>(16)</span></li>
-                <li><NavLink to="#">Necklaces</NavLink><span>(11)</span></li>
-                <li><NavLink to="#">Rugby</NavLink><span>(20)</span></li>
-                <li><NavLink to="#">smart phones</NavLink><span>(15)</span></li>
-                <li><NavLink to="#">tablet</NavLink><span>(12)</span></li>
-                <li><NavLink to="#">watch</NavLink><span>(10)</span></li>
+                <li><a href="#">books</a><span>(10)</span></li>
+                <li><a href="#">camera</a><span>(12)</span></li>
+                <li><a href="#">computer</a><span>(08)</span></li>
+                <li><a href="#">electronic</a><span>(16)</span></li>
+                <li><a href="#">Necklaces</a><span>(11)</span></li>
+                <li><a href="#">Rugby</a><span>(20)</span></li>
+                <li><a href="#">smart phones</a><span>(15)</span></li>
+                <li><a href="#">tablet</a><span>(12)</span></li>
+                <li><a href="#">watch</a><span>(10)</span></li>
               </ul>
             </div>
           </div>
@@ -55,7 +52,7 @@ export default function ShopGirdLeftSidebarSection1() {
             <div className="sidebar-widget-body">
               <div className="price-range-wrap">
                 {/* <div className="price-range" data-min={50} data-max={400} /> */}
-                <input onChange={(e)=>setrange(e)} minLength={50} maxLength={400}  type="range" name="" id="" />
+                <input type="range" name="" id="" />
                 <div className="range-slider">
                   <form action="#" className="d-flex justify-content-between">
                     <button className="filter-btn">filter</button>
@@ -114,7 +111,7 @@ export default function ShopGirdLeftSidebarSection1() {
       </div>
       {/* sidebar end */}
       {/* product main wrap start */}
-      <div className="col-lg-9 order-1 order-lg-2">
+      <div className="col-lg-9 order-1">
         <div className="shop-banner img-full">
           <img src="assets/img/banner/banner_static1.jpg" alt />
         </div>
@@ -126,8 +123,7 @@ export default function ShopGirdLeftSidebarSection1() {
               <div className="col-lg-7 col-md-6">
                 <div className="top-bar-left">
                   <div className="product-view-mode mr-70 mr-sm-0">
-
-                    <NavLink onClick={()=>setmode("col-4")} className="active" to="#" data-target="col-4"><i className="fa fa-th" /></NavLink>
+                  <NavLink onClick={()=>setmode("col-4")} className="active" to="#" data-target="col-4"><i className="fa fa-th" /></NavLink>
                     <NavLink onClick={()=>setmode("list")} to="#" data-target="list"><i className="fa fa-list" /></NavLink>
                   <NavLink onClick={()=>setmode("col-3")} className="active" to="#" data-target="col-3"><i className="fa fa-th" /></NavLink>
                   </div>
@@ -156,10 +152,9 @@ export default function ShopGirdLeftSidebarSection1() {
           </div>
           {/* shop product top wrap start */}
           {/* product item start */}
-          <div className={mode=="list"?"shop-product-wrap row list":"shop-product-wrap grid row "}>
-            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
+          <div className={mode=="col-3"||mode=="col-4"?"shop-product-wrap grid row ":"shop-product-wrap row list"}>
+            <div className={mode=='col-4'?"col-lg-4 col-md-4 col-sm-6":"col-lg-3 col-md-3 col-sm-6"}>
               {/* product single grid item start */}
-
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
                   <a href="product-details.html">
@@ -193,6 +188,8 @@ export default function ShopGirdLeftSidebarSection1() {
                   </div>
                 </div>
               </div>
+              {/* product single grid item end */}
+              {/* product single list item start */}
               <div className="product-list-item mb-30">
                 <div className="product-thumb">
                   <a href="product-details.html">
@@ -229,11 +226,9 @@ export default function ShopGirdLeftSidebarSection1() {
                   </div>
                 </div>
               </div>
-              {/* product single grid item end */}
-              {/* product single list item start */}
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
+            <div className={mode=='col-4'?"col-lg-4 col-md-4 col-sm-6":"col-lg-3 col-md-3 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -308,7 +303,7 @@ export default function ShopGirdLeftSidebarSection1() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
+            <div className={mode=='col-4'?"col-lg-4 col-md-4 col-sm-6":"col-lg-3 col-md-3 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -383,7 +378,7 @@ export default function ShopGirdLeftSidebarSection1() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
+            <div className={mode=='col-4'?"col-lg-4 col-md-4 col-sm-6":"col-lg-3 col-md-3 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -457,7 +452,7 @@ export default function ShopGirdLeftSidebarSection1() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
+            <div className={mode=='col-4'?"col-lg-4 col-md-4 col-sm-6":"col-lg-3 col-md-3 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -532,7 +527,7 @@ export default function ShopGirdLeftSidebarSection1() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
+            <div className={mode=='col-4'?"col-lg-4 col-md-4 col-sm-6":"col-lg-3 col-md-3 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -607,7 +602,7 @@ export default function ShopGirdLeftSidebarSection1() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
+            <div className={mode=='col-4'?"col-lg-4 col-md-4 col-sm-6":"col-lg-3 col-md-3 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -682,7 +677,7 @@ export default function ShopGirdLeftSidebarSection1() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
+            <div className={mode=='col-4'?"col-lg-4 col-md-4 col-sm-6":"col-lg-3 col-md-3 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -757,7 +752,7 @@ export default function ShopGirdLeftSidebarSection1() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
+            <div className={mode=='col-4'?"col-lg-4 col-md-4 col-sm-6":"col-lg-3 col-md-3 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -832,7 +827,7 @@ export default function ShopGirdLeftSidebarSection1() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
+            <div className={mode=='col-4'?"col-lg-4 col-md-4 col-sm-6":"col-lg-3 col-md-3 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -907,7 +902,7 @@ export default function ShopGirdLeftSidebarSection1() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
+            <div className={mode=='col-4'?"col-lg-4 col-md-4 col-sm-6":"col-lg-3 col-md-3 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -982,7 +977,7 @@ export default function ShopGirdLeftSidebarSection1() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
+            <div className={mode=='col-4'?"col-lg-4 col-md-4 col-sm-6":"col-lg-3 col-md-3 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -1057,7 +1052,7 @@ export default function ShopGirdLeftSidebarSection1() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
+            <div className={mode=='col-4'?"col-lg-4 col-md-4 col-sm-6":"col-lg-3 col-md-3 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -1132,7 +1127,7 @@ export default function ShopGirdLeftSidebarSection1() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
+            <div className={mode=='col-4'?"col-lg-4 col-md-4 col-sm-6":"col-lg-3 col-md-3 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -1207,7 +1202,7 @@ export default function ShopGirdLeftSidebarSection1() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
+            <div className={mode=='col-4'?"col-lg-4 col-md-4 col-sm-6":"col-lg-3 col-md-3 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -1282,7 +1277,7 @@ export default function ShopGirdLeftSidebarSection1() {
               </div>
               {/* product single list item start */}
             </div> {/* product single column end */}
-            <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
+            <div className={mode=='col-4'?"col-lg-4 col-md-4 col-sm-6":"col-lg-3 col-md-3 col-sm-6"}>
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
@@ -1381,8 +1376,7 @@ export default function ShopGirdLeftSidebarSection1() {
     </div>
   </div>
 </div>
-{/* page wrapper end */}
 
-    </>
+      
   )
 }

@@ -62,9 +62,9 @@ export default function Header() {
       <div className="row align-items-center">
         <div className="col-lg-3">
           <div className="brand-logo">
-            <a href="index.html">
+            <NavLink to="index.html">
               <img src="assets/img/logo/logo.png" alt="brand logo" />
-            </a>
+            </NavLink>
           </div>
         </div> {/* end logo area */}
         <div className="col-lg-9">
@@ -281,7 +281,7 @@ export default function Header() {
                       <li><NavLink to="/">Home version 01</NavLink></li>
                       <li><NavLink to="/home2">Home version 02</NavLink></li>
                       <li><NavLink to="/home3">Home version 03</NavLink></li>
-                      <li><NavLink to="/home4">Home version 04</NavLink></li>
+                      {/* <li><NavLink to="/home4">Home version 04</NavLink></li> */}
                     </ul>
                   </li>
                   <li className="static"><a href="#">pages <i className="fa fa-angle-down" /></a>
@@ -322,56 +322,56 @@ export default function Header() {
                         <ul>
                           <li><NavLink to="/MyAcccount">my-account</NavLink></li>
                           <li><NavLink to="/LoginRegister">login-register</NavLink></li>
-                          <li><a href="about-us.html">about us</a></li>
-                          <li><a href="contact-us.html">contact us</a></li>
+                          <li><NavLink to="/AboutUs">about us</NavLink></li>
+                          <li><NavLink to="/ContactUs">contact us</NavLink></li>
                         </ul>
                       </li>
                     </ul>
                   </li>
                   <li><a href="#">shop <i className="fa fa-angle-down" /></a>
                     <ul className="dropdown">
-                      <li><a href="#">shop grid layout <i className="fa fa-angle-right" /></a>
+                      <li><NavLink to="#">shop grid layout <i className="fa fa-angle-right" /></NavLink>
                         <ul className="dropdown">
-                          <li><a href="shop-grid-left-sidebar.html">shop grid left
-                              sidebar</a></li>
-                          <li><a href="shop-grid-left-sidebar-3-col.html">left
-                              sidebar 3 col</a></li>
-                          <li><a href="shop-grid-right-sidebar.html">shop grid right
-                              sidebar</a></li>
-                          <li><a href="shop-grid-right-sidebar-3-col.html">grid right
-                              sidebar 3 col</a></li>
-                          <li><a href="shop-grid-full-3-col.html">shop grid full 3
-                              column</a></li>
-                          <li><a href="shop-grid-full-4-col.html">shop grid full 4
-                              column</a></li>
+                          <li><NavLink to="/ShopGirdLeftSidebar">shop grid left
+                              sidebar</NavLink></li>
+                          {/* <li><NavLink to="/ShopGirdRightSidebar">left
+                              sidebar 3 col</NavLink></li> */}
+                          <li><NavLink to="/ShopGirdRightSidebar">shop grid right
+                              sidebar</NavLink></li>
+                          {/* <li><a href="shop-grid-right-sidebar-3-col.html">grid right
+                              sidebar 3 col</a></li> */}
+                          <li><NavLink to="/ShopGirdFullCol3">shop grid full 3
+                              column</NavLink></li>
+                          <li><NavLink to="/ShopGirdFullCol4">shop grid full 4
+                              column</NavLink></li>
                         </ul>
                       </li>
                       <li><a href="#">shop list layout <i className="fa fa-angle-right" /></a>
                         <ul className="dropdown">
-                          <li><a href="shop-list-left-sidebar.html">shop list left
-                              sidebar</a></li>
-                          <li><a href="shop-list-right-sidebar.html">shop list right
-                              sidebar</a></li>
-                          <li><a href="shop-list-full.html">shop list full width</a></li>
+                        <li><NavLink to="/ShopLeftList">shop list left
+                              sidebar</NavLink></li>
+                          <li><NavLink to="/ShopRightList">shop list right
+                              sidebar</NavLink></li>
+                          <li><NavLink to="/ShopListFullWidth">shop list full width</NavLink></li>
                         </ul>
                       </li>
-                      <li><a href="#">products details <i className="fa fa-angle-right" /></a>
+                      <li><NavLink to="#">products details <i className="fa fa-angle-right" /></NavLink>
                         <ul className="dropdown">
-                          <li><a href="product-details.html">product details</a></li>
-                          <li><a href="product-details-affiliate.html">product
+                          <li><NavLink to="/ProductDetail">product details</NavLink></li>
+                          <li><NavLink to="/product-details-affiliate">product
                               details
-                              affiliate</a></li>
-                          <li><a href="product-details-variable.html">product details
-                              variable</a></li>
-                          <li><a href="product-details-group.html">product details
-                              group</a></li>
+                              affiliate</NavLink></li>
+                          <li><NavLink to="/product-details-variable">product details
+                              variable</NavLink></li>
+                          <li><NavLink to="/ProductDetailGroup">product details
+                              group</NavLink></li>
                           <li><a href="product-details-box.html">product details box
                               slider</a></li>
                         </ul>
                       </li>
-                    </ul>
+                  </ul>
                   </li>
-                  <li><a href="#">Blog <i className="fa fa-angle-down" /></a>
+                  {/* <li><a href="#">Blog <i className="fa fa-angle-down" /></a>
                     <ul className="dropdown">
                       <li><a href="blog-left-sidebar.html">blog left sidebar</a></li>
                       <li><a href="blog-left-sidebar-2-col.html">blog left sidebar 2 col</a></li>
@@ -383,8 +383,10 @@ export default function Header() {
                       <li><a href="blog-details-video.html">blog details video</a></li>
                       <li><a href="blog-details-image.html">blog details image</a></li>
                     </ul>
-                  </li>
-                  <li><a href="contact-us.html">Contact us</a></li>
+                  </li> */}
+                  <li><NavLink to="/AboutUs">About Us</NavLink></li>
+                  <li><NavLink to="/ContactUs">Contact us</NavLink></li>
+
                 </ul>
               </nav>
             </div>

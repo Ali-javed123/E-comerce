@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-export default function ShopGirdLeftSidebarSection1() {
+export default function ShopLeftSection() {
     const [mode,setmode]=useState("")
     const [range,setrange]=useState("")
-    console.log('range',range)
+console.log('range',range)
   return (
     <>
 {/* page wrapper start */}
@@ -156,7 +156,7 @@ export default function ShopGirdLeftSidebarSection1() {
           </div>
           {/* shop product top wrap start */}
           {/* product item start */}
-          <div className={mode=="list"?"shop-product-wrap row list":"shop-product-wrap grid row "}>
+          <div className={mode=="col-3"||mode=="col-4"?"shop-product-wrap grid row ":"shop-product-wrap row list"}>
             <div className={mode=='col-3'?"col-lg-3 col-md-3 col-sm-6":"col-lg-4 col-md-4 col-sm-6"}>
               {/* product single grid item start */}
 

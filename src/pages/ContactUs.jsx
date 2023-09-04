@@ -1,15 +1,11 @@
 import React from 'react'
 import Header from '../component/globleComponent/Header'
 import Footer from '../component/globleComponent/Footer'
-import Home3Hero from '../component/Home3/Home3Hero'
-import Home3Sectin1 from '../component/Home3/Home3Sectin1'
-import Home3Section2 from '../component/Home3/Home3Section2'
-import Home3Section3 from '../component/Home3/Home3Section3'
-import Home3Section4 from '../component/Home3/Home3Section4'
-import Home3Section5 from '../component/Home3/Home3Section5'
-import Home3Section6 from '../component/Home3/Home3Section6'
+import ContactUsBreadcrum from '../component/ContactUs/ContactISBreadcrum'
+import ContactUsSection1 from '../component/ContactUs/ContactISSection1'
+import ContactUsSection2 from '../component/ContactUs/ContactUSSection2'
 import Home2Section6 from '../component/Home2/Home2Section6'
-export default function Home3() {
+export default function ContactUs() {
   return (
     <>
         <div className="color-switcher">
@@ -59,19 +55,14 @@ export default function Home3() {
     </div>
   </div>
 </div>
-<div class="wrapper box-layout">
+    <div class="wrapper box-layout">
 <Header/>
-<Home3Hero/>
-<Home3Sectin1/>
-<Home3Section2/>
-<Home3Section3/>
-<Home3Section4/>
-<Home3Section5/>
-<Home3Section6/>
+<ContactUsBreadcrum/>
+<ContactUsSection1/>
+<ContactUsSection2/>
 <Home2Section6/>
 <Footer/>
-</div>
-      
+    </div>
     </>
   )
 }

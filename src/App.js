@@ -21,12 +21,16 @@ import Compare from './pages/Compare';
 import Whislist from './pages/Whislist';
 import MyAcccount from './pages/MyAccount';
 import LoginRegister from './pages/LoginRegister';
+import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
+import ShopLeftList from './pages/ShopLeftList';
+import ShopRightList from './pages/ShopRightList';
+import ShopListFullWidth from './pages/ShopListFullWidth';
 function App() {
   return (
     <div className="App">
- <Router>''
+ <Router>
         <Routes>
-          {/* >>>>Superadmin panel>>>>> */}
         <Route exact path="/" element={< Home1/>}></Route>
         <Route exact path="/home2" element={< Home2/>}></Route>
         <Route exact path="/home3" element={< Home3/>}></Route>
@@ -45,7 +49,16 @@ function App() {
         <Route exact path="/Whislist" element={< Whislist/>}></Route>
         <Route exact path="/MyAcccount" element={<  MyAcccount/>}></Route>
         <Route exact path="/LoginRegister" element={< LoginRegister/>}></Route>
+        <Route exact path="/AboutUs" element={< AboutUs/>}></Route>
+        <Route exact path="/ContactUs" element={< ContactUs/>}></Route>
+        <Route exact path="/ShopLeftList" element={< ShopLeftList/>}></Route>
+        <Route exact path="/ShopRightList" element={<  ShopRightList/>}></Route>
+        <Route exact path="/ShopListFullWidth" element={<  ShopListFullWidth/>}></Route>
 
+        
+       
+        
+        
    
        
 

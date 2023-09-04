@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 export default function CompareSection() {
   return (
 <div className="compare-page-wrapper">
@@ -14,25 +14,25 @@ export default function CompareSection() {
                 <tr>
                   <td className="first-column">Product</td>
                   <td className="product-image-title">
-                    <a href="single-product.html" className="image">
+                    <Link  to="/" className="image">
                       <img className="img-fluid" src="assets/img/product/product-img4.jpg" alt="Compare Product" />
-                    </a>
+                    </Link>
                     <a href="#" className="category">Daimond</a>
                     <a href="single-product-sale.html" className="title">wet food</a>
                   </td>
                   <td className="product-image-title">
-                    <a href="single-product.html" className="image">
+                    <Link  to="/" className="image">
                       <img className="img-fluid" src="assets/img/product/product-img5.jpg" alt="Compare Product" />
-                    </a>
+                    </Link>
                     <a href="#" className="category">Gold</a>
                     <a href="single-product-group.html" className="title">organic food</a>
                   </td>
                   <td className="product-image-title">
-                    <a href="single-product.html" className="image">
+                    <Link  to="/" className="image">
                       <img className="img-fluid" src="assets/img/product/product-img2.jpg" alt="Compare Product" />
-                    </a>
+                    </Link>
                     <a href="#" className="category">Ring</a>
-                    <a href="single-product.html" className="title">dry food</a>
+                    <Link  to="/" className="title">dry food</Link>
                   </td>
                 </tr>
                 <tr>
@@ -67,9 +67,9 @@ export default function CompareSection() {
                 </tr>
                 <tr>
                   <td className="first-column">Add to cart</td>
-                  <td><a href="cart.html" className="sqr-btn">Add to Cart</a></td>
-                  <td><a href="cart.html" className="sqr-btn disabled">Add to Cart</a></td>
-                  <td><a href="cart.html" className="sqr-btn">Add to Cart</a></td>
+                  <td><Link  to="/Cart" className="sqr-btn">Add to Cart</Link></td>
+                  <td><Link  to="/Cart" className="sqr-btn disabled">Add to Cart</Link></td>
+                  <td><Link  to="/Cart" className="sqr-btn">Add to Cart</Link></td>
                 </tr>
                 <tr>
                   <td className="first-column">Rating</td>

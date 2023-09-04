@@ -26,6 +26,7 @@ import ContactUs from './pages/ContactUs';
 import ShopLeftList from './pages/ShopLeftList';
 import ShopRightList from './pages/ShopRightList';
 import ShopListFullWidth from './pages/ShopListFullWidth';
+import ProductDetailBox from './pages/ProductDetailBox';
 function App() {
   return (
     <div className="App">
@@ -54,9 +55,10 @@ function App() {
         <Route exact path="/ShopLeftList" element={< ShopLeftList/>}></Route>
         <Route exact path="/ShopRightList" element={<  ShopRightList/>}></Route>
         <Route exact path="/ShopListFullWidth" element={<  ShopListFullWidth/>}></Route>
+        <Route exact path="/ProductDetailBox" element={<  ProductDetailBox/>}></Route>
 
         
-       
+        
         
         
    

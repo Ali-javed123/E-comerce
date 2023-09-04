@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-
+import { Link } from 'react-router-dom';
 // import required modules
 import { Autoplay, Pagination ,Navigation,Scrollbar, A11y} from "swiper/modules";
 import { SwiperButtun } from '../globleComponent/SwiperButtun';
@@ -36,10 +36,10 @@ export default function Home1Section4() {
 
               <div className="product-item fix">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link to="/ProductDetail">
                     <img src="assets/img/product/product-img7.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img13.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
@@ -51,7 +51,7 @@ export default function Home1Section4() {
                   </div>
                 </div>
                 <div className="product-content">
-                  <h4><a href="product-details.html">vertual product 01</a></h4>
+                  <h4><Link to="/ProductDetail">vertual product 01</Link></h4>
                   <div className="pricebox">
                     <span className="regular-price">$70.00</span>
                     <div className="ratings">
@@ -74,10 +74,10 @@ export default function Home1Section4() {
 
               <div className="product-item fix">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link to="/ProductDetail">
                     <img src="assets/img/product/product-img3.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img4.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
@@ -89,7 +89,7 @@ export default function Home1Section4() {
                   </div>
                 </div>
                 <div className="product-content">
-                  <h4><a href="product-details.html">vertual product 01</a></h4>
+                  <h4><Link to="/ProductDetail">vertual product 01</Link></h4>
                   <div className="pricebox">
                     <span className="regular-price">$70.00</span>
                     <div className="ratings">
@@ -111,10 +111,10 @@ export default function Home1Section4() {
               <SwiperSlide>
               <div className="product-item fix">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link to="/ProductDetail">
                     <img src="assets/img/product/product-img5.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img1.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
@@ -126,7 +126,7 @@ export default function Home1Section4() {
                   </div>
                 </div>
                 <div className="product-content">
-                  <h4><a href="product-details.html">vertual product 01</a></h4>
+                  <h4><Link to="/ProductDetail">vertual product 01</Link></h4>
                   <div className="pricebox">
                     <span className="regular-price">$70.00</span>
                     <div className="ratings">
@@ -159,12 +159,12 @@ export default function Home1Section4() {
               <div className="col">
                 <div className="category-item">
                   <div className="category-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-img1.jpg" alt />
-                    </a>
+                    </Link>
                   </div>
                   <div className="category-content">
-                    <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                    <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                     <div className="price-box">
                       <div className="regular-price">
                         $150.00
@@ -189,12 +189,12 @@ export default function Home1Section4() {
               <div className="col">
                 <div className="category-item">
                   <div className="category-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-img2.jpg" alt />
-                    </a>
+                    </Link>
                   </div>
                   <div className="category-content">
-                    <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                    <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                     <div className="price-box">
                       <div className="regular-price">
                         $150.00
@@ -219,12 +219,12 @@ export default function Home1Section4() {
               <div className="col">
                 <div className="category-item">
                   <div className="category-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-img3.jpg" alt />
-                    </a>
+                    </Link>
                   </div>
                   <div className="category-content">
-                    <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                    <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                     <div className="price-box">
                       <div className="regular-price">
                         $150.00
@@ -249,12 +249,12 @@ export default function Home1Section4() {
               <div className="col">
                 <div className="category-item">
                   <div className="category-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-img4.jpg" alt />
-                    </a>
+                    </Link>
                   </div>
                   <div className="category-content">
-                    <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                    <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                     <div className="price-box">
                       <div className="regular-price">
                         $150.00
@@ -282,12 +282,12 @@ export default function Home1Section4() {
               <div className="col">
                 <div className="category-item">
                   <div className="category-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-img5.jpg" alt />
-                    </a>
+                    </Link>
                   </div>
                   <div className="category-content">
-                    <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                    <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                     <div className="price-box">
                       <div className="regular-price">
                         $150.00
@@ -312,12 +312,12 @@ export default function Home1Section4() {
               <div className="col">
                 <div className="category-item">
                   <div className="category-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-img6.jpg" alt />
-                    </a>
+                    </Link>
                   </div>
                   <div className="category-content">
-                    <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                    <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                     <div className="price-box">
                       <div className="regular-price">
                         $150.00
@@ -342,12 +342,12 @@ export default function Home1Section4() {
               <div className="col">
                 <div className="category-item">
                   <div className="category-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-img10.jpg" alt />
-                    </a>
+                    </Link>
                   </div>
                   <div className="category-content">
-                    <h4><a href="product-details.html">simple Product 01</a></h4>
+                    <h4><Link to="/ProductDetail">simple Product 01</Link></h4>
                     <div className="price-box">
                       <div className="regular-price">
                         $150.00
@@ -372,12 +372,12 @@ export default function Home1Section4() {
               <div className="col">
                 <div className="category-item">
                   <div className="category-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-img12.jpg" alt />
-                    </a>
+                    </Link>
                   </div>
                   <div className="category-content">
-                    <h4><a href="product-details.html">external Product 01</a></h4>
+                    <h4><Link to="/ProductDetail">external Product 01</Link></h4>
                     <div className="price-box">
                       <div className="regular-price">
                         $140.00
@@ -555,10 +555,10 @@ export default function Home1Section4() {
 
             <div className="product-item fix">
               <div className="product-thumb">
-                <a href="product-details.html">
+                <Link to="/ProductDetail">
                   <img src="assets/img/product/product-img1.jpg" className="img-pri" alt />
                   <img src="assets/img/product/product-img2.jpg" className="img-sec" alt />
-                </a>
+                </Link>
                 <div className="product-label">
                   <span>hot</span>
                 </div>
@@ -570,7 +570,7 @@ export default function Home1Section4() {
                 </div>
               </div>
               <div className="product-content">
-                <h4><a href="product-details.html">affiliate product</a></h4>
+                <h4><Link to="/ProductDetail">affiliate product</Link></h4>
                 <div className="pricebox">
                   <span className="regular-price">$90.00</span>
                   <div className="ratings">
@@ -591,10 +591,10 @@ export default function Home1Section4() {
             {/* product single item start */}
             <SwiperSlide className="product-item fix">
               <div className="product-thumb">
-                <a href="product-details.html">
+                <Link to="/ProductDetail">
                   <img src="assets/img/product/product-img3.jpg" className="img-pri" alt />
                   <img src="assets/img/product/product-img4.jpg" className="img-sec" alt />
-                </a>
+                </Link>
                 <div className="product-label">
                   <span>hot</span>
                 </div>
@@ -606,7 +606,7 @@ export default function Home1Section4() {
                 </div>
               </div>
               <div className="product-content">
-                <h4><a href="product-details.html">simple product 01</a></h4>
+                <h4><Link to="/ProductDetail">simple product 01</Link></h4>
                 <div className="pricebox">
                   <span className="regular-price">$120.00</span>
                   <div className="ratings">
@@ -626,10 +626,10 @@ export default function Home1Section4() {
             {/* product single item start */}
             <SwiperSlide className="product-item fix">
               <div className="product-thumb">
-                <a href="product-details.html">
+                <Link to="/ProductDetail">
                   <img src="assets/img/product/product-img5.jpg" className="img-pri" alt />
                   <img src="assets/img/product/product-img6.jpg" className="img-sec" alt />
-                </a>
+                </Link>
                 <div className="product-label">
                   <span>hot</span>
                 </div>
@@ -641,7 +641,7 @@ export default function Home1Section4() {
                 </div>
               </div>
               <div className="product-content">
-                <h4><a href="product-details.html">vertual product 05</a></h4>
+                <h4><Link to="/ProductDetail">vertual product 05</Link></h4>
                 <div className="pricebox">
                   <span className="regular-price">$60.00</span>
                   <div className="ratings">
@@ -661,10 +661,10 @@ export default function Home1Section4() {
             {/* product single item start */}
             <SwiperSlide className="product-item fix">
               <div className="product-thumb">
-                <a href="product-details.html">
+                <Link to="/ProductDetail">
                   <img src="assets/img/product/product-img7.jpg" className="img-pri" alt />
                   <img src="assets/img/product/product-img8.jpg" className="img-sec" alt />
-                </a>
+                </Link>
                 <div className="product-label">
                   <span>hot</span>
                 </div>
@@ -676,7 +676,7 @@ export default function Home1Section4() {
                 </div>
               </div>
               <div className="product-content">
-                <h4><a href="product-details.html">grouped product</a></h4>
+                <h4><Link to="/ProductDetail">grouped product</Link></h4>
                 <div className="pricebox">
                   <span className="regular-price">$10.00</span>
                   <div className="ratings">
@@ -696,10 +696,10 @@ export default function Home1Section4() {
             {/* product single item start */}
             <SwiperSlide className="product-item fix">
               <div className="product-thumb">
-                <a href="product-details.html">
+                <Link to="/ProductDetail">
                   <img src="assets/img/product/product-img9.jpg" className="img-pri" alt />
                   <img src="assets/img/product/product-img10.jpg" className="img-sec" alt />
-                </a>
+                </Link>
                 <div className="product-label">
                   <span>hot</span>
                 </div>
@@ -711,7 +711,7 @@ export default function Home1Section4() {
                 </div>
               </div>
               <div className="product-content">
-                <h4><a href="product-details.html">simple product 10</a></h4>
+                <h4><Link to="/ProductDetail">simple product 10</Link></h4>
                 <div className="pricebox">
                   <span className="regular-price">$70.00</span>
                   <div className="ratings">
@@ -734,10 +734,10 @@ export default function Home1Section4() {
 
             <div className="product-item fix">
               <div className="product-thumb">
-                <a href="product-details.html">
+                <Link to="/ProductDetail">
                   <img src="assets/img/product/product-img11.jpg" className="img-pri" alt />
                   <img src="assets/img/product/product-img12.jpg" className="img-sec" alt />
-                </a>
+                </Link>
                 <div className="product-label">
                   <span>hot</span>
                 </div>
@@ -749,7 +749,7 @@ export default function Home1Section4() {
                 </div>
               </div>
               <div className="product-content">
-                <h4><a href="product-details.html">affiliate product</a></h4>
+                <h4><Link to="/ProductDetail">affiliate product</Link></h4>
                 <div className="pricebox">
                   <span className="regular-price">$70.00</span>
                   <div className="ratings">
@@ -820,10 +820,10 @@ export default function Home1Section4() {
 
             <div className="product-item fix">
               <div className="product-thumb">
-                <a href="product-details.html">
+                <Link to="/ProductDetail">
                   <img src="assets/img/product/product-img1.jpg" className="img-pri" alt />
                   <img src="assets/img/product/product-img2.jpg" className="img-sec" alt />
-                </a>
+                </Link>
                 <div className="product-label">
                   <span>new</span>
                 </div>
@@ -835,7 +835,7 @@ export default function Home1Section4() {
                 </div>
               </div>
               <div className="product-content">
-                <h4><a href="product-details.html">vertual product 01</a></h4>
+                <h4><Link to="/ProductDetail">vertual product 01</Link></h4>
                 <div className="pricebox">
                   <span className="regular-price">$70.00</span>
                   <div className="ratings">
@@ -858,10 +858,10 @@ export default function Home1Section4() {
 
             <div className="product-item fix">
               <div className="product-thumb">
-                <a href="product-details.html">
+                <Link to="/ProductDetail">
                   <img src="assets/img/product/product-img3.jpg" className="img-pri" alt />
                   <img src="assets/img/product/product-img4.jpg" className="img-sec" alt />
-                </a>
+                </Link>
                 <div className="product-label">
                   <span>new</span>
                 </div>
@@ -873,7 +873,7 @@ export default function Home1Section4() {
                 </div>
               </div>
               <div className="product-content">
-                <h4><a href="product-details.html">simple product 02</a></h4>
+                <h4><Link to="/ProductDetail">simple product 02</Link></h4>
                 <div className="pricebox">
                   <span className="regular-price">$100.00</span>
                   <div className="ratings">
@@ -896,10 +896,10 @@ export default function Home1Section4() {
 
             <div className="product-item fix">
               <div className="product-thumb">
-                <a href="product-details.html">
+                <Link to="/ProductDetail">
                   <img src="assets/img/product/product-img5.jpg" className="img-pri" alt />
                   <img src="assets/img/product/product-img6.jpg" className="img-sec" alt />
-                </a>
+                </Link>
                 <div className="product-label">
                   <span>new</span>
                 </div>
@@ -911,7 +911,7 @@ export default function Home1Section4() {
                 </div>
               </div>
               <div className="product-content">
-                <h4><a href="product-details.html">affiliate product</a></h4>
+                <h4><Link to="/ProductDetail">affiliate product</Link></h4>
                 <div className="pricebox">
                   <span className="regular-price">$60.00</span>
                   <div className="ratings">
@@ -934,10 +934,10 @@ export default function Home1Section4() {
 
             <div className="product-item fix">
               <div className="product-thumb">
-                <a href="product-details.html">
+                <Link to="/ProductDetail">
                   <img src="assets/img/product/product-img7.jpg" className="img-pri" alt />
                   <img src="assets/img/product/product-img8.jpg" className="img-sec" alt />
-                </a>
+                </Link>
                 <div className="product-label">
                   <span>new</span>
                 </div>
@@ -949,7 +949,7 @@ export default function Home1Section4() {
                 </div>
               </div>
               <div className="product-content">
-                <h4><a href="product-details.html">trendy product 03</a></h4>
+                <h4><Link to="/ProductDetail">trendy product 03</Link></h4>
                 <div className="pricebox">
                   <span className="regular-price">$50.00</span>
                   <div className="ratings">
@@ -972,10 +972,10 @@ export default function Home1Section4() {
 
             <div className="product-item fix">
               <div className="product-thumb">
-                <a href="product-details.html">
+                <Link to="/ProductDetail">
                   <img src="assets/img/product/product-img9.jpg" className="img-pri" alt />
                   <img src="assets/img/product/product-img10.jpg" className="img-sec" alt />
-                </a>
+                </Link>
                 <div className="product-label">
                   <span>new</span>
                 </div>
@@ -987,7 +987,7 @@ export default function Home1Section4() {
                 </div>
               </div>
               <div className="product-content">
-                <h4><a href="product-details.html">simple product 20</a></h4>
+                <h4><Link to="/ProductDetail">simple product 20</Link></h4>
                 <div className="pricebox">
                   <span className="regular-price">$80.00</span>
                   <div className="ratings">
@@ -1010,10 +1010,10 @@ export default function Home1Section4() {
 
             <div className="product-item fix">
               <div className="product-thumb">
-                <a href="product-details.html">
+                <Link to="/ProductDetail">
                   <img src="assets/img/product/product-img11.jpg" className="img-pri" alt />
                   <img src="assets/img/product/product-img12.jpg" className="img-sec" alt />
-                </a>
+                </Link>
                 <div className="product-label">
                   <span>new</span>
                 </div>
@@ -1025,7 +1025,7 @@ export default function Home1Section4() {
                 </div>
               </div>
               <div className="product-content">
-                <h4><a href="product-details.html">grouped product</a></h4>
+                <h4><Link to="/ProductDetail">grouped product</Link></h4>
                 <div className="pricebox">
                   <span className="regular-price">$70.00</span>
                   <div className="ratings">
@@ -1083,12 +1083,12 @@ export default function Home1Section4() {
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
-                        <a href="product-details.html">
+                        <Link to="/ProductDetail">
                           <img src="assets/img/product/product-img1.jpg" alt />
-                        </a>
+                        </Link>
                       </div>
                       <div className="category-content">
-                        <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                        <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                         <div className="price-box">
                           <div className="regular-price">
                             $150.00
@@ -1113,12 +1113,12 @@ export default function Home1Section4() {
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
-                        <a href="product-details.html">
+                        <Link to="/ProductDetail">
                           <img src="assets/img/product/product-img2.jpg" alt />
-                        </a>
+                        </Link>
                       </div>
                       <div className="category-content">
-                        <h4><a href="product-details.html">grouped Product</a></h4>
+                        <h4><Link to="/ProductDetail">grouped Product</Link></h4>
                         <div className="price-box">
                           <div className="regular-price">
                             $100.00
@@ -1143,12 +1143,12 @@ export default function Home1Section4() {
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
-                        <a href="product-details.html">
+                        <Link to="/ProductDetail">
                           <img src="assets/img/product/product-img3.jpg" alt />
-                        </a>
+                        </Link>
                       </div>
                       <div className="category-content">
-                        <h4><a href="product-details.html">simple Product 05</a></h4>
+                        <h4><Link to="/ProductDetail">simple Product 05</Link></h4>
                         <div className="price-box">
                           <div className="regular-price">
                             $155.00
@@ -1173,12 +1173,12 @@ export default function Home1Section4() {
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
-                        <a href="product-details.html">
+                        <Link to="/ProductDetail">
                           <img src="assets/img/product/product-img4.jpg" alt />
-                        </a>
+                        </Link>
                       </div>
                       <div className="category-content">
-                        <h4><a href="product-details.html">demandable Product</a></h4>
+                        <h4><Link to="/ProductDetail">demandable Product</Link></h4>
                         <div className="price-box">
                           <div className="regular-price">
                             $210.00
@@ -1206,12 +1206,12 @@ export default function Home1Section4() {
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
-                        <a href="product-details.html">
+                        <Link to="/ProductDetail">
                           <img src="assets/img/product/product-img5.jpg" alt />
-                        </a>
+                        </Link>
                       </div>
                       <div className="category-content">
-                        <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                        <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                         <div className="price-box">
                           <div className="regular-price">
                             $150.00
@@ -1236,12 +1236,12 @@ export default function Home1Section4() {
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
-                        <a href="product-details.html">
+                        <Link to="/ProductDetail">
                           <img src="assets/img/product/product-img6.jpg" alt />
-                        </a>
+                        </Link>
                       </div>
                       <div className="category-content">
-                        <h4><a href="product-details.html">simple Product 12</a></h4>
+                        <h4><Link to="/ProductDetail">simple Product 12</Link></h4>
                         <div className="price-box">
                           <div className="regular-price">
                             $150.00
@@ -1266,12 +1266,12 @@ export default function Home1Section4() {
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
-                        <a href="product-details.html">
+                        <Link to="/ProductDetail">
                           <img src="assets/img/product/product-img7.jpg" alt />
-                        </a>
+                        </Link>
                       </div>
                       <div className="category-content">
-                        <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                        <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                         <div className="price-box">
                           <div className="regular-price">
                             $150.00
@@ -1296,12 +1296,12 @@ export default function Home1Section4() {
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
-                        <a href="product-details.html">
+                        <Link to="/ProductDetail">
                           <img src="assets/img/product/product-img8.jpg" alt />
-                        </a>
+                        </Link>
                       </div>
                       <div className="category-content">
-                        <h4><a href="product-details.html">grouped Product</a></h4>
+                        <h4><Link to="/ProductDetail">grouped Product</Link></h4>
                         <div className="price-box">
                           <div className="regular-price">
                             $90.00
@@ -1342,12 +1342,12 @@ export default function Home1Section4() {
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
-                        <a href="product-details.html">
+                        <Link to="/ProductDetail">
                           <img src="assets/img/product/product-img14.jpg" alt />
-                        </a>
+                        </Link>
                       </div>
                       <div className="category-content">
-                        <h4><a href="product-details.html">simple Product 06</a></h4>
+                        <h4><Link to="/ProductDetail">simple Product 06</Link></h4>
                         <div className="price-box">
                           <div className="regular-price">
                             $190.00
@@ -1372,12 +1372,12 @@ export default function Home1Section4() {
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
-                        <a href="product-details.html">
+                        <Link to="/ProductDetail">
                           <img src="assets/img/product/product-img13.jpg" alt />
-                        </a>
+                        </Link>
                       </div>
                       <div className="category-content">
-                        <h4><a href="product-details.html">affiliate Product</a></h4>
+                        <h4><Link to="/ProductDetail">affiliate Product</Link></h4>
                         <div className="price-box">
                           <div className="regular-price">
                             $45.00
@@ -1402,12 +1402,12 @@ export default function Home1Section4() {
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
-                        <a href="product-details.html">
+                        <Link to="/ProductDetail">
                           <img src="assets/img/product/product-img12.jpg" alt />
-                        </a>
+                        </Link>
                       </div>
                       <div className="category-content">
-                        <h4><a href="product-details.html">grouped Product</a></h4>
+                        <h4><Link to="/ProductDetail">grouped Product</Link></h4>
                         <div className="price-box">
                           <div className="regular-price">
                             $120.00
@@ -1432,12 +1432,12 @@ export default function Home1Section4() {
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
-                        <a href="product-details.html">
+                        <Link to="/ProductDetail">
                           <img src="assets/img/product/product-img10.jpg" alt />
-                        </a>
+                        </Link>
                       </div>
                       <div className="category-content">
-                        <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                        <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                         <div className="price-box">
                           <div className="regular-price">
                             $180.00
@@ -1465,12 +1465,12 @@ export default function Home1Section4() {
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
-                        <a href="product-details.html">
+                        <Link to="/ProductDetail">
                           <img src="assets/img/product/product-img9.jpg" alt />
-                        </a>
+                        </Link>
                       </div>
                       <div className="category-content">
-                        <h4><a href="product-details.html">external Product</a></h4>
+                        <h4><Link to="/ProductDetail">external Product</Link></h4>
                         <div className="price-box">
                           <div className="regular-price">
                             $150.00
@@ -1495,12 +1495,12 @@ export default function Home1Section4() {
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
-                        <a href="product-details.html">
+                        <Link to="/ProductDetail">
                           <img src="assets/img/product/product-img8.jpg" alt />
-                        </a>
+                        </Link>
                       </div>
                       <div className="category-content">
-                        <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                        <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                         <div className="price-box">
                           <div className="regular-price">
                             $150.00
@@ -1525,12 +1525,12 @@ export default function Home1Section4() {
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
-                        <a href="product-details.html">
+                        <Link to="/ProductDetail">
                           <img src="assets/img/product/product-img6.jpg" alt />
-                        </a>
+                        </Link>
                       </div>
                       <div className="category-content">
-                        <h4><a href="product-details.html">download Product</a></h4>
+                        <h4><Link to="/ProductDetail">download Product</Link></h4>
                         <div className="price-box">
                           <div className="regular-price">
                             $150.00
@@ -1555,12 +1555,12 @@ export default function Home1Section4() {
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
-                        <a href="product-details.html">
+                        <Link to="/ProductDetail">
                           <img src="assets/img/product/product-img5.jpg" alt />
-                        </a>
+                        </Link>
                       </div>
                       <div className="category-content">
-                        <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                        <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                         <div className="price-box">
                           <div className="regular-price">
                             $150.00
@@ -1601,12 +1601,12 @@ export default function Home1Section4() {
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
-                        <a href="product-details.html">
+                        <Link to="/ProductDetail">
                           <img src="assets/img/product/product-img6.jpg" alt />
-                        </a>
+                        </Link>
                       </div>
                       <div className="category-content">
-                        <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                        <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                         <div className="price-box">
                           <div className="regular-price">
                             $120.00
@@ -1631,12 +1631,12 @@ export default function Home1Section4() {
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
-                        <a href="product-details.html">
+                        <Link to="/ProductDetail">
                           <img src="assets/img/product/product-img15.jpg" alt />
-                        </a>
+                        </Link>
                       </div>
                       <div className="category-content">
-                        <h4><a href="product-details.html">grouped Product</a></h4>
+                        <h4><Link to="/ProductDetail">grouped Product</Link></h4>
                         <div className="price-box">
                           <div className="regular-price">
                             $160.00
@@ -1661,12 +1661,12 @@ export default function Home1Section4() {
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
-                        <a href="product-details.html">
+                        <Link to="/ProductDetail">
                           <img src="assets/img/product/product-img11.jpg" alt />
-                        </a>
+                        </Link>
                       </div>
                       <div className="category-content">
-                        <h4><a href="product-details.html">download Product</a></h4>
+                        <h4><Link to="/ProductDetail">download Product</Link></h4>
                         <div className="price-box">
                           <div className="regular-price">
                             $140.00
@@ -1691,12 +1691,12 @@ export default function Home1Section4() {
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
-                        <a href="product-details.html">
+                        <Link to="/ProductDetail">
                           <img src="assets/img/product/product-img16.jpg" alt />
-                        </a>
+                        </Link>
                       </div>
                       <div className="category-content">
-                        <h4><a href="product-details.html">simple Product 01</a></h4>
+                        <h4><Link to="/ProductDetail">simple Product 01</Link></h4>
                         <div className="price-box">
                           <div className="regular-price">
                             $80.00
@@ -1724,12 +1724,12 @@ export default function Home1Section4() {
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
-                        <a href="product-details.html">
+                        <Link to="/ProductDetail">
                           <img src="assets/img/product/product-img15.jpg" alt />
-                        </a>
+                        </Link>
                       </div>
                       <div className="category-content">
-                        <h4><a href="product-details.html">affiliate Product</a></h4>
+                        <h4><Link to="/ProductDetail">affiliate Product</Link></h4>
                         <div className="price-box">
                           <div className="regular-price">
                             $120.00
@@ -1754,12 +1754,12 @@ export default function Home1Section4() {
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
-                        <a href="product-details.html">
+                        <Link to="/ProductDetail">
                           <img src="assets/img/product/product-img1.jpg" alt />
-                        </a>
+                        </Link>
                       </div>
                       <div className="category-content">
-                        <h4><a href="product-details.html">external Product</a></h4>
+                        <h4><Link to="/ProductDetail">external Product</Link></h4>
                         <div className="price-box">
                           <div className="regular-price">
                             $130.00
@@ -1784,12 +1784,12 @@ export default function Home1Section4() {
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
-                        <a href="product-details.html">
+                        <Link to="/ProductDetail">
                           <img src="assets/img/product/product-img13.jpg" alt />
-                        </a>
+                        </Link>
                       </div>
                       <div className="category-content">
-                        <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                        <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                         <div className="price-box">
                           <div className="regular-price">
                             $150.00
@@ -1814,12 +1814,12 @@ export default function Home1Section4() {
                   <div className="col">
                     <div className="category-item">
                       <div className="category-thumb">
-                        <a href="product-details.html">
+                        <Link to="/ProductDetail">
                           <img src="assets/img/product/product-img3.jpg" alt />
-                        </a>
+                        </Link>
                       </div>
                       <div className="category-content">
-                        <h4><a href="product-details.html">variable Product 01</a></h4>
+                        <h4><Link to="/ProductDetail">variable Product 01</Link></h4>
                         <div className="price-box">
                           <div className="regular-price">
                             $70.00

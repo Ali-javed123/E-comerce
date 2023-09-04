@@ -1,66 +1,75 @@
-import React,{useState} from 'react'
-import { Carousel } from 'react-responsive-carousel';
+import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import { Link } from 'react-router-dom';
 
+import { Link } from 'react-router-dom';
 // import required modules
 import { Autoplay, Pagination ,Navigation} from "swiper/modules";
 import { SwiperButtun } from '../globleComponent/SwiperButtun';
-
-
-export default function ProductDetailLayout() {
-    let [num, setNum]= useState(0);
-    let incNum =()=>{
-      if(num<10)
-      {
-      setNum(Number(num)+1);
-      }
-    };
-    let decNum = () => {
-       if(num>0)
-       {
-        setNum(num - 1);
-       }
-    }
-   let handleChange = (e)=>{
-     setNum(e.target.value);
-    }
+export default function ProductDetailBoxSection() {
   return (
+    <>
+    
+{/* product details wrapper start */}
 <div className="product-details-wrapper">
   <div className="container">
     <div className="row">
       <div className="col-lg-9">
         {/* product details inner end */}
-        <div className="product-details-inner">
+        <div className="product-details-inner fix">
           <div className="row">
+            <div className="col-lg-12">
+              <Swiper   breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        }} loop   autoplay={{
+            delay: 2000,
+            disableOnInteraction: false
+        }}
+        spaceBetween={10} modules={[Autoplay,Navigation,Pagination]} className="product-box-slider slick-padding slick-arrow-style_2 mb-20">
+            <SwiperSlide>
 
-            <div className="col-lg-6">
-            <div className='carousel-wrappe'>
-<Carousel infiniteLoop useKeyboardArrows autoPlay>
-                <div className='pro-large-img img-zoom '>
-                    <img src="assets/img/product/product-details-img1.jpg" />
+                <div className="pro-large-img">
+                  <img src="assets/img/product/product-details-img1.jpg" alt />
                 </div>
-                <div className='pro-large-img img-zoom '>
-                    <img src="assets/img/product/product-details-img2.jpg" />
-                </div>
-                <div className='pro-large-img img-zoom '>
-                    <img src="assets/img/product/product-details-img3.jpg" />
-                </div>
-                <div className='pro-large-img img-zoom '>
-                    <img src="assets/img/product/product-details-img4.jpg" />
-                </div>
-            </Carousel>
-</div>
+            </SwiperSlide>
+            <SwiperSlide>
 
-              
+                <div className="pro-large-img">
+                  <img src="assets/img/product/product-details-img2.jpg" alt />
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+
+                <div className="pro-large-img">
+                  <img src="assets/img/product/product-details-img3.jpg" alt />
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+
+                <div className="pro-large-img">
+                  <img src="assets/img/product/product-details-img4.jpg" alt />
+                </div>
+            </SwiperSlide>
+            <SwiperButtun/>
+              </Swiper>
             </div>
-            <div className="col-lg-6">
-              <div className="product-details-des mt-md-34 mt-sm-34">
-                <h3 className='text-start'> <Link  to="/ProductDetail">external product 12</Link></h3>
+            <div className="col-lg-12">
+              <div className="product-details-des slider-box-center text-center mt-14">
+                <h3><a href="product-details.html">external product 12</a></h3>
                 <div className="ratings">
                   <span className="good"><i className="fa fa-star" /></span>
                   <span className="good"><i className="fa fa-star" /></span>
@@ -68,60 +77,27 @@ export default function ProductDetailLayout() {
                   <span className="good"><i className="fa fa-star" /></span>
                   <span><i className="fa fa-star" /></span>
                   <div className="pro-review">
-                    <span className='text-start' >1 review(s)</span>
+                    <span>1 review(s)</span>
                   </div>
                 </div>
-                <div className="customer-rev text-start">
-                  <a className='text-start' href="#">(1 customer review)</a>
+                <div className="customer-rev">
+                  <a href="#">(1 customer review)</a>
                 </div>
-                <div className="availability mt-10 text-start">
+                <div className="availability mt-10">
                   <h5>Availability:</h5>
                   <span>1 in stock</span>
                 </div>
-                <div className="pricebox text-start">
+                <div className="pricebox">
                   <span className="regular-price">$160.00</span>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.<br />
-                  Phasellus id nisi quis justo tempus mollis sed et dui. In hac habitasse platea dictumst. Suspendisse ultrices mauris diam. Nullam sed aliquet elit. Mauris consequat nisi ut mauris efficitur lacinia.</p>
-                  <div class="color-option mt-10">
-                                            <h5>color :</h5>
-                                            <ul>
-                                                <li>
-                                                    <a class="c-black" href="#" title="Black"></a>
-                                                    
-                                                </li>
-                                                <li>
-                                                    <a class="c-blue" href="#" title="Blue"></a>
-                                                </li>
-                                                <li>
-                                                    <a class="c-brown" href="#" title="Brown"></a>
-                                                </li>
-                                                <li>
-                                                    <a class="c-gray" href="#" title="Gray"></a>
-                                                </li>
-                                                <li>
-                                                    <a class="c-red" href="#" title="Red"></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="pro-size mb-20 mt-20">
-                                            <h5>size :</h5>
-                                            <select class="nice-select">
-                                                <option>S</option>
-                                                <option>M</option>
-                                                <option>L</option>
-                                                <option>XL</option>
-                                            </select>
-                                        </div>
+                  Phasellus id nisi quis justo tempus mollis sed et dui. In hac habitasse platea dictumst. Suspendisse ultrices mauris diam. Nullam sed aliquet elit.</p>
                 <div className="quantity-cart-box d-flex align-items-center">
                   <div className="quantity">
-                    <div className='pro-qty'>
-
-                    <span onClick={decNum} className="dec qtybtn">-</span><input type="text"  value={num} onChange={handleChange} /><span onClick={incNum} className="inc qtybtn">+</span>
-                    </div>
+                    <div className="pro-qty"><input type="text" defaultValue={1} /></div>
                   </div>
                   <div className="action_link">
-                    <a className="buy-btn" href="#">add to cart<i className="fa fa-shopping-cart" /></a>
+                    <a className="buy-btn" href="#">add to cart<i className="fa fa-shopping-cart" /> </a>
                   </div>
                 </div>
                 <div className="useful-links mt-20">
@@ -287,16 +263,16 @@ export default function ProductDetailLayout() {
             delay: 2000,
             disableOnInteraction: false
         }}
-        spaceBetween={10} modules={[Autoplay,Navigation]}  className="featured-carousel-active slick-padding slick-arrow-style">
+        spaceBetween={10} modules={[Autoplay,Navigation,Pagination]} className="featured-carousel-active slick-padding slick-arrow-style">
             {/* product single item start */}
             <SwiperSlide>
 
             <div className="product-item fix">
               <div className="product-thumb">
-                <Link  to="/ProductDetail">
+                <a href="product-details.html">
                   <img src="assets/img/product/product-img1.jpg" className="img-pri" alt />
                   <img src="assets/img/product/product-img2.jpg" className="img-sec" alt />
-                </Link>
+                </a>
                 <div className="product-label">
                   <span>hot</span>
                 </div>
@@ -308,7 +284,7 @@ export default function ProductDetailLayout() {
                 </div>
               </div>
               <div className="product-content">
-                <h4><Link  to="/ProductDetail">affiliate product</Link></h4>
+                <h4><a href="product-details.html">affiliate product</a></h4>
                 <div className="pricebox">
                   <span className="regular-price">$90.00</span>
                   <div className="ratings">
@@ -329,10 +305,10 @@ export default function ProductDetailLayout() {
 
             <div className="product-item fix">
               <div className="product-thumb">
-                <Link  to="/ProductDetail">
+                <a href="product-details.html">
                   <img src="assets/img/product/product-img3.jpg" className="img-pri" alt />
                   <img src="assets/img/product/product-img4.jpg" className="img-sec" alt />
-                </Link>
+                </a>
                 <div className="product-label">
                   <span>hot</span>
                 </div>
@@ -344,7 +320,7 @@ export default function ProductDetailLayout() {
                 </div>
               </div>
               <div className="product-content">
-                <h4><Link  to="/ProductDetail">simple product 01</Link></h4>
+                <h4><a href="product-details.html">simple product 01</a></h4>
                 <div className="pricebox">
                   <span className="regular-price">$120.00</span>
                   <div className="ratings">
@@ -362,13 +338,12 @@ export default function ProductDetailLayout() {
             </div>
             </SwiperSlide>
             <SwiperSlide>
-
             <div className="product-item fix">
               <div className="product-thumb">
-                <Link  to="/ProductDetail">
+                <a href="product-details.html">
                   <img src="assets/img/product/product-img5.jpg" className="img-pri" alt />
                   <img src="assets/img/product/product-img6.jpg" className="img-sec" alt />
-                </Link>
+                </a>
                 <div className="product-label">
                   <span>hot</span>
                 </div>
@@ -380,7 +355,7 @@ export default function ProductDetailLayout() {
                 </div>
               </div>
               <div className="product-content">
-                <h4><Link  to="/ProductDetail">vertual product 05</Link></h4>
+                <h4><a href="product-details.html">vertual product 05</a></h4>
                 <div className="pricebox">
                   <span className="regular-price">$60.00</span>
                   <div className="ratings">
@@ -396,15 +371,16 @@ export default function ProductDetailLayout() {
                 </div>
               </div>
             </div>
+
             </SwiperSlide>
             <SwiperSlide>
 
             <div className="product-item fix">
               <div className="product-thumb">
-                <Link  to="/ProductDetail">
+                <a href="product-details.html">
                   <img src="assets/img/product/product-img7.jpg" className="img-pri" alt />
                   <img src="assets/img/product/product-img8.jpg" className="img-sec" alt />
-                </Link>
+                </a>
                 <div className="product-label">
                   <span>hot</span>
                 </div>
@@ -416,7 +392,7 @@ export default function ProductDetailLayout() {
                 </div>
               </div>
               <div className="product-content">
-                <h4><Link  to="/ProductDetail">grouped product</Link></h4>
+                <h4><a href="product-details.html">grouped product</a></h4>
                 <div className="pricebox">
                   <span className="regular-price">$10.00</span>
                   <div className="ratings">
@@ -437,10 +413,10 @@ export default function ProductDetailLayout() {
 
             <div className="product-item fix">
               <div className="product-thumb">
-                <Link  to="/ProductDetail">
+                <a href="product-details.html">
                   <img src="assets/img/product/product-img9.jpg" className="img-pri" alt />
                   <img src="assets/img/product/product-img10.jpg" className="img-sec" alt />
-                </Link>
+                </a>
                 <div className="product-label">
                   <span>hot</span>
                 </div>
@@ -452,7 +428,7 @@ export default function ProductDetailLayout() {
                 </div>
               </div>
               <div className="product-content">
-                <h4><Link  to="/ProductDetail">simple product 10</Link></h4>
+                <h4><a href="product-details.html">simple product 10</a></h4>
                 <div className="pricebox">
                   <span className="regular-price">$70.00</span>
                   <div className="ratings">
@@ -473,10 +449,10 @@ export default function ProductDetailLayout() {
 
             <div className="product-item fix">
               <div className="product-thumb">
-                <Link  to="/ProductDetail">
+                <a href="product-details.html">
                   <img src="assets/img/product/product-img11.jpg" className="img-pri" alt />
                   <img src="assets/img/product/product-img12.jpg" className="img-sec" alt />
-                </Link>
+                </a>
                 <div className="product-label">
                   <span>hot</span>
                 </div>
@@ -488,7 +464,7 @@ export default function ProductDetailLayout() {
                 </div>
               </div>
               <div className="product-content">
-                <h4><Link  to="/ProductDetail">affiliate product</Link></h4>
+                <h4><a href="product-details.html">affiliate product</a></h4>
                 <div className="pricebox">
                   <span className="regular-price">$70.00</span>
                   <div className="ratings">
@@ -505,7 +481,17 @@ export default function ProductDetailLayout() {
               </div>
             </div>
             </SwiperSlide>
-
+            {/* product single item end */}
+            {/* product single item start */}
+            {/* product single item end */}
+            {/* product single item start */}
+            {/* product single item end */}
+            {/* product single item start */}
+            {/* product single item end */}
+            {/* product single item start */}
+            {/* product single item end */}
+            {/* product single item start */}
+            {/* product single item end */}
           </Swiper>
           {/* featured category end */}
         </div>
@@ -524,18 +510,18 @@ export default function ProductDetailLayout() {
         autoplay={{
             delay: 2000,
             disableOnInteraction: false
-        }} modules={[Pagination,Autoplay,Navigation]} className="category-carousel-active row" >
+        }} modules={[Pagination,Autoplay,Navigation]} className="category-carousel-active row" data-row={4}>
             <SwiperSlide>
-                
+
               <div className="col">
                 <div className="category-item">
                   <div className="category-thumb">
-                    <Link  to="/ProductDetail">
+                    <a href="product-details.html">
                       <img src="assets/img/product/product-img1.jpg" alt />
-                    </Link>
+                    </a>
                   </div>
                   <div className="category-content">
-                    <h4><Link  to="/ProductDetail">Virtual Product 01</Link></h4>
+                    <h4><a href="product-details.html">Virtual Product 01</a></h4>
                     <div className="price-box">
                       <div className="regular-price">
                         $150.00
@@ -560,12 +546,12 @@ export default function ProductDetailLayout() {
               <div className="col">
                 <div className="category-item">
                   <div className="category-thumb">
-                    <Link  to="/ProductDetail">
+                    <a href="product-details.html">
                       <img src="assets/img/product/product-img2.jpg" alt />
-                    </Link>
+                    </a>
                   </div>
                   <div className="category-content">
-                    <h4><Link  to="/ProductDetail">Virtual Product 01</Link></h4>
+                    <h4><a href="product-details.html">Virtual Product 01</a></h4>
                     <div className="price-box">
                       <div className="regular-price">
                         $150.00
@@ -590,12 +576,12 @@ export default function ProductDetailLayout() {
               <div className="col">
                 <div className="category-item">
                   <div className="category-thumb">
-                    <Link  to="/ProductDetail">
+                    <a href="product-details.html">
                       <img src="assets/img/product/product-img3.jpg" alt />
-                    </Link>
+                    </a>
                   </div>
                   <div className="category-content">
-                    <h4><Link  to="/ProductDetail">Virtual Product 01</Link></h4>
+                    <h4><a href="product-details.html">Virtual Product 01</a></h4>
                     <div className="price-box">
                       <div className="regular-price">
                         $150.00
@@ -620,12 +606,12 @@ export default function ProductDetailLayout() {
               <div className="col">
                 <div className="category-item">
                   <div className="category-thumb">
-                    <Link  to="/ProductDetail">
+                    <a href="product-details.html">
                       <img src="assets/img/product/product-img4.jpg" alt />
-                    </Link>
+                    </a>
                   </div>
                   <div className="category-content">
-                    <h4><Link  to="/ProductDetail">Virtual Product 01</Link></h4>
+                    <h4><a href="product-details.html">Virtual Product 01</a></h4>
                     <div className="price-box">
                       <div className="regular-price">
                         $150.00
@@ -653,12 +639,12 @@ export default function ProductDetailLayout() {
               <div className="col">
                 <div className="category-item">
                   <div className="category-thumb">
-                    <Link  to="/ProductDetail">
+                    <a href="product-details.html">
                       <img src="assets/img/product/product-img5.jpg" alt />
-                    </Link>
+                    </a>
                   </div>
                   <div className="category-content">
-                    <h4><Link  to="/ProductDetail">Virtual Product 01</Link></h4>
+                    <h4><a href="product-details.html">Virtual Product 01</a></h4>
                     <div className="price-box">
                       <div className="regular-price">
                         $150.00
@@ -683,12 +669,12 @@ export default function ProductDetailLayout() {
               <div className="col">
                 <div className="category-item">
                   <div className="category-thumb">
-                    <Link  to="/ProductDetail">
+                    <a href="product-details.html">
                       <img src="assets/img/product/product-img6.jpg" alt />
-                    </Link>
+                    </a>
                   </div>
                   <div className="category-content">
-                    <h4><Link  to="/ProductDetail">Virtual Product 01</Link></h4>
+                    <h4><a href="product-details.html">Virtual Product 01</a></h4>
                     <div className="price-box">
                       <div className="regular-price">
                         $150.00
@@ -713,12 +699,12 @@ export default function ProductDetailLayout() {
               <div className="col">
                 <div className="category-item">
                   <div className="category-thumb">
-                    <Link  to="/ProductDetail">
+                    <a href="product-details.html">
                       <img src="assets/img/product/product-img10.jpg" alt />
-                    </Link>
+                    </a>
                   </div>
                   <div className="category-content">
-                    <h4><Link  to="/ProductDetail">simple Product 01</Link></h4>
+                    <h4><a href="product-details.html">simple Product 01</a></h4>
                     <div className="price-box">
                       <div className="regular-price">
                         $150.00
@@ -743,12 +729,12 @@ export default function ProductDetailLayout() {
               <div className="col">
                 <div className="category-item">
                   <div className="category-thumb">
-                    <Link  to="/ProductDetail">
+                    <a href="product-details.html">
                       <img src="assets/img/product/product-img12.jpg" alt />
-                    </Link>
+                    </a>
                   </div>
                   <div className="category-content">
-                    <h4><Link  to="/ProductDetail">external Product 01</Link></h4>
+                    <h4><a href="product-details.html">external Product 01</a></h4>
                     <div className="price-box">
                       <div className="regular-price">
                         $140.00
@@ -823,6 +809,8 @@ export default function ProductDetailLayout() {
     </div>
   </div>
 </div>
+{/* product details wrapper end */}
 
+    </>
   )
 }

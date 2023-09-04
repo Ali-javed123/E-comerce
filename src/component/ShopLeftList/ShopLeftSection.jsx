@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink,Link } from 'react-router-dom'
 export default function ShopLeftSection() {
     const [mode,setmode]=useState("")
     const [range,setrange]=useState("")
@@ -162,10 +162,10 @@ console.log('range',range)
 
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img1.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img2.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
@@ -177,7 +177,7 @@ console.log('range',range)
                   </div>
                 </div>
                 <div className="product-content">
-                  <h4><a href="product-details.html">vertual product 01</a></h4>
+                  <h4><Link  to="/ProductDetail">vertual product 01</Link></h4>
                   <div className="pricebox">
                     <span className="regular-price">$70.00</span>
                     <div className="ratings">
@@ -195,16 +195,16 @@ console.log('range',range)
               </div>
               <div className="product-list-item mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img1.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img2.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
                 </div>
                 <div className="product-list-content">
-                  <h3><a href="product-details.html">virtual product 02</a></h3>
+                  <h3><Link  to="/ProductDetail">virtual product 02</Link></h3>
                   <div className="ratings">
                     <span className="good"><i className="fa fa-star" /></span>
                     <span className="good"><i className="fa fa-star" /></span>
@@ -237,10 +237,10 @@ console.log('range',range)
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img3.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img4.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
@@ -252,7 +252,7 @@ console.log('range',range)
                   </div>
                 </div>
                 <div className="product-content">
-                  <h4><a href="product-details.html">simple product 01</a></h4>
+                  <h4><Link  to="/ProductDetail">simple product 01</Link></h4>
                   <div className="pricebox">
                     <span className="regular-price">$70.00</span>
                     <div className="ratings">
@@ -272,16 +272,16 @@ console.log('range',range)
               {/* product single list item start */}
               <div className="product-list-item mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img3.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img4.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
                 </div>
                 <div className="product-list-content">
-                  <h3><a href="product-details.html">simple product 02</a></h3>
+                  <h3><Link  to="/ProductDetail">simple product 02</Link></h3>
                   <div className="ratings">
                     <span className="good"><i className="fa fa-star" /></span>
                     <span className="good"><i className="fa fa-star" /></span>
@@ -312,10 +312,10 @@ console.log('range',range)
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img5.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img6.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
@@ -327,7 +327,7 @@ console.log('range',range)
                   </div>
                 </div>
                 <div className="product-content">
-                  <h4><a href="product-details.html">group product 01</a></h4>
+                  <h4><Link  to="/ProductDetail">group product 01</Link></h4>
                   <div className="pricebox">
                     <span className="regular-price">$70.00</span>
                     <div className="ratings">
@@ -347,16 +347,16 @@ console.log('range',range)
               {/* product single list item start */}
               <div className="product-list-item mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img5.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img6.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
                 </div>
                 <div className="product-list-content">
-                  <h3><a href="product-details.html">group product 02</a></h3>
+                  <h3><Link  to="/ProductDetail">group product 02</Link></h3>
                   <div className="ratings">
                     <span className="good"><i className="fa fa-star" /></span>
                     <span className="good"><i className="fa fa-star" /></span>
@@ -387,10 +387,10 @@ console.log('range',range)
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img7.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img8.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
@@ -402,7 +402,7 @@ console.log('range',range)
                   </div>
                 </div>
                 <div className="product-content">
-                  <h4><a href="product-details.html">external product</a></h4>
+                  <h4><Link  to="/ProductDetail">external product</Link></h4>
                   <div className="pricebox">
                     <span className="regular-price">$70.00</span>
                     <div className="ratings">
@@ -422,16 +422,16 @@ console.log('range',range)
               {/* product single list item start */}
               <div className="product-list-item mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img7.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img8.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
                 </div>
                 <div className="product-list-content">
-                  <h3><a href="product-details.html">external product</a></h3>
+                  <h3><Link  to="/ProductDetail">external product</Link></h3>
                   <div className="ratings">
                     <span className="good"><i className="fa fa-star" /></span>
                     <span className="good"><i className="fa fa-star" /></span>
@@ -461,10 +461,10 @@ console.log('range',range)
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img9.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img10.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
@@ -476,7 +476,7 @@ console.log('range',range)
                   </div>
                 </div>
                 <div className="product-content">
-                  <h4><a href="product-details.html">simple product 01</a></h4>
+                  <h4><Link  to="/ProductDetail">simple product 01</Link></h4>
                   <div className="pricebox">
                     <span className="regular-price">$70.00</span>
                     <div className="ratings">
@@ -496,16 +496,16 @@ console.log('range',range)
               {/* product single list item start */}
               <div className="product-list-item mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img9.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img10.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
                 </div>
                 <div className="product-list-content">
-                  <h3><a href="product-details.html">simple product 02</a></h3>
+                  <h3><Link  to="/ProductDetail">simple product 02</Link></h3>
                   <div className="ratings">
                     <span className="good"><i className="fa fa-star" /></span>
                     <span className="good"><i className="fa fa-star" /></span>
@@ -536,10 +536,10 @@ console.log('range',range)
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img11.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img12.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
@@ -551,7 +551,7 @@ console.log('range',range)
                   </div>
                 </div>
                 <div className="product-content">
-                  <h4><a href="product-details.html">smart product 01</a></h4>
+                  <h4><Link  to="/ProductDetail">smart product 01</Link></h4>
                   <div className="pricebox">
                     <span className="regular-price">$70.00</span>
                     <div className="ratings">
@@ -571,16 +571,16 @@ console.log('range',range)
               {/* product single list item start */}
               <div className="product-list-item mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img11.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img12.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
                 </div>
                 <div className="product-list-content">
-                  <h3><a href="product-details.html">smart product 02</a></h3>
+                  <h3><Link  to="/ProductDetail">smart product 02</Link></h3>
                   <div className="ratings">
                     <span className="good"><i className="fa fa-star" /></span>
                     <span className="good"><i className="fa fa-star" /></span>
@@ -611,10 +611,10 @@ console.log('range',range)
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img13.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img14.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
@@ -626,7 +626,7 @@ console.log('range',range)
                   </div>
                 </div>
                 <div className="product-content">
-                  <h4><a href="product-details.html">vertual product 01</a></h4>
+                  <h4><Link  to="/ProductDetail">vertual product 01</Link></h4>
                   <div className="pricebox">
                     <span className="regular-price">$70.00</span>
                     <div className="ratings">
@@ -646,16 +646,16 @@ console.log('range',range)
               {/* product single list item start */}
               <div className="product-list-item mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img13.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img14.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
                 </div>
                 <div className="product-list-content">
-                  <h3><a href="product-details.html">virtual product 02</a></h3>
+                  <h3><Link  to="/ProductDetail">virtual product 02</Link></h3>
                   <div className="ratings">
                     <span className="good"><i className="fa fa-star" /></span>
                     <span className="good"><i className="fa fa-star" /></span>
@@ -686,10 +686,10 @@ console.log('range',range)
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img15.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img16.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
@@ -701,7 +701,7 @@ console.log('range',range)
                   </div>
                 </div>
                 <div className="product-content">
-                  <h4><a href="product-details.html">external product</a></h4>
+                  <h4><Link  to="/ProductDetail">external product</Link></h4>
                   <div className="pricebox">
                     <span className="regular-price">$70.00</span>
                     <div className="ratings">
@@ -721,16 +721,16 @@ console.log('range',range)
               {/* product single list item start */}
               <div className="product-list-item mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img15.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img16.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
                 </div>
                 <div className="product-list-content">
-                  <h3><a href="product-details.html">external product</a></h3>
+                  <h3><Link  to="/ProductDetail">external product</Link></h3>
                   <div className="ratings">
                     <span className="good"><i className="fa fa-star" /></span>
                     <span className="good"><i className="fa fa-star" /></span>
@@ -761,10 +761,10 @@ console.log('range',range)
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img2.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img3.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
@@ -776,7 +776,7 @@ console.log('range',range)
                   </div>
                 </div>
                 <div className="product-content">
-                  <h4><a href="product-details.html">vertual product 01</a></h4>
+                  <h4><Link  to="/ProductDetail">vertual product 01</Link></h4>
                   <div className="pricebox">
                     <span className="regular-price">$70.00</span>
                     <div className="ratings">
@@ -796,16 +796,16 @@ console.log('range',range)
               {/* product single list item start */}
               <div className="product-list-item mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img2.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img3.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
                 </div>
                 <div className="product-list-content">
-                  <h3><a href="product-details.html">virtual product 02</a></h3>
+                  <h3><Link  to="/ProductDetail">virtual product 02</Link></h3>
                   <div className="ratings">
                     <span className="good"><i className="fa fa-star" /></span>
                     <span className="good"><i className="fa fa-star" /></span>
@@ -836,10 +836,10 @@ console.log('range',range)
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img4.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img5.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
@@ -851,7 +851,7 @@ console.log('range',range)
                   </div>
                 </div>
                 <div className="product-content">
-                  <h4><a href="product-details.html">group product 01</a></h4>
+                  <h4><Link  to="/ProductDetail">group product 01</Link></h4>
                   <div className="pricebox">
                     <span className="regular-price">$70.00</span>
                     <div className="ratings">
@@ -871,16 +871,16 @@ console.log('range',range)
               {/* product single list item start */}
               <div className="product-list-item mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img4.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img5.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
                 </div>
                 <div className="product-list-content">
-                  <h3><a href="product-details.html">group product 02</a></h3>
+                  <h3><Link  to="/ProductDetail">group product 02</Link></h3>
                   <div className="ratings">
                     <span className="good"><i className="fa fa-star" /></span>
                     <span className="good"><i className="fa fa-star" /></span>
@@ -911,10 +911,10 @@ console.log('range',range)
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img6.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img7.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
@@ -926,7 +926,7 @@ console.log('range',range)
                   </div>
                 </div>
                 <div className="product-content">
-                  <h4><a href="product-details.html">simple product 01</a></h4>
+                  <h4><Link  to="/ProductDetail">simple product 01</Link></h4>
                   <div className="pricebox">
                     <span className="regular-price">$70.00</span>
                     <div className="ratings">
@@ -946,16 +946,16 @@ console.log('range',range)
               {/* product single list item start */}
               <div className="product-list-item mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img8.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img9.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
                 </div>
                 <div className="product-list-content">
-                  <h3><a href="product-details.html">simple product 02</a></h3>
+                  <h3><Link  to="/ProductDetail">simple product 02</Link></h3>
                   <div className="ratings">
                     <span className="good"><i className="fa fa-star" /></span>
                     <span className="good"><i className="fa fa-star" /></span>
@@ -986,10 +986,10 @@ console.log('range',range)
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img10.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img11.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
@@ -1001,7 +1001,7 @@ console.log('range',range)
                   </div>
                 </div>
                 <div className="product-content">
-                  <h4><a href="product-details.html">vertual product 01</a></h4>
+                  <h4><Link  to="/ProductDetail">vertual product 01</Link></h4>
                   <div className="pricebox">
                     <span className="regular-price">$100.00</span>
                     <div className="ratings">
@@ -1021,16 +1021,16 @@ console.log('range',range)
               {/* product single list item start */}
               <div className="product-list-item mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img10.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img11.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
                 </div>
                 <div className="product-list-content">
-                  <h3><a href="product-details.html">virtual product 02</a></h3>
+                  <h3><Link  to="/ProductDetail">virtual product 02</Link></h3>
                   <div className="ratings">
                     <span className="good"><i className="fa fa-star" /></span>
                     <span className="good"><i className="fa fa-star" /></span>
@@ -1061,10 +1061,10 @@ console.log('range',range)
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img12.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img13.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
@@ -1076,7 +1076,7 @@ console.log('range',range)
                   </div>
                 </div>
                 <div className="product-content">
-                  <h4><a href="product-details.html">vertual product 01</a></h4>
+                  <h4><Link  to="/ProductDetail">vertual product 01</Link></h4>
                   <div className="pricebox">
                     <span className="regular-price">$70.00</span>
                     <div className="ratings">
@@ -1096,16 +1096,16 @@ console.log('range',range)
               {/* product single list item start */}
               <div className="product-list-item mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img12.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img13.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
                 </div>
                 <div className="product-list-content">
-                  <h3><a href="product-details.html">virtual product 02</a></h3>
+                  <h3><Link  to="/ProductDetail">virtual product 02</Link></h3>
                   <div className="ratings">
                     <span className="good"><i className="fa fa-star" /></span>
                     <span className="good"><i className="fa fa-star" /></span>
@@ -1136,10 +1136,10 @@ console.log('range',range)
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img14.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img15.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
@@ -1151,7 +1151,7 @@ console.log('range',range)
                   </div>
                 </div>
                 <div className="product-content">
-                  <h4><a href="product-details.html">smart product 01</a></h4>
+                  <h4><Link  to="/ProductDetail">smart product 01</Link></h4>
                   <div className="pricebox">
                     <span className="regular-price">$90.00</span>
                     <div className="ratings">
@@ -1171,16 +1171,16 @@ console.log('range',range)
               {/* product single list item start */}
               <div className="product-list-item mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img14.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img15.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
                 </div>
                 <div className="product-list-content">
-                  <h3><a href="product-details.html">virtual product 02</a></h3>
+                  <h3><Link  to="/ProductDetail">virtual product 02</Link></h3>
                   <div className="ratings">
                     <span className="good"><i className="fa fa-star" /></span>
                     <span className="good"><i className="fa fa-star" /></span>
@@ -1211,10 +1211,10 @@ console.log('range',range)
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img16.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img1.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
@@ -1226,7 +1226,7 @@ console.log('range',range)
                   </div>
                 </div>
                 <div className="product-content">
-                  <h4><a href="product-details.html">simple product 01</a></h4>
+                  <h4><Link  to="/ProductDetail">simple product 01</Link></h4>
                   <div className="pricebox">
                     <span className="regular-price">$70.00</span>
                     <div className="ratings">
@@ -1246,16 +1246,16 @@ console.log('range',range)
               {/* product single list item start */}
               <div className="product-list-item mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img16.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img1.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
                 </div>
                 <div className="product-list-content">
-                  <h3><a href="product-details.html">simple product 02</a></h3>
+                  <h3><Link  to="/ProductDetail">simple product 02</Link></h3>
                   <div className="ratings">
                     <span className="good"><i className="fa fa-star" /></span>
                     <span className="good"><i className="fa fa-star" /></span>
@@ -1286,10 +1286,10 @@ console.log('range',range)
               {/* product single grid item start */}
               <div className="product-item fix mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img4.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img6.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
@@ -1301,7 +1301,7 @@ console.log('range',range)
                   </div>
                 </div>
                 <div className="product-content">
-                  <h4><a href="product-details.html">vertual product 01</a></h4>
+                  <h4><Link  to="/ProductDetail">vertual product 01</Link></h4>
                   <div className="pricebox">
                     <span className="regular-price">$70.00</span>
                     <div className="ratings">
@@ -1321,16 +1321,16 @@ console.log('range',range)
               {/* product single list item start */}
               <div className="product-list-item mb-30">
                 <div className="product-thumb">
-                  <a href="product-details.html">
+                  <Link  to="/ProductDetail">
                     <img src="assets/img/product/product-img8.jpg" className="img-pri" alt />
                     <img src="assets/img/product/product-img8.jpg" className="img-sec" alt />
-                  </a>
+                  </Link>
                   <div className="product-label">
                     <span>hot</span>
                   </div>
                 </div>
                 <div className="product-list-content">
-                  <h3><a href="product-details.html">virtual product 02</a></h3>
+                  <h3><Link  to="/ProductDetail">virtual product 02</Link></h3>
                   <div className="ratings">
                     <span className="good"><i className="fa fa-star" /></span>
                     <span className="good"><i className="fa fa-star" /></span>

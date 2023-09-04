@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 export default function Home3Section4() {
   return (
     <>
@@ -9,23 +9,23 @@ export default function Home3Section4() {
     <div className="row">
       <div className="col-lg-4">
         <div className="img-container img-full fix mb-md-30 mb-sm-30">
-          <a href="#">
+          <Link to="/ProductDetail">
             <img src="assets/img/banner/home3_static6.jpg" alt />
-          </a>
+          </Link>
         </div>
       </div>
       <div className="col-lg-4">
         <div className="img-container img-full fix mb-md-30 mb-sm-30">
-          <a href="#">
+          <Link to="/ProductDetail">
             <img src="assets/img/banner/home3_static7.jpg" alt />
-          </a>
+          </Link>
         </div>
       </div>
       <div className="col-lg-4">
         <div className="img-container img-full fix mb-md-30 mb-sm-30">
-          <a href="#">
+          <Link to="/ProductDetail">
             <img src="assets/img/banner/home3_static8.jpg" alt />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

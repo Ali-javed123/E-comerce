@@ -1,6 +1,6 @@
 import React from 'react'
-
-export default function ShopGirdFull4ColBreadcrum() {
+import {Link } from 'react-router-dom'
+  export default function ShopGirdFull4ColBreadcrum() {
   return (
     <>
     
@@ -12,7 +12,7 @@ export default function ShopGirdFull4ColBreadcrum() {
         <div className="breadcrumb-wrap">
           <nav aria-label="breadcrumb">
             <ul className="breadcrumb">
-              <li className="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li className="breadcrumb-item"><Link to="/">Home</Link></li>
               <li className="breadcrumb-item active" aria-current="page">shop left sidebar</li>
             </ul>
           </nav>

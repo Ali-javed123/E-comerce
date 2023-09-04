@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
+import { Link } from 'react-router-dom';
 
 // import required modules
 import { Autoplay, Pagination ,Navigation} from "swiper/modules";
@@ -34,12 +34,12 @@ export default function Home3Section5() {
 
             <div className="blog-item">
               <div className="blog-thumb img-full fix">
-                <a href="blog-details.html">
+                <Link to="#">
                   <img src="assets/img/blog/img_blog1.jpg" alt />
-                </a>
+                </Link>
               </div>
               <div className="blog-content">
-                <h3><a href="blog-details.html">post format audio</a></h3>
+                <h3><Link to="#">post format audio</Link></h3>
                 <div className="blog-meta">
                   <span className="posted-author">by: admin</span>
                   <span className="post-date">25 Nov, 2018</span>
@@ -52,12 +52,12 @@ export default function Home3Section5() {
 
             <div className="blog-item">
               <div className="blog-thumb img-full fix">
-                <a href="blog-details.html">
+                <Link to="#">
                   <img src="assets/img/blog/img_blog2.jpg" alt />
-                </a>
+                </Link>
               </div>
               <div className="blog-content">
-                <h3><a href="blog-details.html">post format image</a></h3>
+                <h3><Link to="#">post format image</Link></h3>
                 <div className="blog-meta">
                   <span className="posted-author">by: admin</span>
                   <span className="post-date">25 Nov, 2018</span>
@@ -89,7 +89,7 @@ export default function Home3Section5() {
                 <img src="assets/img/testimonial/team_member1.jpg" alt />
               </div>
               <div className="testimonial-content">
-                <h3><a href="#">Elizabeth Taylor</a></h3>
+                <h3><a to="/ProductDetail">Elizabeth Taylor</a></h3>
                 <p>Etiam rhoncus congue arcu sed interdum. Cras dolor diam, accumsan eu aliquam eu, luctus vehicula velit. Nam eget tortor ut felis fermentum sodales ac eu lacus</p>
               </div>
             </div> {/* end single testimonial item */}
@@ -101,7 +101,7 @@ export default function Home3Section5() {
                 <img src="assets/img/testimonial/team_member2.jpg" alt />
               </div>
               <div className="testimonial-content">
-                <h3><a href="#">Elizabeth Taylor</a></h3>
+                <h3><a to="/ProductDetail">Elizabeth Taylor</a></h3>
                 <p>Etiam rhoncus congue arcu sed interdum. Cras dolor diam, accumsan eu aliquam eu, luctus vehicula velit. Nam eget tortor ut felis fermentum sodales ac eu lacus</p>
               </div>
             </div> {/* end single testimonial item */}
@@ -113,7 +113,7 @@ export default function Home3Section5() {
                 <img src="assets/img/testimonial/team_member3.jpg" alt />
               </div>
               <div className="testimonial-content">
-                <h3><a href="#">Elizabeth Taylor</a></h3>
+                <h3><a to="/ProductDetail">Elizabeth Taylor</a></h3>
                 <p>Etiam rhoncus congue arcu sed interdum. Cras dolor diam, accumsan eu aliquam eu, luctus vehicula velit. Nam eget tortor ut felis fermentum sodales ac eu lacus</p>
               </div>
             </div> {/* end single testimonial item */}

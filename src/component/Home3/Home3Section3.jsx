@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-
+import { Link } from 'react-router-dom';
 // import required modules
 import { Autoplay, Pagination ,Navigation,Scrollbar, A11y} from "swiper/modules";
 import { SwiperButtun } from '../globleComponent/SwiperButtun';
@@ -32,12 +32,12 @@ export default function Home3Section3() {
             <div className="col">
               <div className="category-item">
                 <div className="category-thumb">
-                  <a href="product-details.html">
+                  <Link to="/ProductDetail">
                     <img src="assets/img/product/product-s-1.jpg" alt />
-                  </a>
+                  </Link>
                 </div>
                 <div className="category-content">
-                  <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                  <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                   <div className="price-box">
                     <div className="regular-price">
                       $150.00
@@ -62,12 +62,12 @@ export default function Home3Section3() {
             <div className="col">
               <div className="category-item">
                 <div className="category-thumb">
-                  <a href="product-details.html">
+                  <Link to="/ProductDetail">
                     <img src="assets/img/product/product-s-2.jpg" alt />
-                  </a>
+                  </Link>
                 </div>
                 <div className="category-content">
-                  <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                  <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                   <div className="price-box">
                     <div className="regular-price">
                       $150.00
@@ -92,12 +92,12 @@ export default function Home3Section3() {
             <div className="col">
               <div className="category-item">
                 <div className="category-thumb">
-                  <a href="product-details.html">
+                  <Link to="/ProductDetail">
                     <img src="assets/img/product/product-s-3.jpg" alt />
-                  </a>
+                  </Link>
                 </div>
                 <div className="category-content">
-                  <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                  <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                   <div className="price-box">
                     <div className="regular-price">
                       $150.00
@@ -126,12 +126,12 @@ export default function Home3Section3() {
             <div className="col">
               <div className="category-item">
                 <div className="category-thumb">
-                  <a href="product-details.html">
+                  <Link to="/ProductDetail">
                     <img src="assets/img/product/product-b-1.jpg" alt />
-                  </a>
+                  </Link>
                 </div>
                 <div className="category-content">
-                  <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                  <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                   <div className="price-box">
                     <div className="regular-price">
                       $150.00
@@ -156,12 +156,12 @@ export default function Home3Section3() {
             <div className="col">
               <div className="category-item">
                 <div className="category-thumb">
-                  <a href="product-details.html">
+                  <Link to="/ProductDetail">
                     <img src="assets/img/product/product-b-2.jpg" alt />
-                  </a>
+                  </Link>
                 </div>
                 <div className="category-content">
-                  <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                  <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                   <div className="price-box">
                     <div className="regular-price">
                       $150.00
@@ -186,12 +186,12 @@ export default function Home3Section3() {
             <div className="col">
               <div className="category-item">
                 <div className="category-thumb">
-                  <a href="product-details.html">
+                  <Link to="/ProductDetail">
                     <img src="assets/img/product/product-b-3.jpg" alt />
-                  </a>
+                  </Link>
                 </div>
                 <div className="category-content">
-                  <h4><a href="product-details.html">simple Product 01</a></h4>
+                  <h4><Link to="/ProductDetail">simple Product 01</Link></h4>
                   <div className="price-box">
                     <div className="regular-price">
                       $150.00
@@ -218,12 +218,12 @@ export default function Home3Section3() {
             <div className="col">
               <div className="category-item">
                 <div className="category-thumb">
-                  <a href="product-details.html">
+                  <Link to="/ProductDetail">
                     <img src="assets/img/product/product-b-4.jpg" alt />
-                  </a>
+                  </Link>
                 </div>
                 <div className="category-content">
-                  <h4><a href="product-details.html">external Product 01</a></h4>
+                  <h4><Link to="/ProductDetail">external Product 01</Link></h4>
                   <div className="price-box">
                     <div className="regular-price">
                       $140.00
@@ -248,12 +248,12 @@ export default function Home3Section3() {
             <div className="col">
               <div className="category-item">
                 <div className="category-thumb">
-                  <a href="product-details.html">
+                  <Link to="/ProductDetail">
                     <img src="assets/img/product/product-f-1.jpg" alt />
-                  </a>
+                  </Link>
                 </div>
                 <div className="category-content">
-                  <h4><a href="product-details.html">external Product 01</a></h4>
+                  <h4><Link to="/ProductDetail">external Product 01</Link></h4>
                   <div className="price-box">
                     <div className="regular-price">
                       $140.00
@@ -278,12 +278,12 @@ export default function Home3Section3() {
             <div className="col">
               <div className="category-item">
                 <div className="category-thumb">
-                  <a href="product-details.html">
+                  <Link to="/ProductDetail">
                     <img src="assets/img/product/product-s-4.jpg" alt />
-                  </a>
+                  </Link>
                 </div>
                 <div className="category-content">
-                  <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                  <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                   <div className="price-box">
                     <div className="regular-price">
                       $150.00
@@ -367,10 +367,10 @@ export default function Home3Section3() {
 
                 <div className="product-item fix">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-s-1.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-s-2.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
@@ -382,7 +382,7 @@ export default function Home3Section3() {
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">vertual product 01</a></h4>
+                    <h4><Link to="/ProductDetail">vertual product 01</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$70.00</span>
                       <div className="ratings">
@@ -407,10 +407,10 @@ export default function Home3Section3() {
 
                 <div className="product-item fix">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-s-3.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-s-4.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
@@ -422,7 +422,7 @@ export default function Home3Section3() {
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">simple product 04</a></h4>
+                    <h4><Link to="/ProductDetail">simple product 04</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$80.00</span>
                       <div className="ratings">
@@ -444,10 +444,10 @@ export default function Home3Section3() {
 
                 <div className="product-item fix">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-s-5.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-s-6.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
@@ -459,7 +459,7 @@ export default function Home3Section3() {
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">grouped product 05</a></h4>
+                    <h4><Link to="/ProductDetail">grouped product 05</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$70.00</span>
                       <div className="ratings">
@@ -482,10 +482,10 @@ export default function Home3Section3() {
 
                 <div className="product-item fix">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-s-6.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-s-5.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
@@ -497,7 +497,7 @@ export default function Home3Section3() {
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">affiliate product 06</a></h4>
+                    <h4><Link to="/ProductDetail">affiliate product 06</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$100.00</span>
                       <div className="ratings">
@@ -518,10 +518,10 @@ export default function Home3Section3() {
 
                 <div className="product-item fix">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-s-2.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-s-3.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
@@ -533,7 +533,7 @@ export default function Home3Section3() {
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">vertual product 01</a></h4>
+                    <h4><Link to="/ProductDetail">vertual product 01</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$70.00</span>
                       <div className="ratings">
@@ -554,10 +554,10 @@ export default function Home3Section3() {
 
                 <div className="product-item fix">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-s-4.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-s-6.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
@@ -569,7 +569,7 @@ export default function Home3Section3() {
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">simple product 01</a></h4>
+                    <h4><Link to="/ProductDetail">simple product 01</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$50.00</span>
                       <div className="ratings">
@@ -626,10 +626,10 @@ export default function Home3Section3() {
 
                 <div className="product-item fix">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-f-1.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-f-2.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
@@ -641,7 +641,7 @@ export default function Home3Section3() {
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">vertual product 01</a></h4>
+                    <h4><Link to="/ProductDetail">vertual product 01</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$70.00</span>
                       <div className="ratings">
@@ -662,10 +662,10 @@ export default function Home3Section3() {
 
                 <div className="product-item fix">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-f-3.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-f-4.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
@@ -677,7 +677,7 @@ export default function Home3Section3() {
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">simple product 04</a></h4>
+                    <h4><Link to="/ProductDetail">simple product 04</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$80.00</span>
                       <div className="ratings">
@@ -698,10 +698,10 @@ export default function Home3Section3() {
 
                 <div className="product-item fix">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-f-2.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-s-4.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
@@ -713,7 +713,7 @@ export default function Home3Section3() {
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">grouped product 05</a></h4>
+                    <h4><Link to="/ProductDetail">grouped product 05</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$70.00</span>
                       <div className="ratings">
@@ -734,10 +734,10 @@ export default function Home3Section3() {
 
                 <div className="product-item fix">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-f-4.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-s-2.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
@@ -749,7 +749,7 @@ export default function Home3Section3() {
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">affiliate product 06</a></h4>
+                    <h4><Link to="/ProductDetail">affiliate product 06</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$100.00</span>
                       <div className="ratings">
@@ -769,10 +769,10 @@ export default function Home3Section3() {
                 <SwiperSlide>
                 <div className="product-item fix">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-f-2.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-f-3.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
@@ -784,7 +784,7 @@ export default function Home3Section3() {
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">vertual product 01</a></h4>
+                    <h4><Link to="/ProductDetail">vertual product 01</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$70.00</span>
                       <div className="ratings">
@@ -806,10 +806,10 @@ export default function Home3Section3() {
 
                 <div className="product-item fix">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-b-1.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-b-2.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
@@ -821,7 +821,7 @@ export default function Home3Section3() {
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">simple product 01</a></h4>
+                    <h4><Link to="/ProductDetail">simple product 01</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$50.00</span>
                       <div className="ratings">
@@ -877,10 +877,10 @@ export default function Home3Section3() {
 
                 <div className="product-item fix">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-f-1.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-f-2.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
@@ -892,7 +892,7 @@ export default function Home3Section3() {
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">vertual product 01</a></h4>
+                    <h4><Link to="/ProductDetail">vertual product 01</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$70.00</span>
                       <div className="ratings">
@@ -913,10 +913,10 @@ export default function Home3Section3() {
 
                 <div className="product-item fix">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-f-3.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-f-4.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
@@ -928,7 +928,7 @@ export default function Home3Section3() {
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">simple product 04</a></h4>
+                    <h4><Link to="/ProductDetail">simple product 04</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$80.00</span>
                       <div className="ratings">
@@ -949,10 +949,10 @@ export default function Home3Section3() {
 
                 <div className="product-item fix">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-b-2.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-b-4.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
@@ -964,7 +964,7 @@ export default function Home3Section3() {
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">grouped product 05</a></h4>
+                    <h4><Link to="/ProductDetail">grouped product 05</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$70.00</span>
                       <div className="ratings">
@@ -985,10 +985,10 @@ export default function Home3Section3() {
 
                 <div className="product-item fix">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-f-3.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-s-1.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
@@ -1000,7 +1000,7 @@ export default function Home3Section3() {
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">affiliate product 06</a></h4>
+                    <h4><Link to="/ProductDetail">affiliate product 06</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$100.00</span>
                       <div className="ratings">
@@ -1021,10 +1021,10 @@ export default function Home3Section3() {
 
                 <div className="product-item fix">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-b-2.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-b-3.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
@@ -1036,7 +1036,7 @@ export default function Home3Section3() {
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">vertual product 01</a></h4>
+                    <h4><Link to="/ProductDetail">vertual product 01</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$70.00</span>
                       <div className="ratings">
@@ -1057,10 +1057,10 @@ export default function Home3Section3() {
 
                 <div className="product-item fix">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-s-1.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-s-2.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
@@ -1072,7 +1072,7 @@ export default function Home3Section3() {
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">simple product 01</a></h4>
+                    <h4><Link to="/ProductDetail">simple product 01</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$50.00</span>
                       <div className="ratings">

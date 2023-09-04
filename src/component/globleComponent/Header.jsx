@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink,Link } from 'react-router-dom'
 export default function Header() {
   const [Show,SetShow]=useState(false)
+  const [Show2,SetShow2]=useState(false)
+
   return (
     <>
 {/* header area start */}
@@ -104,15 +106,15 @@ export default function Header() {
                 <button className="search-btn"><i className="fa fa-search" /></button>
               </div>
               <div className="header-mini-cart">
-                <div className="mini-cart-btn">
-                  <i className="fa fa-shopping-cart" />
+                <div onClick={()=>SetShow2(!Show2)} className="mini-cart-btn">
+                  <i className="fa fa-shopping-cart px-2" />
                   <span className="cart-notification">2</span>
                 </div>
-                <div className="cart-total-price">
+                <div className="cart-total-price px-2">
                   <span>total</span>
                   $50.00
                 </div>
-                <ul className="cart-list">
+                <ul className="cart-list" style={{display:Show2?"block":"none"}}>
                   <li>
                     <div className="cart-img">
                       <a href="product-details.html"><img src="assets/img/cart/cart-1.jpg" alt /></a>
@@ -168,112 +170,112 @@ export default function Header() {
               </div>
               <nav className="category-menu hm-1" style={{display:Show?"block":"none"}}>
                 <ul>
-                  <li><a href="shop-grid-left-sidebar.html"><i className="fa fa-desktop" />
-                      computer</a></li>
-                  <li className="menu-item-has-children"><a href="shop-grid-left-sidebar.html"><i className="fa fa-camera" /> camera</a>
+                  <li><Link  to="/ShopGirdLeftSidebar"><i className="fa fa-desktop" />
+                      computer</Link></li>
+                  <li className="menu-item-has-children"><Link  to="/ShopGirdLeftSidebar"><i className="fa fa-camera" /> camera</Link>
                     {/* Mega Category Menu Start */}
                     <ul className="category-mega-menu">
                       <li className="menu-item-has-children">
-                        <a href="shop-grid-left-sidebar.html">Smartphone</a>
+                        <Link  to="/ShopGirdLeftSidebar">Smartphone</Link>
                         <ul>
-                          <li><a href="shop-grid-left-sidebar.html">Samsome</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">GL Stylus</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">Uawei</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">Cherry Berry</a></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Samsome</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">GL Stylus</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Uawei</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Cherry Berry</Link></li>
                         </ul>
                       </li>
                       <li className="menu-item-has-children">
-                        <a href="shop-grid-left-sidebar.html">headphone</a>
+                        <Link  to="/ShopGirdLeftSidebar">headphone</Link>
                         <ul>
-                          <li><a href="shop-grid-left-sidebar.html">Desktop Headphone</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">Mobile Headphone</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">Wireless
-                              Headphone</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">LED Headphone</a></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Desktop Headphone</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Mobile Headphone</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Wireless
+                              Headphone</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">LED Headphone</Link></li>
                         </ul>
                       </li>
                       <li className="menu-item-has-children">
-                        <a href="shop-grid-left-sidebar.html">accessories</a>
+                        <Link  to="/ShopGirdLeftSidebar">accessories</Link>
                         <ul>
-                          <li><a href="shop-grid-left-sidebar.html">Power Bank</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">Data Cable</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">Power Cable</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">Battery</a></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Power Bank</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Data Cable</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Power Cable</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Battery</Link></li>
                         </ul>
                       </li>
                       <li className="menu-item-has-children">
-                        <a href="shop-grid-left-sidebar.html">headphone</a>
+                        <Link  to="/ShopGirdLeftSidebar">headphone</Link>
                         <ul>
-                          <li><a href="shop-grid-left-sidebar.html">Desktop Headphone</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">Mobile Headphone</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">Wireless
-                              Headphone</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">LED Headphone</a></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Desktop Headphone</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Mobile Headphone</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Wireless
+                              Headphone</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">LED Headphone</Link></li>
                         </ul>
                       </li>
                     </ul>{/* Mega Category Menu End */}
                   </li>
-                  <li className="menu-item-has-children"><a href="shop-grid-left-sidebar.html"><i className="fa fa-book" /> smart phones</a>
+                  <li className="menu-item-has-children"><Link  to="/ShopGirdLeftSidebar"><i className="fa fa-book" /> smart phones</Link>
                     {/* Mega Category Menu Start */}
                     <ul className="category-mega-menu">
                       <li className="menu-item-has-children">
-                        <a href="shop-grid-left-sidebar.html">Smartphone</a>
+                        <Link  to="/ShopGirdLeftSidebar">Smartphone</Link>
                         <ul>
-                          <li><a href="shop-grid-left-sidebar.html">Samsome</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">GL Stylus</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">Uawei</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">Cherry Berry</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">uPhone</a></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Samsome</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">GL Stylus</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Uawei</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Cherry Berry</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">uPhone</Link></li>
                         </ul>
                       </li>
                       <li className="menu-item-has-children">
-                        <a href="shop-grid-left-sidebar.html">headphone</a>
+                        <Link  to="/ShopGirdLeftSidebar">headphone</Link>
                         <ul>
-                          <li><a href="shop-grid-left-sidebar.html">Desktop Headphone</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">Mobile Headphone</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">Wireless
-                              Headphone</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">LED Headphone</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">Over-ear</a></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Desktop Headphone</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Mobile Headphone</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Wireless
+                              Headphone</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">LED Headphone</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Over-ear</Link></li>
                         </ul>
                       </li>
                       <li className="menu-item-has-children">
-                        <a href="shop-grid-left-sidebar.html">accessories</a>
+                        <Link  to="/ShopGirdLeftSidebar">accessories</Link>
                         <ul>
-                          <li><a href="shop-grid-left-sidebar.html">Power Bank</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">Data Cable</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">Power Cable</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">Battery</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">OTG Cable</a></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Power Bank</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Data Cable</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Power Cable</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Battery</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">OTG Cable</Link></li>
                         </ul>
                       </li>
                       <li className="menu-item-has-children">
-                        <a href="shop-grid-left-sidebar.html">accessories</a>
+                        <Link  to="/ShopGirdLeftSidebar">accessories</Link>
                         <ul>
-                          <li><a href="shop-grid-left-sidebar.html">Power Bank</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">Data Cable</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">Power Cable</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">Battery</a></li>
-                          <li><a href="shop-grid-left-sidebar.html">OTG Cable</a></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Power Bank</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Data Cable</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Power Cable</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">Battery</Link></li>
+                          <li><Link  to="/ShopGirdLeftSidebar">OTG Cable</Link></li>
                         </ul>
                       </li>
                     </ul>{/* Mega Category Menu End */}
                   </li>
-                  <li><a href="shop-grid-left-sidebar.html"><i className="fa fa-clock-o" />
-                      watch</a></li>
-                  <li><a href="shop-grid-left-sidebar.html"><i className="fa fa-television" />
-                      electronic</a></li>
-                  <li><a href="shop-grid-left-sidebar.html"><i className="fa fa-tablet" />
-                      tablet</a></li>
-                  <li><a href="shop-grid-left-sidebar.html"><i className="fa fa-book" /> books</a></li>
-                  <li><a href="shop-grid-left-sidebar.html"><i className="fa fa-microchip" />
-                      microchip</a></li>
-                  <li><a href="shop-grid-left-sidebar.html"><i className="fa fa-bullhorn" />
-                      bullhorn</a></li>
+                  <li><Link  to="/ShopGirdLeftSidebar"><i className="fa fa-clock-o" />
+                      watch</Link></li>
+                  <li><Link  to="/ShopGirdLeftSidebar"><i className="fa fa-television" />
+                      electronic</Link></li>
+                  <li><Link  to="/ShopGirdLeftSidebar"><i className="fa fa-tablet" />
+                      tablet</Link></li>
+                  <li><Link  to="/ShopGirdLeftSidebar"><i className="fa fa-book" /> books</Link></li>
+                  <li><Link  to="/ShopGirdLeftSidebar"><i className="fa fa-microchip" />
+                      microchip</Link></li>
+                  <li><Link  to="/ShopGirdLeftSidebar"><i className="fa fa-bullhorn" />
+                      bullhorn</Link></li>
                 </ul>
               </nav>
             </div>
-            <div className="main-menu">
+            <div className="main-menu d-sm-block d-none" >
               <nav id="mobile-menu">
                 <ul>
                   <li className="active"><a href="#"><i className="fa fa-home" />Home <i className="fa fa-angle-down" /></a>
@@ -365,8 +367,8 @@ export default function Header() {
                               variable</NavLink></li>
                           <li><NavLink to="/ProductDetailGroup">product details
                               group</NavLink></li>
-                          <li><a href="product-details-box.html">product details box
-                              slider</a></li>
+                          <li><NavLink to="/ProductDetailBox">product details box
+                              slider</NavLink></li>
                         </ul>
                       </li>
                   </ul>
@@ -390,6 +392,69 @@ export default function Header() {
                 </ul>
               </nav>
             </div>
+        <nav className="navbar navbar-light bg-light shadow  d-sm-none d-block">
+  <div className="container-fluid">
+    <a className="navbar-brand" href="#">Offcanvas dark navbar</a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon" />
+    </button>
+    <div className="offcanvas offcanvas-end text-bg-light" tabIndex={-1} id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div className="offcanvas-header">
+        <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+        <button type="button" className="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close" />
+      </div>
+      <div className="offcanvas-body">
+        <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <li className="nav-item dropdown ">
+            <NavLink className="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </NavLink>
+            <ul className="dropdown-menu dropdown-menu-light justify-content-center">
+              <li><NavLink className="dropdown-item" to="/">Home Version 1</NavLink></li>
+              <li><NavLink className="dropdown-item" to="/home2">Home Version 2</NavLink></li>
+              <li><NavLink className="dropdown-item" to="/home3">Home Version 3</NavLink></li>
+
+             
+            </ul>
+          </li>
+          <li className="nav-item dropdown">
+            <NavLink className="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+            </NavLink>
+            <ul className="dropdown-menu dropdown-menu-light justify-content-center">
+              <li><NavLink className="dropdown-item " to="/">Home Version 1</NavLink></li>
+              <li><NavLink className="dropdown-item " to="/home2">Home Version 2</NavLink></li>
+              <li><NavLink className="dropdown-item " to="/home3">Home Version 3</NavLink></li>
+
+             
+            </ul>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/AboutUs">About Us</NavLink>
+          </li>
+          <li className="nav-item dropdown">
+            <NavLink className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </NavLink>
+            <ul className="dropdown-menu dropdown-menu-dark">
+              <li><NavLink className="dropdown-item" to="">Action</NavLink></li>
+              <li><a className="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr className="dropdown-divider" />
+              </li>
+              <li><a className="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form className="d-flex mt-3" role="search">
+          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button className="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+
           </div>
         </div>
         <div className="col-12 d-block d-lg-none">
@@ -400,6 +465,8 @@ export default function Header() {
   </div>
   {/* main menu area end */}
 </header>
+
+
 {/* header area end */}
 
     </>

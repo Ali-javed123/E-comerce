@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 export default function CheckoutBreadcrum() {
   return (
     <>
@@ -12,8 +12,8 @@ export default function CheckoutBreadcrum() {
         <div className="breadcrumb-wrap">
           <nav aria-label="breadcrumb">
             <ul className="breadcrumb">
-              <li className="breadcrumb-item"><a href="index.html">Home</a></li>
-              <li className="breadcrumb-item"><a href="shop-grid-left-sidebar.html">shop</a></li>
+              <li className="breadcrumb-item"><Link to="/">Home</Link></li>
+              <li className="breadcrumb-item"><Link href="/ShopGirdLeftSidebar">shop</Link></li>
               <li className="breadcrumb-item active" aria-current="page">checkout</li>
             </ul>
           </nav>

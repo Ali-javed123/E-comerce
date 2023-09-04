@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 export default function CheckoutSection() {
   return (
   
@@ -240,15 +240,15 @@ export default function CheckoutSection() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a href="single-product.html">Suscipit Vestibulum <strong> × 1</strong></a></td>
+                    <td><Link  to="#">Suscipit Vestibulum <strong> × 1</strong></Link></td>
                     <td>$165.00</td>
                   </tr>
                   <tr>
-                    <td><a href="single-product.html">Ami Vestibulum suscipit <strong> × 4</strong></a></td>
+                    <td><Link  to="#">Ami Vestibulum suscipit <strong> × 4</strong></Link></td>
                     <td>$165.00</td>
                   </tr>
                   <tr>
-                    <td><a href="single-product.html">Vestibulum suscipit <strong> × 2</strong></a></td>
+                    <td><Link  to="#">Vestibulum suscipit <strong> × 2</strong></Link></td>
                     <td>$165.00</td>
                   </tr>
                 </tbody>

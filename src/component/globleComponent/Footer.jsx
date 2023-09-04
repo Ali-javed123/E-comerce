@@ -55,9 +55,9 @@ export default function Footer() {
             </div>
             <div className="widget-body justify-content-center">
               <ul className="location">
-                <li><i className="fa fa-envelope" />support@galio.com</li>
-                <li><i className="fa fa-phone" />(800) 0123 456 789</li>
-                <li><i className="fa fa-map-marker" />Address: 1234 - Bandit Tringi Aliquam
+                <li><i className="fa fa-envelope mt-2" />support@galio.com</li>
+                <li><i className="fa fa-phone mt-2" />(800) 0123 456 789</li>
+                <li className='text-start mt-2'><i className="fa fa-map-marker" />Address: 1234 - Bandit Tringi Aliquam
                   Vitae. New York</li>
               </ul>
               <a className="map-btn" href="contact-us.html">open in google map</a>

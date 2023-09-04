@@ -58,7 +58,7 @@ export default function AboutUs() {
     </div>
   </div>
   <div class="wrapper box-layout">
-    <Header/>
+    {/* <Header/> */}
     <AboutUsBreadcrum/>
     <AboutUsSection1/>
     <AboutUsSection2/>

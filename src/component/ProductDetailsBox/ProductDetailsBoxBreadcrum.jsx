@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
-export default function CompareBreadcrum() {
+export default function ProductDetailsBoxBreadcrum() {
   return (
     <>
-  {/* breadcrumb area start */}
+    
+ {/* breadcrumb area start */}
 <div className="breadcrumb-area">
   <div className="container">
     <div className="row">
@@ -12,9 +12,9 @@ export default function CompareBreadcrum() {
         <div className="breadcrumb-wrap">
           <nav aria-label="breadcrumb">
             <ul className="breadcrumb">
-              <li className="breadcrumb-item"><Link  to="/">Home</Link></li>
+              <li className="breadcrumb-item"><Link to="/">Home</Link></li>
               <li className="breadcrumb-item"><Link to="/ShopGirdLeftSidebar">shop</Link></li>
-              <li className="breadcrumb-item active" aria-current="page">compare</li>
+              <li className="breadcrumb-item active" aria-current="page">product details box</li>
             </ul>
           </nav>
         </div>
@@ -24,8 +24,6 @@ export default function CompareBreadcrum() {
 </div>
 {/* breadcrumb area end */}
 
-    
-    
     </>
   )
 }

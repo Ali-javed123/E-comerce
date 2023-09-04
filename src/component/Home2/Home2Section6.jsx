@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-
+import { Link } from 'react-router-dom';
 // import required modules
 import { Autoplay, Pagination ,Navigation} from "swiper/modules";
 import { SwiperButtun } from '../globleComponent/SwiperButtun';
@@ -49,43 +49,43 @@ export default function Home2Section6() {
           <SwiperSlide>
 
           <div className="brand-item text-center">
-            <a href="#"><img src="assets/img/brand/br1.png" alt /></a>
+            <Link to="#"><img src="assets/img/brand/br1.png" alt /></Link>
           </div>
           </SwiperSlide>
           <SwiperSlide>
 
           <div className="brand-item text-center">
-            <a href="#"><img src="assets/img/brand/br2.png" alt /></a>
+            <Link to="#"><img src="assets/img/brand/br2.png" alt /></Link>
           </div>
           </SwiperSlide>
           <SwiperSlide>
 
           <div className="brand-item text-center">
-            <a href="#"><img src="assets/img/brand/br3.png" alt /></a>
+            <Link to="#"><img src="assets/img/brand/br3.png" alt /></Link>
           </div>
           </SwiperSlide>
           <SwiperSlide>
 
           <div className="brand-item text-center">
-            <a href="#"><img src="assets/img/brand/br4.png" alt /></a>
+            <Link to="#"><img src="assets/img/brand/br4.png" alt /></Link>
           </div>
           </SwiperSlide>
           <SwiperSlide>
 
           <div className="brand-item text-center">
-            <a href="#"><img src="assets/img/brand/br5.png" alt /></a>
+            <Link to="#"><img src="assets/img/brand/br5.png" alt /></Link>
           </div>
           </SwiperSlide>
           <SwiperSlide>
 
           <div className="brand-item text-center">
-            <a href="#"><img src="assets/img/brand/br6.png" alt /></a>
+            <Link to="#"><img src="assets/img/brand/br6.png" alt /></Link>
           </div>
           </SwiperSlide>
           <SwiperSlide>
 
           <div className="brand-item text-center">
-            <a href="#"><img src="assets/img/brand/br4.png" alt /></a>
+            <Link to="#"><img src="assets/img/brand/br4.png" alt /></Link>
           </div>
           </SwiperSlide>
           <SwiperButtun/>

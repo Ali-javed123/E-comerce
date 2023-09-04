@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function MyAccountLayout() {
   return (
@@ -32,7 +33,7 @@ export default function MyAccountLayout() {
                   <div className="myaccount-content">
                     <h3>Dashboard</h3>
                     <div className="welcome">
-                      <p>Hello, <strong>Alex Tuntuni</strong> (If Not <strong>Tuntuni !</strong><a href="login-register.html" className="logout"> Logout</a>)</p>
+                      <p>Hello, <strong>Alex Tuntuni</strong> (If Not <strong>Tuntuni !</strong><Link to="/LoginRegister" className="logout"> Logout</Link>)</p>
                     </div>
                     <p className="mb-0">From your account dashboard. you can easily check &amp; view your recent orders, manage your shipping and billing addresses and edit your password and account details.</p>
                   </div>
@@ -59,21 +60,21 @@ export default function MyAccountLayout() {
                             <td>Aug 22, 2018</td>
                             <td>Pending</td>
                             <td>$3000</td>
-                            <td><a href="cart.html" className="check-btn sqr-btn ">View</a></td>
+                            <td><Link to="/Cart" className="check-btn sqr-btn ">View</Link></td>
                           </tr>
                           <tr>
                             <td>2</td>
                             <td>July 22, 2018</td>
                             <td>Approved</td>
                             <td>$200</td>
-                            <td><a href="cart.html" className="check-btn sqr-btn ">View</a></td>
+                            <td><Link to="/Cart" className="check-btn sqr-btn ">View</Link></td>
                           </tr>
                           <tr>
                             <td>3</td>
                             <td>June 12, 2017</td>
                             <td>On Hold</td>
                             <td>$990</td>
-                            <td><a href="cart.html" className="check-btn sqr-btn ">View</a></td>
+                            <td><Link to="/Cart" className="check-btn sqr-btn ">View</Link></td>
                           </tr>
                         </tbody>
                       </table>

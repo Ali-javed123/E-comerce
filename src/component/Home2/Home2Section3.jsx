@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-
+import { Link } from 'react-router-dom';
 // import required modules
 import { Autoplay, Pagination ,Navigation} from "swiper/modules";
 import { SwiperButtun } from '../globleComponent/SwiperButtun';
@@ -33,12 +33,12 @@ export default function Home2Section3() {
             <div className="col">
               <div className="category-item">
                 <div className="category-thumb">
-                  <a href="product-details.html">
+                  <Link to="/ProductDetail">
                     <img src="assets/img/product/product-img1.jpg" alt />
-                  </a>
+                  </Link>
                 </div>
                 <div className="category-content">
-                  <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                  <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                   <div className="price-box">
                     <div className="regular-price">
                       $150.00
@@ -63,12 +63,12 @@ export default function Home2Section3() {
             <div className="col">
               <div className="category-item">
                 <div className="category-thumb">
-                  <a href="product-details.html">
+                  <Link to="/ProductDetail">
                     <img src="assets/img/product/product-img2.jpg" alt />
-                  </a>
+                  </Link>
                 </div>
                 <div className="category-content">
-                  <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                  <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                   <div className="price-box">
                     <div className="regular-price">
                       $150.00
@@ -93,12 +93,12 @@ export default function Home2Section3() {
             <div className="col">
               <div className="category-item">
                 <div className="category-thumb">
-                  <a href="product-details.html">
+                  <Link to="/ProductDetail">
                     <img src="assets/img/product/product-img3.jpg" alt />
-                  </a>
+                  </Link>
                 </div>
                 <div className="category-content">
-                  <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                  <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                   <div className="price-box">
                     <div className="regular-price">
                       $150.00
@@ -126,12 +126,12 @@ export default function Home2Section3() {
             <div className="col">
               <div className="category-item">
                 <div className="category-thumb">
-                  <a href="product-details.html">
+                  <Link to="/ProductDetail">
                     <img src="assets/img/product/product-img4.jpg" alt />
-                  </a>
+                  </Link>
                 </div>
                 <div className="category-content">
-                  <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                  <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                   <div className="price-box">
                     <div className="regular-price">
                       $150.00
@@ -156,12 +156,12 @@ export default function Home2Section3() {
             <div className="col">
               <div className="category-item">
                 <div className="category-thumb">
-                  <a href="product-details.html">
+                  <Link to="/ProductDetail">
                     <img src="assets/img/product/product-img5.jpg" alt />
-                  </a>
+                  </Link>
                 </div>
                 <div className="category-content">
-                  <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                  <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                   <div className="price-box">
                     <div className="regular-price">
                       $150.00
@@ -186,12 +186,12 @@ export default function Home2Section3() {
             <div className="col">
               <div className="category-item">
                 <div className="category-thumb">
-                  <a href="product-details.html">
+                  <Link to="/ProductDetail">
                     <img src="assets/img/product/product-img6.jpg" alt />
-                  </a>
+                  </Link>
                 </div>
                 <div className="category-content">
-                  <h4><a href="product-details.html">Virtual Product 01</a></h4>
+                  <h4><Link to="/ProductDetail">Virtual Product 01</Link></h4>
                   <div className="price-box">
                     <div className="regular-price">
                       $150.00
@@ -219,12 +219,12 @@ export default function Home2Section3() {
             <div className="col">
               <div className="category-item">
                 <div className="category-thumb">
-                  <a href="product-details.html">
+                  <Link to="/ProductDetail">
                     <img src="assets/img/product/product-img10.jpg" alt />
-                  </a>
+                  </Link>
                 </div>
                 <div className="category-content">
-                  <h4><a href="product-details.html">simple Product 01</a></h4>
+                  <h4><Link to="/ProductDetail">simple Product 01</Link></h4>
                   <div className="price-box">
                     <div className="regular-price">
                       $150.00
@@ -249,12 +249,12 @@ export default function Home2Section3() {
             <div className="col">
               <div className="category-item">
                 <div className="category-thumb">
-                  <a href="product-details.html">
+                  <Link to="/ProductDetail">
                     <img src="assets/img/product/product-img12.jpg" alt />
-                  </a>
+                  </Link>
                 </div>
                 <div className="category-content">
-                  <h4><a href="product-details.html">external Product 01</a></h4>
+                  <h4><Link to="/ProductDetail">external Product 01</Link></h4>
                   <div className="price-box">
                     <div className="regular-price">
                       $140.00
@@ -279,12 +279,12 @@ export default function Home2Section3() {
             <div className="col">
               <div className="category-item">
                 <div className="category-thumb">
-                  <a href="product-details.html">
+                  <Link to="/ProductDetail">
                     <img src="assets/img/product/product-img13.jpg" alt />
-                  </a>
+                  </Link>
                 </div>
                 <div className="category-content">
-                  <h4><a href="product-details.html">external Product 01</a></h4>
+                  <h4><Link to="/ProductDetail">external Product 01</Link></h4>
                   <div className="price-box">
                     <div className="regular-price">
                       $140.00
@@ -328,7 +328,7 @@ export default function Home2Section3() {
                 <img src="assets/img/testimonial/team_member1.jpg" alt />
               </div>
               <div className="testimonial-content">
-                <h3><a href="#">Elizabeth Taylor</a></h3>
+                <h3><Link to="#">Elizabeth Taylor</Link></h3>
                 <p>Etiam rhoncus congue arcu sed interdum. Cras dolor diam, accumsan eu aliquam eu, luctus vehicula velit. Nam eget tortor ut felis fermentum sodales ac eu lacus</p>
               </div>
             </div> {/* end single testimonial item */}
@@ -340,7 +340,7 @@ export default function Home2Section3() {
                 <img src="assets/img/testimonial/team_member2.jpg" alt />
               </div>
               <div className="testimonial-content">
-                <h3><a href="#">Elizabeth Taylor</a></h3>
+                <h3><Link to="#">Elizabeth Taylor</Link></h3>
                 <p>Etiam rhoncus congue arcu sed interdum. Cras dolor diam, accumsan eu aliquam eu, luctus vehicula velit. Nam eget tortor ut felis fermentum sodales ac eu lacus</p>
               </div>
             </div> {/* end single testimonial item */}
@@ -352,7 +352,7 @@ export default function Home2Section3() {
                 <img src="assets/img/testimonial/team_member3.jpg" alt />
               </div>
               <div className="testimonial-content">
-                <h3><a href="#">Elizabeth Taylor</a></h3>
+                <h3><Link to="#">Elizabeth Taylor</Link></h3>
                 <p>Etiam rhoncus congue arcu sed interdum. Cras dolor diam, accumsan eu aliquam eu, luctus vehicula velit. Nam eget tortor ut felis fermentum sodales ac eu lacus</p>
               </div>
             </div> {/* end single testimonial item */}
@@ -366,9 +366,9 @@ export default function Home2Section3() {
         {/* banner statistic start */}
         <div className="banner-statistic pt-22 pb-36">
           <div className="img-container fix img-full">
-            <a href="#">
+            <Link to="#">
               <img src="assets/img/banner/banner_static1.jpg" alt />
-            </a>
+            </Link>
           </div>
         </div>
         {/* banner statistic end */}
@@ -411,22 +411,22 @@ export default function Home2Section3() {
               <div className="col">
                 <div className="product-item fix mb-30">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-img1.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-img2.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
                     <div className="product-action-link">
-                      <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></a>
+                      <Link to="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></Link>
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">affiliate product</a></h4>
+                    <h4><Link to="/ProductDetail">affiliate product</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$90.00</span>
                       <div className="ratings">
@@ -449,22 +449,22 @@ export default function Home2Section3() {
               <div className="col">
                 <div className="product-item fix mb-30">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-img3.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-img4.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
                     <div className="product-action-link">
-                      <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></a>
+                      <Link to="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></Link>
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">simple product 01</a></h4>
+                    <h4><Link to="/ProductDetail">simple product 01</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$120.00</span>
                       <div className="ratings">
@@ -486,22 +486,22 @@ export default function Home2Section3() {
               <div className="col">
                 <div className="product-item fix mb-30">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-img5.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-img6.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
                     <div className="product-action-link">
-                      <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></a>
+                      <Link to="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></Link>
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">vertual product</a></h4>
+                    <h4><Link to="/ProductDetail">vertual product</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$60.00</span>
                       <div className="ratings">
@@ -525,22 +525,22 @@ export default function Home2Section3() {
               <div className="col">
                 <div className="product-item fix mb-30">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-img7.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-img8.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
                     <div className="product-action-link">
-                      <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></a>
+                      <Link to="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></Link>
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">grouped product</a></h4>
+                    <h4><Link to="/ProductDetail">grouped product</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$10.00</span>
                       <div className="ratings">
@@ -568,22 +568,22 @@ export default function Home2Section3() {
               <div className="col">
                 <div className="product-item fix mb-30">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-img9.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-img10.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
                     <div className="product-action-link">
-                      <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></a>
+                      <Link to="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></Link>
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">simple product 10</a></h4>
+                    <h4><Link to="/ProductDetail">simple product 10</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$70.00</span>
                       <div className="ratings">
@@ -606,22 +606,22 @@ export default function Home2Section3() {
               <div className="col">
                 <div className="product-item fix mb-30">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-img11.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-img12.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
                     <div className="product-action-link">
-                      <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></a>
+                      <Link to="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></Link>
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">affiliate product</a></h4>
+                    <h4><Link to="/ProductDetail">affiliate product</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$70.00</span>
                       <div className="ratings">
@@ -650,22 +650,22 @@ export default function Home2Section3() {
               <div className="col">
                 <div className="product-item fix mb-30">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-img15.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-img16.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
                     <div className="product-action-link">
-                      <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></a>
+                      <Link to="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></Link>
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">simple product 10</a></h4>
+                    <h4><Link to="/ProductDetail">simple product 10</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$70.00</span>
                       <div className="ratings">
@@ -688,22 +688,22 @@ export default function Home2Section3() {
               <div className="col">
                 <div className="product-item fix mb-30">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-img13.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-img14.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
                     <div className="product-action-link">
-                      <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></a>
+                      <Link to="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></Link>
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">affiliate product</a></h4>
+                    <h4><Link to="/ProductDetail">affiliate product</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$70.00</span>
                       <div className="ratings">
@@ -725,22 +725,22 @@ export default function Home2Section3() {
               <div className="col">
                 <div className="product-item fix mb-30">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-img11.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-img12.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
                     <div className="product-action-link">
-                      <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></a>
+                      <Link to="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></Link>
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">simple product 10</a></h4>
+                    <h4><Link to="/ProductDetail">simple product 10</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$70.00</span>
                       <div className="ratings">
@@ -762,22 +762,22 @@ export default function Home2Section3() {
               <div className="col">
                 <div className="product-item fix mb-30">
                   <div className="product-thumb">
-                    <a href="product-details.html">
+                    <Link to="/ProductDetail">
                       <img src="assets/img/product/product-img6.jpg" className="img-pri" alt />
                       <img src="assets/img/product/product-img8.jpg" className="img-sec" alt />
-                    </a>
+                    </Link>
                     <div className="product-label">
                       <span>hot</span>
                     </div>
                     <div className="product-action-link">
-                      <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></a>
-                      <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></a>
+                      <Link to="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i className="fa fa-search" /></span> </Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i className="fa fa-heart-o" /></Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Compare"><i className="fa fa-refresh" /></Link>
+                      <Link to="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i className="fa fa-shopping-cart" /></Link>
                     </div>
                   </div>
                   <div className="product-content">
-                    <h4><a href="product-details.html">affiliate product</a></h4>
+                    <h4><Link to="/ProductDetail">affiliate product</Link></h4>
                     <div className="pricebox">
                       <span className="regular-price">$70.00</span>
                       <div className="ratings">

@@ -1,3 +1,4 @@
+
 /*------------------------------------------------------------------
 Table of content
 -------------------
@@ -7649,4 +7650,14 @@ body.image-bg .wrapper {
 }
 *{
     list-style: name;
+}
+a{
+text-decoration: none !important;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0 !important;
+}
+.sidebar-category>ul{
+   padding-left: 0;
 }

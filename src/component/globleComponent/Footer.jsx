@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { NavLink } from 'react-router-dom'
 export default function Footer() {
   return (
     <>
@@ -55,11 +55,16 @@ export default function Footer() {
             </div>
             <div className="widget-body justify-content-center">
               <ul className="location">
-                <li className='text-start'><i className="fa fa-envelope mt-2" />Info@creativewebssolutions.com <br/>
-creativewebsitesolutions11@gmail.com
+                <li className='text-start'><i className="fa fa-envelope mt-2" />Info@creativewebssolutions.com 
+
+
 
    </li>
-                <li className='text-start'><i className="fa fa-phone mt-2" />US : +1-(909)-351-3911<br/> canada:+1-(909)-351-3911  <br/>  Europe:+49-1521-6652405  <br/> Uk : +44-7440-451891</li>
+   <li><i className="fa fa-envelope mt-2" /> creativewebsitesolutions11@gmail.com</li>
+                <li className='text-start'><i className="fa fa-phone mt-2" />US : +1-(909)-351-3911</li>
+                <li> <i className="fa fa-phone mt-2" /> Uk : +44-7440-451891</li>
+                <li> <i className="fa fa-phone mt-2" /> canada:+1-(909)-351-3911   </li>
+                <li> <i className="fa fa-phone mt-2" /> Europe:+49-1521-6652405 </li>
                 <li className='text-start mt-2'><i className="fa fa-map-marker" />Address: 50 John Street Toronto Ontario M5V3T5,Canada</li>
               </ul>
               {/* <a className="map-btn" href="contact-us.html">open in google map</a> */}

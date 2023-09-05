@@ -16,11 +16,12 @@ export default function Header() {
           <div className="header-call-action">
             <a href="#">
               <i className="fa fa-envelope" />
-              info@website.com
+              Creativewebsitesolutions11@Gmail.Com
+
             </a>
             <a href="#">
               <i className="fa fa-phone" />
-              0123456789
+              +1-(909)-351-3911
             </a>
           </div>
         </div>
@@ -402,7 +403,9 @@ export default function Header() {
     </button>
     <div className="offcanvas offcanvas-end text-bg-light" tabIndex={-1} id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
       <div className="offcanvas-header">
-        <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+      <img className='w-100 img-fluid offcanvas-title' src="assets/img/logo/creative-web-logo.png" alt="brand logo" />
+
+        {/* <h5 className="" id="offcanvasDarkNavbarLabel"></h5> */}
         <button type="button" className="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close" />
       </div>
       <div className="offcanvas-body">

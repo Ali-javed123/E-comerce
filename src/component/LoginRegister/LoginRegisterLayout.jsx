@@ -83,14 +83,12 @@ export default function LoginRegisterLayout() {
 <section>
   <div className="container">
 <div className="row justify-content-center mb-2 ">
-  <div className="col-md-1">
+  <div className="col-md-2 col-sm-2">
     <button onClick={()=>setshow('sign In')} className='btn btn-danger btn-pills'>Sign In</button>
-
-  </div>
-  <div className="col-md-1">
 
     <button onClick={()=>setshow('sign Up')} className='btn btn-danger btn-pills ml-4'>Sign Up</button>
   </div>
+ 
 </div>
 {show=='sign In'?
 <div className="row justify-content-center">

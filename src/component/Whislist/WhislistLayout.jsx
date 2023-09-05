@@ -10,14 +10,14 @@ export default function WhislistLayout() {
         {/* Wishlist Table Area */}
         <div className="cart-table table-responsive">
           <table className="table table-bordered">
-            <thead>
+            <thead >
               <tr>
-                <th className="pro-thumbnail">Thumbnail</th>
-                <th className="pro-title">Product</th>
-                <th className="pro-price">Price</th>
-                <th className="pro-quantity">Stock Status</th>
-                <th className="pro-subtotal">Add to Cart</th>
-                <th className="pro-remove">Remove</th>
+                <th className="text-dark pro-thumbnail">Thumbnail</th>
+                <th className="text-dark pro-title">Product</th>
+                <th className="text-dark pro-price">Price</th>
+                <th className="text-dark pro-quantity">Stock Status</th>
+                <th className="text-dark pro-subtotal">Add to Cart</th>
+                <th className="text-dark pro-remove">Remove</th>
               </tr>
             </thead>
             <tbody>

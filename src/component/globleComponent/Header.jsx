@@ -35,20 +35,19 @@ export default function Header() {
                       <i className="fa fa-angle-down" />
                     </a>
                     <div className="dropdown-menu" aria-labelledby="myaccount">
-                      <a className="dropdown-item" href="my-account.html">my account</a>
-                      <a className="dropdown-item" href="login-register.html"> login</a>
-                      <a className="dropdown-item" href="login-register.html">register</a>
+                      <NavLink className="dropdown-item" to="/MyAcccount">my account</NavLink>
+                      <NavLink className="dropdown-item" to="/LoginRegister"> login/register</NavLink>
                     </div>
                   </div>
                 </li>
                 <li>
-                  <a href="#">my wishlist</a>
+                  <NavLink to="/Whislist">my wishlist</NavLink>
                 </li>
                 <li>
-                  <a href="#">my cart</a>
+                  <NavLink to="/Cart">my cart</NavLink>
                 </li>
                 <li>
-                  <a href="#">checkout</a>
+                  <NavLink to="/Checkout">checkout</NavLink>
                 </li>
               </ul>
             </nav>
@@ -63,9 +62,9 @@ export default function Header() {
     <div className="container">
       <div className="row align-items-center">
         <div className="col-lg-3">
-          <div className="brand-logo">
-            <NavLink to="index.html">
-              <img src="assets/img/logo/logo.png" alt="brand logo" />
+        <div className="brand-logo">
+            <NavLink to="/">
+              <img className='w-100 img-fluid' src="assets/img/logo/creative-web-logo.png" alt="brand logo" />
             </NavLink>
           </div>
         </div> {/* end logo area */}
@@ -117,10 +116,10 @@ export default function Header() {
                 <ul className="cart-list" style={{display:Show2?"block":"none"}}>
                   <li>
                     <div className="cart-img">
-                      <a href="product-details.html"><img src="assets/img/cart/cart-1.jpg" alt /></a>
+                      <NavLink to="/ProductDetail"><img src="assets/img/cart/cart-1.jpg" alt /></NavLink>
                     </div>
                     <div className="cart-info">
-                      <h4><a href="product-details.html">simple product 09</a></h4>
+                      <h4><NavLink to="/ProductDetail">simple product 09</NavLink></h4>
                       <span>$60.00</span>
                     </div>
                     <div className="del-icon">
@@ -129,10 +128,10 @@ export default function Header() {
                   </li>
                   <li>
                     <div className="cart-img">
-                      <a href="product-details.html"><img src="assets/img/cart/cart-2.jpg" alt /></a>
+                      <NavLink to="/ProductDetail"><img src="assets/img/cart/cart-2.jpg" alt /></NavLink>
                     </div>
                     <div className="cart-info">
-                      <h4><a href="product-details.html">virtual product 10</a></h4>
+                      <h4><NavLink to="/ProductDetail">virtual product 10</NavLink></h4>
                       <span>$50.00</span>
                     </div>
                     <div className="del-icon">
@@ -144,7 +143,7 @@ export default function Header() {
                     <span className="subtotal-price">$88.66</span>
                   </li>
                   <li className="checkout-btn">
-                    <a href="#">checkout</a>
+                    <NavLink to="/Checkout">checkout</NavLink>
                   </li>
                 </ul>
               </div>
@@ -394,7 +393,10 @@ export default function Header() {
             </div>
         <nav className="navbar navbar-light bg-light shadow  d-sm-none d-block">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Offcanvas dark navbar</a>
+    <NavLink className="navbar-brand" to="/">
+    <img className='w-100 img-fluid' src="assets/img/logo/creative-web-logo.png" alt="brand logo" />
+
+    </NavLink>
     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />
     </button>
@@ -422,34 +424,109 @@ export default function Header() {
             Pages
             </NavLink>
             <ul className="dropdown-menu dropdown-menu-light justify-content-center">
-              <li><NavLink className="dropdown-item " to="/">Home Version 1</NavLink></li>
-              <li><NavLink className="dropdown-item " to="/home2">Home Version 2</NavLink></li>
-              <li><NavLink className="dropdown-item " to="/home3">Home Version 3</NavLink></li>
+              
 
+
+              <li ><NavLink className="dropdown-item" to="/ShopGirdLeftSidebar">shop grid left
+                              sidebar</NavLink></li>
+                          <li ><NavLink className="dropdown-item" to="/ShopGirdRightSidebar">shop grid right
+                              sidebar</NavLink></li>
+                          <li ><NavLink className="dropdown-item" to="/ShopGirdFullCol3">shop grid full 3
+                              column</NavLink></li>
+                          <li ><NavLink className="dropdown-item" to="/ShopGirdFullCol4">shop grid full 4
+                              column</NavLink></li>
+               
+
+
+                              <li ><NavLink className="dropdown-item" to="/ProductDetail">product details</NavLink></li>
+                          <li ><NavLink className="dropdown-item" to="/product-details-affiliate">product
+                              details
+                              affiliate</NavLink></li>
+                          <li ><NavLink className="dropdown-item" to="/product-details-variable">product details
+                              variable</NavLink></li>
+                          <li ><NavLink className="dropdown-item" to="/ProductDetailGroup">product details
+                              group</NavLink></li>
+
+
+
+
+                              <li ><NavLink className="dropdown-item" to="/Cart">cart</NavLink></li>
+                          <li ><NavLink className="dropdown-item" to="/Checkout">checkout</NavLink></li>
+                          <li ><NavLink className="dropdown-item" to="/Compare">compare</NavLink></li>
+                          <li ><NavLink className="dropdown-item" to="/Whislist">wishlist</NavLink></li>
+
+
+
+
+                          <li ><NavLink className="dropdown-item" to="/MyAcccount">my-account</NavLink></li>
+                          <li ><NavLink className="dropdown-item" to="/LoginRegister">login-register</NavLink></li>
+                          <li ><NavLink className="dropdown-item" to="/AboutUs">about us</NavLink></li>
+                          <li ><NavLink className="dropdown-item" to="/ContactUs">contact us</NavLink></li>
+ 
+ 
+ 
+            </ul>
+          </li>
+          
+          <li className="nav-item dropdown ">
+            <NavLink className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Shop grid layout
+            </NavLink>
+            <ul className="dropdown-menu dropdown-menu-light justify-content-center">
+            <li><NavLink className="dropdown-item" to="/ShopGirdLeftSidebar">shop grid left
+                              sidebar</NavLink></li>
+                          
+                          <li><NavLink className="dropdown-item" to="/ShopGirdRightSidebar">shop grid right
+                              sidebar</NavLink></li>
+                   
+                          <li><NavLink className="dropdown-item" to="/ShopGirdFullCol3">shop grid full 3
+                              column</NavLink></li>
+                          <li><NavLink className="dropdown-item" to="/ShopGirdFullCol4">shop grid full 4
+                              column</NavLink></li>
              
+            </ul>
+          </li>
+
+          <li className="nav-item dropdown ">
+            <NavLink className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Shop list layout
+            </NavLink>
+            <ul className="dropdown-menu dropdown-menu-light justify-content-center">
+            <li><NavLink className="dropdown-item" to="/ShopLeftList">shop list left
+                              sidebar</NavLink></li>
+                          <li><NavLink className="dropdown-item" to="/ShopRightList">shop list right
+                              sidebar</NavLink></li>
+                          <li><NavLink className="dropdown-item" to="/ShopListFullWidth">shop list full width</NavLink></li>
+             
+            </ul>
+          </li>
+
+
+          <li className="nav-item dropdown ">
+            <NavLink className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            products details
+            </NavLink>
+            <ul className="dropdown-menu dropdown-menu-light justify-content-center">
+            <li><NavLink className="dropdown-item" to="/ProductDetail">product details</NavLink></li>
+                          <li><NavLink className="dropdown-item" to="/product-details-affiliate">product
+                              details
+                              affiliate</NavLink></li>
+                          <li><NavLink className="dropdown-item" to="/product-details-variable">product details
+                              variable</NavLink></li>
+                          <li><NavLink className="dropdown-item" to="/ProductDetailGroup">product details
+                              group</NavLink></li>
+                          <li><NavLink className="dropdown-item" to="/ProductDetailBox">product details box
+                              slider</NavLink></li>
             </ul>
           </li>
           <li className="nav-item">
             <NavLink className="nav-link" to="/AboutUs">About Us</NavLink>
           </li>
-          <li className="nav-item dropdown">
-            <NavLink className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </NavLink>
-            <ul className="dropdown-menu dropdown-menu-dark">
-              <li><NavLink className="dropdown-item" to="">Action</NavLink></li>
-              <li><a className="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr className="dropdown-divider" />
-              </li>
-              <li><a className="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/ContactUs">Contact Us</NavLink>
           </li>
         </ul>
-        <form className="d-flex mt-3" role="search">
-          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button className="btn btn-success" type="submit">Search</button>
-        </form>
+    
       </div>
     </div>
   </div>

@@ -45,7 +45,7 @@ function App() {
         <Route exact path="/product-details-variable" element={<  ProductDetailVariable/>}></Route>
         <Route exact path="/ProductDetailGroup" element={<  ProductDetailGroup/>}></Route>
         <Route exact path="/Cart" element={<  Cart/>}></Route>
-        <Route exact path="/Checkout" element={< Checkout/>}></Route>
+      <Route exact path="/Checkout" element={< Checkout/>}></Route>
         <Route exact path="/Compare" element={< Compare/>}></Route>
         <Route exact path="/Whislist" element={< Whislist/>}></Route>
         <Route exact path="/MyAcccount" element={<  MyAcccount/>}></Route>

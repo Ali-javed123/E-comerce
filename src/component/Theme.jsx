@@ -1,16 +1,9 @@
 import React from 'react'
-import Header from '../component/globleComponent/Header'
-import AboutUsBreadcrum from '../component/AboutUs/AboutUsBreadcrum'
-import AboutUsSection1 from '../component/AboutUs/AboutUsSection1'
-import AboutUsSection2 from '../component/AboutUs/AboutUsSection2'
-import AboutUsSection3 from '../component/AboutUs/AboutUsSection3'
-import AboutUsSection4 from '../component/AboutUs/AboutUsSection4'
-import Home2Section6 from '../component/Home2/Home2Section6'
-import Footer from '../component/globleComponent/Footer'
-export default function AboutUs() {
+
+export default function Theme() {
   return (
-    <>  
-    <div className="color-switcher">
+    <>
+       <div className="color-switcher">
     <div className="color-switcher-inner">
       <div className="switcher-icon">
         <i className="fa fa-cog fa-spin" />
@@ -56,18 +49,7 @@ export default function AboutUs() {
         </ul>
       </div>
     </div>
-  </div>
-  <div class="wrapper box-layout">
-    <Header/>
-    <AboutUsBreadcrum/>
-    <AboutUsSection1/>
-    <AboutUsSection2/>
-    <AboutUsSection3/>
-    <AboutUsSection4/>
-    <Home2Section6/>
-    <Footer/>
-
-  </div>
-  </>
+  </div> 
+    </>
   )
 }

@@ -81,12 +81,12 @@ export default function CartLayout() {
           <table className="table table-bordered">
             <thead>
               <tr>
-                <th className="pro-thumbnail">Thumbnail</th>
-                <th className="pro-title">Product</th>
-                <th className="pro-price">Price</th>
-                <th className="pro-quantity">Quantity</th>
-                <th className="pro-subtotal">Total</th>
-                <th className="pro-remove">Remove</th>
+                <th className="pro-thumbnail text-dark">Thumbnail</th>
+                <th className="pro-title text-dark">Product</th>
+                <th className="pro-price text-dark">Price</th>
+                <th className="pro-quantity text-dark">Quantity</th>
+                <th className="pro-subtotal text-dark">Total</th>
+                <th className="pro-remove text-dark">Remove</th>
               </tr>
             </thead>
             <tbody>

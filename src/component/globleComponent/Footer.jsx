@@ -51,16 +51,18 @@ export default function Footer() {
         <div className="col-md-3 col-sm-6">
           <div className="footer-widget mb-sm-30">
             <div className="widget-title mb-10 mb-sm-6">
-              <h4 style={{textAlign:"start"}}>contact us</h4>
+              <h4 >contact us</h4>
             </div>
             <div className="widget-body justify-content-center">
               <ul className="location">
-                <li><i className="fa fa-envelope mt-2" />support@galio.com</li>
-                <li><i className="fa fa-phone mt-2" />(800) 0123 456 789</li>
-                <li className='text-start mt-2'><i className="fa fa-map-marker" />Address: 1234 - Bandit Tringi Aliquam
-                  Vitae. New York</li>
+                <li className='text-start'><i className="fa fa-envelope mt-2" />Info@creativewebssolutions.com <br/>
+creativewebsitesolutions11@gmail.com
+
+   </li>
+                <li className='text-start'><i className="fa fa-phone mt-2" />US : +1-(909)-351-3911<br/> canada:+1-(909)-351-3911  <br/>  Europe:+49-1521-6652405  <br/> Uk : +44-7440-451891</li>
+                <li className='text-start mt-2'><i className="fa fa-map-marker" />Address: 50 John Street Toronto Ontario M5V3T5,Canada</li>
               </ul>
-              <a className="map-btn" href="contact-us.html">open in google map</a>
+              {/* <a className="map-btn" href="contact-us.html">open in google map</a> */}
             </div>
           </div> {/* single widget end */}
         </div> {/* single widget column end */}
@@ -121,7 +123,7 @@ export default function Footer() {
     <div className="container">
       <div className="footer-bottom-wrap">
         <div className="copyright-text">
-          <p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
+          {/* <p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p> */}
         </div>
         <div className="payment-method-img">
           <img src="assets/img/payment.png" alt />
@@ -131,6 +133,10 @@ export default function Footer() {
   </div>
   {/* footer bootom end */}
 </footer>
+<div className="scroll-top not-visible">
+  <i className="fa fa-angle-up" />
+</div>
+
 {/* footer area end */}
 
     </>

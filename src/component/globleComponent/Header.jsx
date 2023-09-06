@@ -278,13 +278,12 @@ export default function Header() {
             <div className="main-menu d-sm-block d-none" >
               <nav id="mobile-menu">
                 <ul>
-                  <li className="active"><a href="#"><i className="fa fa-home" />Home <i className="fa fa-angle-down" /></a>
-                    <ul className="dropdown">
+                  <li className={"text-start"}><NavLink  to="/"><i className="fa fa-home" />Home </NavLink>
+                    {/* <ul className="dropdown">
                       <li><NavLink to="/">Home version 01</NavLink></li>
                       <li><NavLink to="/home2">Home version 02</NavLink></li>
                       <li><NavLink to="/home3">Home version 03</NavLink></li>
-                      {/* <li><NavLink to="/home4">Home version 04</NavLink></li> */}
-                    </ul>
+                    </ul> */}
                   </li>
                   <li className="static"><a href="#">pages <i className="fa fa-angle-down" /></a>
                     <ul className="megamenu dropdown">
@@ -292,10 +291,10 @@ export default function Header() {
                         <ul>
                           <li><NavLink to="/ShopGirdLeftSidebar">shop grid left
                               sidebar</NavLink></li>
-                          <li><NavLink to="/ShopGirdRightSidebar">shop grid right
+                           <li><NavLink to="/ShopGirdRightSidebar">shop grid right 
                               sidebar</NavLink></li>
-                          <li><NavLink to="/ShopGirdFullCol3">shop grid full 3
-                              column</NavLink></li>
+                          {/* <li><NavLink to="/ShopGirdFullCol3">shop grid full 3
+                              column</NavLink></li> */}
                           <li><NavLink to="/ShopGirdFullCol4">shop grid full 4
                               column</NavLink></li>
                         </ul>
@@ -303,9 +302,9 @@ export default function Header() {
                       <li className="mega-title"><a href="#">column 02</a>
                         <ul>
                           <li><NavLink to="/ProductDetail">product details</NavLink></li>
-                          <li><NavLink to="/product-details-affiliate">product
+                          {/* <li><NavLink to="/product-details-affiliate">product
                               details
-                              affiliate</NavLink></li>
+                              affiliate</NavLink></li> */}
                           <li><NavLink to="/product-details-variable">product details
                               variable</NavLink></li>
                           <li><NavLink to="/ProductDetailGroup">product details
@@ -340,10 +339,9 @@ export default function Header() {
                               sidebar 3 col</NavLink></li> */}
                           <li><NavLink to="/ShopGirdRightSidebar">shop grid right
                               sidebar</NavLink></li>
-                          {/* <li><a href="shop-grid-right-sidebar-3-col.html">grid right
-                              sidebar 3 col</a></li> */}
-                          <li><NavLink to="/ShopGirdFullCol3">shop grid full 3
-                              column</NavLink></li>
+                          
+                          {/* <li><NavLink to="/ShopGirdFullCol3">shop grid full 3
+                              column</NavLink></li> */}
                           <li><NavLink to="/ShopGirdFullCol4">shop grid full 4
                               column</NavLink></li>
                         </ul>
@@ -360,9 +358,9 @@ export default function Header() {
                       <li><NavLink to="#">products details <i className="fa fa-angle-right" /></NavLink>
                         <ul className="dropdown">
                           <li><NavLink to="/ProductDetail">product details</NavLink></li>
-                          <li><NavLink to="/product-details-affiliate">product
+                          {/* <li><NavLink to="/product-details-affiliate">product
                               details
-                              affiliate</NavLink></li>
+                              affiliate</NavLink></li> */}
                           <li><NavLink to="/product-details-variable">product details
                               variable</NavLink></li>
                           <li><NavLink to="/ProductDetailGroup">product details

@@ -7595,7 +7595,12 @@ body.image-bg .wrapper {
     background-color: #d8373e;
     cursor: pointer;
   }
-
+#mobile-menu ul{
+    padding: 0%;
+}
+.category-menu ul{
+    padding: 0;
+}
 
 
 

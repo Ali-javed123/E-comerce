@@ -60,7 +60,7 @@ export default function ShopGirdRightSidebar() {
 <Header/>
 <ShopGirdRightSidebarBreadcrurm/>
 <ShopGirdRightSidebarSection/>
-<Home2Section6/>
+{/* <Home2Section6/> */}
 <Footer/>
 </div>
       

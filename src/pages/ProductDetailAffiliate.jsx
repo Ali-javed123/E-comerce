@@ -59,7 +59,7 @@ export default function ProductDetailAffiliate() {
 <Header/>
 <ProductDetailBreadcrum/>
 <ProductDetailLayout/>
-<Home2Section6/>
+{/* <Home2Section6/> */}
 <Footer/>
 </div>
     

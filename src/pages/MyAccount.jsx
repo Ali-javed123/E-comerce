@@ -59,7 +59,7 @@ export default function MyAcccount() {
 <Header/>
 <MyAccountBreadcrum/>
 <MyAccountLayout/>
-<Home2Section6/>
+{/* <Home2Section6/> */}
 <Footer/>
 </div>
     

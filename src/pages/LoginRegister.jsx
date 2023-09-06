@@ -59,7 +59,7 @@ export default function LoginRegister() {
 <Header/>
 <LoginRegisterBreadcrum/>
 <LoginRegisterLayout/>
-<Home2Section6/>
+{/* <Home2Section6/> */}
 <Footer/>
 </div>
     

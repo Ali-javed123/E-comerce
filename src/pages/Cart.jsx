@@ -58,7 +58,7 @@ export default function Cart() {
     <Header/>
     <CartBreadcrum/>
     <CartLayout/>
-    <Home2Section6/>
+    {/* <Home2Section6/> */}
     <Footer/>
 
   </div>

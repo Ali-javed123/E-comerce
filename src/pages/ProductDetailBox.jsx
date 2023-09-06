@@ -59,7 +59,7 @@ export default function ProductDetailBox() {
 <Header/>
 <ProductDetailsBoxBreadcrum/>
 <ProductDetailBoxSection/>
-<Home2Section6/>
+{/* <Home2Section6/> */}
 <Footer/>
 </div>
     

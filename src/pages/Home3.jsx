@@ -68,7 +68,7 @@ export default function Home3() {
 <Home3Section4/>
 <Home3Section5/>
 <Home3Section6/>
-<Home2Section6/>
+{/* <Home2Section6/> */}
 <Footer/>
 </div>
       

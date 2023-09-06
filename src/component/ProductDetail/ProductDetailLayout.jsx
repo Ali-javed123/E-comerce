@@ -134,15 +134,15 @@ export default function ProductDetailLayout() {
                           <img src="assets/img/about/services.jpg" alt />
                         </div>
                         <div className="tab-des mt-sm-24">
-                          <h3>Product Information :</h3>
+                          <h3 className='text-start'>Product Information :</h3>
                           <ul>
-                            <li>Donec non est at libero vulputate rutrum.</li>
-                            <li>Morbi ornare lectus quis justo gravida semper.</li>
-                            <li>Pellentesque aliquet, sem eget laoreet ultrices</li>
-                            <li>Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla</li>
-                            <li>Donec a neque libero.</li>
-                            <li>Pellentesque aliquet, sem eget laoreet ultrices</li>
-                            <li>Morbi ornare lectus quis justo gravida semper.</li>
+                            <li className='text-start'>Donec non est at libero vulputate rutrum.</li>
+                            <li className='text-start'>Morbi ornare lectus quis justo gravida semper.</li>
+                            <li className='text-start'>Pellentesque aliquet, sem eget laoreet ultrices</li>
+                            <li className='text-start'>Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla</li>
+                            <li className='text-start'>Donec a neque libero.</li>
+                            <li className='text-start'>Pellentesque aliquet, sem eget laoreet ultrices</li>
+                            <li className='text-start'>Morbi ornare lectus quis justo gravida semper.</li>
                           </ul>
                         </div>
                       </div>

@@ -66,7 +66,7 @@ export default function Home2() {
     <Home2Section3/>
     <Home2Section4/>
     <Home2Section5/>
-    <Home1Section6/>
+    {/* <Home1Section6/> */}
     <Footer/>
 
 </div>

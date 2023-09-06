@@ -59,7 +59,7 @@ export default function ShopGirdFull3Col() {
 <Header/>
 <ShopGirdFull3ColBreadcrum/>
 <ShopGirdFull3ColSection/>
-<Home2Section6/>
+{/* <Home2Section6/> */}
 <Footer/>
 </div>
       

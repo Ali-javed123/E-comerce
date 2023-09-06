@@ -61,7 +61,7 @@ export default function ShopRightList() {
 <ShopRightListBreadcum/>
 <ShopRightListSection/>
 {/* <ShopGirdLeftSidebarSection2/> */}
-< Home2Section6/>
+{/* < Home2Section6/> */}
 <Footer/>
 </div>
 

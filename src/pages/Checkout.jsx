@@ -58,7 +58,7 @@ export default function Checkout() {
 <Header/>
 <CheckoutBreadcrum/>
 <CheckoutLayout/>
-<Home2Section6/>
+{/* <Home2Section6/> */}
 <Footer/>
     </div>
     </>

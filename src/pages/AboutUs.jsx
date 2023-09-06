@@ -64,7 +64,7 @@ export default function AboutUs() {
     <AboutUsSection2/>
     <AboutUsSection3/>
     <AboutUsSection4/>
-    <Home2Section6/>
+    {/* <Home2Section6/> */}
     <Footer/>
 
   </div>

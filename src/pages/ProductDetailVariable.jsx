@@ -58,7 +58,7 @@ export default function ProductDetailVariable() {
     <Header/>
     <ProductDetailVariableBreadcrurm/>
     <ProductDetailVariableLayout/>
-    <Home2Section6/>
+    {/* <Home2Section6/> */}
     <Footer/>
 
 

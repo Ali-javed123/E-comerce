@@ -62,7 +62,7 @@ export default function ShopGirdLeftSidebar() {
 <ShopGirdLeftSidebarBreadcrumb/>
 <ShopGirdLeftSidebarSection1/>
 {/* <ShopGirdLeftSidebarSection2/> */}
-<Home1Section6/>
+{/* <Home1Section6/> */}
 <Footer/>
 </div>
 

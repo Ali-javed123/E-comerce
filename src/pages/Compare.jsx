@@ -58,7 +58,7 @@ export default function Compare() {
 <Header/>
 <CompareBreadcrum/>
 <ComparetLayout/>
-<Home2Section6/>
+{/* <Home2Section6/> */}
 <Footer/>
     </div>
     </>

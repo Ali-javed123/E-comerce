@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link,NavLink } from 'react-router-dom'
 export default function CheckoutSection() {
   return (
   
@@ -79,29 +79,29 @@ export default function CheckoutSection() {
             <form action="#">
               <div className="row">
                 <div className="col-md-6">
-                  <div className="single-input-item">
+                  <div className="single-input-item text-start">
                     <label htmlFor="f_name" className="required">First Name</label>
                     <input type="text" id="f_name" placeholder="First Name" required />
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="single-input-item">
+                  <div className="single-input-item text-start">
                     <label htmlFor="l_name" className="required">Last Name</label>
                     <input type="text" id="l_name" placeholder="Last Name" required />
                   </div>
                 </div>
               </div>
-              <div className="single-input-item">
+              <div className="single-input-item text-start">
                 <label htmlFor="email" className="required">Email Address</label>
                 <input type="email" id="email" placeholder="Email Address" required />
               </div>
-              <div className="single-input-item">
+              <div className="single-input-item text-start">
                 <label htmlFor="com-name">Company Name</label>
                 <input type="text" id="com-name" placeholder="Company Name" />
               </div>
-              <div className="single-input-item">
+              <div className="single-input-item text-start">
                 <label htmlFor="country" className="required">Country</label>
-                <select name="country nice-select" id="country">
+                <select name="country nice-select" className='form-select' id="country">
                   <option value="Afghanistan">Afghanistan</option>
                   <option value="Albania">Albania</option>
                   <option value="Algeria">Algeria</option>
@@ -115,30 +115,30 @@ export default function CheckoutSection() {
                   <option value="Chaina">China</option>
                 </select>
               </div>
-              <div className="single-input-item">
+              <div className="single-input-item text-start">
                 <label htmlFor="street-address" className="required pt-20">Street address</label>
                 <input type="text" id="street-address" placeholder="Street address Line 1" required />
               </div>
-              <div className="single-input-item">
+              <div className="single-input-item text-start">
                 <input type="text" placeholder="Street address Line 2 (Optional)" />
               </div>
-              <div className="single-input-item">
+              <div className="single-input-item text-start">
                 <label htmlFor="town" className="required">Town / City</label>
                 <input type="text" id="town" placeholder="Town / City" required />
               </div>
-              <div className="single-input-item">
+              <div className="single-input-item text-start">
                 <label htmlFor="state">State / Divition</label>
                 <input type="text" id="state" placeholder="State / Divition" />
               </div>
-              <div className="single-input-item">
+              <div className="single-input-item text-start">
                 <label htmlFor="postcode" className="required">Postcode / ZIP</label>
                 <input type="text" id="postcode" placeholder="Postcode / ZIP" required />
               </div>
-              <div className="single-input-item">
+              <div className="single-input-item text-start">
                 <label htmlFor="phone">Phone</label>
                 <input type="text" id="phone" placeholder="Phone" />
               </div>
-              <div className="checkout-box-wrap">
+              {/* <div className="checkout-box-wrap">
                 <div className="single-input-item">
                   <div className="custom-control custom-checkbox">
                     <input type="checkbox" className="custom-control-input" id="create_pwd" />
@@ -152,8 +152,16 @@ export default function CheckoutSection() {
                     <input type="password" id="pwd" placeholder="Account Password" required />
                   </div>
                 </div>
-              </div>
-              <div className="checkout-box-wrap">
+              </div> */}
+             <div className="mb-3 form-check text-start mt-3">
+  <input type="checkbox" className="form-check-input" id="exampleCheck144" />
+  <label className="form-check-label" htmlFor="exampleCheck144">Craete an account?</label>
+</div>
+<div className="mb-3 form-check text-start mt-3">
+  <input type="checkbox" className="form-check-input" id="exampleCheck143" />
+  <label className="form-check-label" htmlFor="exampleCheck143">Ship to a different address?</label>
+</div>
+              {/* <div className="checkout-box-wrap">
                 <div className="single-input-item">
                   <div className="custom-control custom-checkbox">
                     <input type="checkbox" className="custom-control-input" id="ship_to_different" />
@@ -215,8 +223,8 @@ export default function CheckoutSection() {
                     <input type="text" id="postcode_2" placeholder="Postcode / ZIP" required />
                   </div>
                 </div>
-              </div>
-              <div className="single-input-item">
+              </div> */}
+              <div className="single-input-item text-start">
                 <label htmlFor="ordernote">Order Note</label>
                 <textarea name="ordernote" id="ordernote" cols={30} rows={3} placeholder="Notes about your order, e.g. special notes for delivery." defaultValue={""} />
               </div>
@@ -262,16 +270,29 @@ export default function CheckoutSection() {
                     <td className="d-flex justify-content-center">
                       <ul className="shipping-type">
                         <li>
-                          <div className="custom-control custom-radio">
+                          {/* <div className="custom-control custom-radio">
                             <input type="radio" id="flatrate" name="shipping" className="custom-control-input" defaultChecked />
                             <label className="custom-control-label" htmlFor="flatrate">Flat Rate: $70.00</label>
-                          </div>
+                          </div> */}
+                          <div className="form-check mb-3 mt-3 text-start">
+    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault222" defaultChecked />
+    <label className="form-check-label" htmlFor="flexRadioDefault222">
+    Flat Rate: $70.00
+    </label>
+  </div>
                         </li>
                         <li>
-                          <div className="custom-control custom-radio">
+                          {/* <div className="custom-control custom-radio">
                             <input type="radio" id="freeshipping" name="shipping" className="custom-control-input" />
                             <label className="custom-control-label" htmlFor="freeshipping">Free Shipping</label>
-                          </div>
+                          </div> */}
+
+                          <div className="form-check mb-3 mt-3 text-start">
+    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2222" defaultChecked />
+    <label className="form-check-label" htmlFor="flexRadioDefault2222">
+    Free Shipping
+    </label>
+  </div>
                         </li>
                       </ul>
                     </td>
@@ -286,54 +307,87 @@ export default function CheckoutSection() {
             {/* Order Payment Method */}
             <div className="order-payment-method">
               <div className="single-payment-method show">
-                <div className="payment-method-name">
+                {/* <div className="payment-method-name">
                   <div className="custom-control custom-radio">
                     <input type="radio" id="cashon" name="paymentmethod" defaultValue="cash" className="custom-control-input" defaultChecked />
                     <label className="custom-control-label" htmlFor="cashon">Cash On Delivery</label>
                   </div>
-                </div>
+                </div> */}
+                <div className="mb-3 form-check text-start mt-3">
+  <input type="checkbox" className="form-check-input" id="exampleCheck122" />
+  <label className="form-check-label" htmlFor="exampleCheck122">Cash on Delivery?</label>
+</div>
                 <div className="payment-method-details" data-method="cash">
                   <p>Pay with cash upon delivery.</p>
                 </div>
               </div>
               <div className="single-payment-method">
-                <div className="payment-method-name">
+                {/* <div className="payment-method-name">
                   <div className="custom-control custom-radio">
                     <input type="radio" id="directbank" name="paymentmethod" defaultValue="bank" className="custom-control-input" />
                     <label className="custom-control-label" htmlFor="directbank">Direct Bank Transfer</label>
                   </div>
-                </div>
+                </div> */}
+
+                <div className="mb-3 form-check text-start mt-3">
+  <input type="checkbox" className="form-check-input" id="exampleCheck12" />
+  <label className="form-check-label" htmlFor="exampleCheck12">Direct Bank Transfer</label>
+</div>
                 <div className="payment-method-details" data-method="bank">
                   <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account..</p>
                 </div>
               </div>
               <div className="single-payment-method">
-                <div className="payment-method-name">
+                {/* <div className="payment-method-name">
                   <div className="custom-control custom-radio">
                     <input type="radio" id="checkpayment" name="paymentmethod" defaultValue="check" className="custom-control-input" />
                     <label className="custom-control-label" htmlFor="checkpayment">Pay with Check</label>
                   </div>
-                </div>
+                </div> */}
+
+  <div className="form-check mb-3 mt-3 text-start">
+    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+    <label className="form-check-label" htmlFor="flexRadioDefault1">
+      Pay with check
+    </label>
+  </div>
+  
+
                 <div className="payment-method-details" data-method="check">
                   <p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
                 </div>
               </div>
               <div className="single-payment-method">
-                <div className="payment-method-name">
+                {/* <div className="payment-method-name">
                   <div className="custom-control custom-radio">
                     <input type="radio" id="paypalpayment" name="paymentmethod" defaultValue="paypal" className="custom-control-input" />
                     <label className="custom-control-label" htmlFor="paypalpayment">Paypal <img src="assets/img/paypal-card.jpg" className="img-fluid paypal-card" alt="Paypal" /></label>
                   </div>
-                </div>
+
+                </div> */}
+<div className="form-check mb-3 mt-3 text-start">
+    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" defaultChecked />
+    <label className="form-check-label" htmlFor="flexRadioDefault2">
+      Default checked radio
+    </label>
+  </div>
+
+<div>
+<img src="assets/img/paypal-card.jpg" className="img-fluid paypal-card" alt="Paypal" />
+</div>
                 <div className="payment-method-details" data-method="paypal">
                   <p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p>
                 </div>
               </div>
               <div className="summary-footer-area">
-                <div className="custom-control custom-checkbox mb-14">
+                {/* <div className="custom-control custom-checkbox mb-14">
                   <input type="checkbox" className="custom-control-input" id="terms" required />
                   <label className="custom-control-label" htmlFor="terms">I have read and agree to the website <a href="index.html">terms and conditions.</a></label>
-                </div>
+                </div> */}
+                  <div className="mb-3 form-check text-start mt-3">
+  <input type="checkbox" className="form-check-input" id="exampleCheck12234" />
+  <label className="form-check-label" htmlFor="exampleCheck12234">I have read and agree to the website <NavLink to="/">terms and conditions</NavLink></label>
+</div>
                 <button type="submit" className="check-btn sqr-btn">Place Order</button>
               </div>
             </div>

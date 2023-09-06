@@ -15,7 +15,7 @@ import { SwiperButtun } from '../globleComponent/SwiperButtun';
 export default function ProductDetailLayout() {
     let [num, setNum]= useState(0);
     let incNum =()=>{
-      if(num<10)
+      if(num<100)
       {
       setNum(Number(num)+1);
       }

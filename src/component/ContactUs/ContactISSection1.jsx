@@ -43,11 +43,22 @@ export default function ContactUsSection1() {
       <div className="col-lg-6">
         <div className="contact-info mt-md-28 mt-sm-28">
           <h2>contact us</h2>
-          <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram anteposuerit litterarum formas human.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aperiam possimus perspiciatis vel sunt rem exercitationem inventore incidunt doloremque? Similique alias incidunt, quia nostrum reiciendis expedita quibusdam sequi. Aliquid, architecto!</p>
           <ul>
-            <li><i className="fa fa-fax" /> Address : No 40 Baria Sreet 133/2 NewYork City</li>
-            <li><i className="fa fa-phone" /> info@yourdomain.com</li>
-            <li><i className="fa fa-envelope-o" /> +88013245657</li>
+            <li><i className="fa fa-fax" /> Address : 50 John Street Toronto Ontario M5V3T5,Canada</li>
+            <li><i className="fa fa-fax" /> Address :122 Harold Rd, London E13 0SF, United Kingdom</li>
+
+            <li><i className="fa fa-envelope-o" /> Creativewebsitesolutions11@Gmail.Com</li>
+            <li><i className="fa fa-envelope-o" /> Info@Creativewebssolutions.Com</li>
+
+            <li><i className="fa fa-phone" />US: +1 (281) 885-8538</li>
+            <li><i className="fa fa-phone" />US: +1 (281) 985-9318</li>
+
+            <li><i className="fa fa-phone" />UK: +44-7440-451891</li>
+            <li><i className="fa fa-phone" />Canada:+1-(909)-351-3911</li>
+            <li><i className="fa fa-phone" />Europe:+49-1521-6652405</li>
+            <li><i className="fa fa-desktop" />www.creativewebssolutions.com</li>
+
           </ul>
           <div className="working-time">
             <h3>Working hours</h3>

@@ -7,7 +7,7 @@ export default function CartLayout() {
     let [num4, setNum4]= useState(0);
 
     let incNum =()=>{
-      if(num<10)
+      if(num<100)
       {
       setNum(Number(num)+1);
       }
@@ -23,13 +23,13 @@ export default function CartLayout() {
     }  
     
     let incNum2 =()=>{
-        if(num2<10)
+        if(num2<100)
         {
         setNum2(Number(num2)+1);
         }
       };
       let decNum2 = () => {
-         if(num2>0)
+         if(num2>100)
          {
           setNum2(num2 - 1);
          }
@@ -40,7 +40,7 @@ export default function CartLayout() {
 
 
       let incNum3 =()=>{
-        if(num3<10)
+        if(num3<100)
         {
         setNum3(Number(num3)+1);
         }
@@ -57,7 +57,7 @@ export default function CartLayout() {
 
 
       let incNum4 =()=>{
-        if(num4<10)
+        if(num4<100)
         {
         setNum4(Number(num4)+1);
         }

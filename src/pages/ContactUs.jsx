@@ -59,7 +59,7 @@ export default function ContactUs() {
 <Header/>
 <ContactUsBreadcrum/>
 <ContactUsSection1/>
-<ContactUsSection2/>
+{/* <ContactUsSection2/> */}
 <Home2Section6/>
 <Footer/>
     </div>

@@ -9,7 +9,7 @@ export default function ContactUsSection1() {
     <div className="row">
       <div className="col-lg-6">
         <div className="contact-message">
-          <h2>tell us your project</h2>
+          <h2>Contact Us Form </h2>
           {/* id="contact-form" action="http://demo.hasthemes.com/galio-v6/galio/assets/php/mail.php" method="post" */}
           <form  className="contact-form">
             <div className="row">

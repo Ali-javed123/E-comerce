@@ -17,7 +17,7 @@ export default function CheckoutSection() {
                 <div className="login-reg-form-wrap mt-20">
                   <div className="row">
                     <div className="col-lg-7 m-auto">
-                      <form action="#" method="post">
+                      <form >
                         <div className="row">
                           <div className="col-md-12">
                             <div className="single-input-item">
@@ -57,7 +57,7 @@ export default function CheckoutSection() {
               <div className="card-body">
                 <div className="cart-update-option">
                   <div className="apply-coupon-wrapper">
-                    <form action="#" method="post" className=" d-block d-md-flex">
+                    <form  className=" d-block d-md-flex">
                       <input type="text" placeholder="Enter Your Coupon Code" required />
                       <button className="check-btn sqr-btn">Apply Coupon</button>
                     </form>

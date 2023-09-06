@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink,Link } from 'react-router-dom'
 export default function Header() {
-  const [Show,SetShow]=useState(false)
+  const [Show,SetShow]=useState(true)
   const [Show2,SetShow2]=useState(false)
 
   return (

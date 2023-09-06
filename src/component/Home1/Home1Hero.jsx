@@ -22,7 +22,7 @@ export default function Home1Hero() {
           delay: 5000,
           disableOnInteraction: false,
         }}
-                modules={[Navigation, Pagination, A11y]}
+                modules={[Navigation, Pagination]}
                 spaceBetween={50}
                 slidesPerView={1}
                 navigation

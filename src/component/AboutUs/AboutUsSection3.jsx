@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 
 
 // import required modules
-import { Autoplay, EffectFade, Navigation, Pagination} from "swiper/modules";
+import { Autoplay, EffectFade, Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 export default function AboutUsSection3() {
   return (
     <>
@@ -24,18 +24,18 @@ export default function AboutUsSection3() {
     <div className="row">
       <div className="col-12">
         <Swiper  loop 
-            effect={"fade"}
-            speed={600}
-            parallax={true}
-            navigation={true}
-            // onSwiper={(swiper) => console.log(swiper)}
-            // onSlideChange={() => console.log('slide change')}
-           
-            autoplay={{
-              delay: 5000,
-              disableOnInteraction: false,
-            }}
-            modules={[EffectFade, Autoplay, Navigation, Pagination]} className="testimonial-carousel-active testimonial-style-2 slick-dot-style">
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+                modules={[Navigation, Pagination, A11y]}
+                spaceBetween={50}
+                slidesPerView={1}
+                navigation
+                pagination={{ clickable: true }}
+                scrollbar={{ draggable: true }}
+                onSwiper={(swiper) => console.log(swiper)}
+                onSlideChange={() => console.log('slide change')} className="testimonial-carousel-active testimonial-style-2 slick-dot-style">
                
 
           <SwiperSlide className="testimonial-item text-center">

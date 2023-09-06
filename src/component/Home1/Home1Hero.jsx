@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 
 
 // import required modules
-import { Autoplay, EffectFade, Navigation, Pagination} from "swiper/modules";
+import { Autoplay, EffectFade, Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 export default function Home1Hero() {
   return (
     <>
@@ -17,27 +17,20 @@ export default function Home1Hero() {
   <div className="row">
     <div className="col-lg-12">
       <div className="slider-wrapper-area">
-        <Swiper     spaceBetween={30}
-            effect={"fade"}
-            speed={600}
-            parallax={true}
-            navigation={true}
-            scrollbar={{ draggable: true }}
-            // onSwiper={(swiper) => console.log(swiper)}
-            // onSlideChange={() => console.log('slide change')}
-            pagination={{
-              clickable: true,
-              // dynamicBullets: true,
-
-            }}
-
-            centeredSlides={true}
-            autoplay={{
-              delay: 5000,
-              disableOnInteraction: false,
-            }}
-            modules={[EffectFade, Autoplay, Navigation, Pagination]}  className="hero-slider-active hero__1 slick-dot-style hero-dot">
-          <SwiperSlide className="single-slider" style={{backgroundImage: 'url(assets/img/slider/slider11_bg.jpg)'}}>
+        <Swiper     loop 
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+                modules={[Navigation, Pagination, A11y]}
+                spaceBetween={50}
+                slidesPerView={1}
+                navigation
+                pagination={{ clickable: true }}
+                scrollbar={{ draggable: true }}
+                onSwiper={(swiper) => console.log(swiper)}
+                onSlideChange={() => console.log('slide change')}  className="hero-slider-active hero__1 slick-dot-style hero-dot">
+          <SwiperSlide className="single-slider" style={{backgroundImage: 'url(assets/img/slider/slider11_bg.jpg)',backgroundSize:"cover"}}>
             <div className="container p-0">
               <div className="slider-main-content">
                 <div className="slider-content-img">

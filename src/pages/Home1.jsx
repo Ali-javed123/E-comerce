@@ -69,7 +69,7 @@ export default function Home1() {
       <Home1Section3/>
       <Home1Section4/>
       <Home1Section5/>
-      <Home1Section6/>
+      {/* <Home1Section6/> */}
       <Footer/>
       </div>
 {/* Scroll to top start */}

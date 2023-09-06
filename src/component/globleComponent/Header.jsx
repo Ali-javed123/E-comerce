@@ -408,7 +408,7 @@ export default function Header() {
       </div>
       <div className="offcanvas-body">
         <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-        <li className="nav-item dropdown ">
+        {/* <li className="nav-item dropdown ">
             <NavLink className="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Home
             </NavLink>
@@ -419,6 +419,9 @@ export default function Header() {
 
              
             </ul>
+          </li> */}
+          <li classname="nav-item">
+            <NavLink className="nav-link text-dark"  to="/">Home</NavLink>
           </li>
           <li className="nav-item dropdown">
             <NavLink className="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -432,17 +435,17 @@ export default function Header() {
                               sidebar</NavLink></li>
                           <li ><NavLink className="dropdown-item" to="/ShopGirdRightSidebar">shop grid right
                               sidebar</NavLink></li>
-                          <li ><NavLink className="dropdown-item" to="/ShopGirdFullCol3">shop grid full 3
-                              column</NavLink></li>
+                          {/* <li ><NavLink className="dropdown-item" to="/ShopGirdFullCol3">shop grid full 3
+                              column</NavLink></li> */}
                           <li ><NavLink className="dropdown-item" to="/ShopGirdFullCol4">shop grid full 4
                               column</NavLink></li>
                
 
 
                               <li ><NavLink className="dropdown-item" to="/ProductDetail">product details</NavLink></li>
-                          <li ><NavLink className="dropdown-item" to="/product-details-affiliate">product
+                          {/* <li ><NavLink className="dropdown-item" to="/product-details-affiliate">product
                               details
-                              affiliate</NavLink></li>
+                              affiliate</NavLink></li> */}
                           <li ><NavLink className="dropdown-item" to="/product-details-variable">product details
                               variable</NavLink></li>
                           <li ><NavLink className="dropdown-item" to="/ProductDetailGroup">product details
@@ -480,8 +483,8 @@ export default function Header() {
                           <li><NavLink className="dropdown-item" to="/ShopGirdRightSidebar">shop grid right
                               sidebar</NavLink></li>
                    
-                          <li><NavLink className="dropdown-item" to="/ShopGirdFullCol3">shop grid full 3
-                              column</NavLink></li>
+                          {/* <li><NavLink className="dropdown-item" to="/ShopGirdFullCol3">shop grid full 3
+                              column</NavLink></li> */}
                           <li><NavLink className="dropdown-item" to="/ShopGirdFullCol4">shop grid full 4
                               column</NavLink></li>
              
@@ -509,9 +512,9 @@ export default function Header() {
             </NavLink>
             <ul className="dropdown-menu dropdown-menu-light justify-content-center">
             <li><NavLink className="dropdown-item" to="/ProductDetail">product details</NavLink></li>
-                          <li><NavLink className="dropdown-item" to="/product-details-affiliate">product
+                          {/* <li><NavLink className="dropdown-item" to="/product-details-affiliate">product
                               details
-                              affiliate</NavLink></li>
+                              affiliate</NavLink></li> */}
                           <li><NavLink className="dropdown-item" to="/product-details-variable">product details
                               variable</NavLink></li>
                           <li><NavLink className="dropdown-item" to="/ProductDetailGroup">product details

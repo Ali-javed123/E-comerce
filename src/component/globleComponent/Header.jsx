@@ -293,8 +293,8 @@ export default function Header() {
                               sidebar</NavLink></li>
                            <li><NavLink to="/ShopGirdRightSidebar">shop grid right 
                               sidebar</NavLink></li>
-                          {/* <li><NavLink to="/ShopGirdFullCol3">shop grid full 3
-                              column</NavLink></li> */}
+                          <li><NavLink to="/ShopGirdFullCol3">shop grid full 3
+                              column</NavLink></li>
                           <li><NavLink to="/ShopGirdFullCol4">shop grid full 4
                               column</NavLink></li>
                         </ul>
@@ -365,8 +365,8 @@ export default function Header() {
                               variable</NavLink></li>
                           <li><NavLink to="/ProductDetailGroup">product details
                               group</NavLink></li>
-                          <li><NavLink to="/ProductDetailBox">product details box
-                              slider</NavLink></li>
+                          {/* <li><NavLink to="/ProductDetailBox">product details box
+                              slider</NavLink></li> */}
                         </ul>
                       </li>
                   </ul>
@@ -435,8 +435,8 @@ export default function Header() {
                               sidebar</NavLink></li>
                           <li ><NavLink className="dropdown-item" to="/ShopGirdRightSidebar">shop grid right
                               sidebar</NavLink></li>
-                          {/* <li ><NavLink className="dropdown-item" to="/ShopGirdFullCol3">shop grid full 3
-                              column</NavLink></li> */}
+                          <li ><NavLink className="dropdown-item" to="/ShopGirdFullCol3">shop grid full 3
+                              column</NavLink></li>
                           <li ><NavLink className="dropdown-item" to="/ShopGirdFullCol4">shop grid full 4
                               column</NavLink></li>
                
@@ -483,8 +483,8 @@ export default function Header() {
                           <li><NavLink className="dropdown-item" to="/ShopGirdRightSidebar">shop grid right
                               sidebar</NavLink></li>
                    
-                          {/* <li><NavLink className="dropdown-item" to="/ShopGirdFullCol3">shop grid full 3
-                              column</NavLink></li> */}
+                          <li><NavLink className="dropdown-item" to="/ShopGirdFullCol3">shop grid full 3
+                              column</NavLink></li>
                           <li><NavLink className="dropdown-item" to="/ShopGirdFullCol4">shop grid full 4
                               column</NavLink></li>
              
@@ -519,8 +519,8 @@ export default function Header() {
                               variable</NavLink></li>
                           <li><NavLink className="dropdown-item" to="/ProductDetailGroup">product details
                               group</NavLink></li>
-                          <li><NavLink className="dropdown-item" to="/ProductDetailBox">product details box
-                              slider</NavLink></li>
+                          {/* <li><NavLink className="dropdown-item" to="/ProductDetailBox">product details box
+                              slider</NavLink></li> */}
             </ul>
           </li>
           <li className="nav-item">

@@ -123,7 +123,7 @@ export default function ShopGirdLeftSidebarSection1() {
           {/* shop product top wrap start */}
           <div className="shop-top-bar">
             <div className="row">
-              <div className="col-lg-7 col-md-6">
+              <div className=" col-md-4">
                 <div className="top-bar-left">
                   <div className="product-view-mode mr-70 mr-sm-0">
 
@@ -131,12 +131,27 @@ export default function ShopGirdLeftSidebarSection1() {
                     <NavLink onClick={()=>setmode("list")} to="#" data-target="list"><i className="fa fa-list" /></NavLink>
                   <NavLink onClick={()=>setmode("col-3")} className="active" to="#" data-target="col-3"><i className="fa fa-th" /></NavLink>
                   </div>
-                  <div className="product-amount">
+                  {/* <div className="product-amount">
                     <p>Showing 1–16 of 21 results</p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
-              <div className="col-lg-5 col-md-6">
+              <div className=" col-md-4">
+                <div className="top-bar-left">
+                  <div className="product-view-mode mr-70 mr-sm-0">
+
+                    <NavLink   className="active" to="/ShopGirdLeftSidebar" data-target="col-4"><i className="fa fa-th" /></NavLink>
+                    <NavLink  className="active"  to="/ShopGirdRightSidebar" data-target="list"><i className="fa fa-list" /></NavLink>
+                  <NavLink  className="active" to="/ShopGirdFullCol3" data-target="col-3"><i className="fa fa-th" /></NavLink>
+                  <NavLink  className="active" to="/ShopGirdFullCol4" data-target="col-3"><i className="fa fa-th" /></NavLink>
+
+                  </div>
+                  {/* <div className="product-amount">
+                    <p>Showing 1–16 of 21 results</p>
+                  </div> */}
+                </div>
+              </div>
+              <div className=" col-md-4">
                 <div className="top-bar-right">
                   <div className="product-short">
                     <p>Sort By : </p>

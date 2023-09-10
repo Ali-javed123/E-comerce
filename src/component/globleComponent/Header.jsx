@@ -285,7 +285,7 @@ export default function Header() {
                       <li><NavLink to="/home3">Home version 03</NavLink></li>
                     </ul> */}
                   </li>
-                  <li className="static"><a href="#">pages <i className="fa fa-angle-down" /></a>
+                  {/* <li className="static"><a href="#">pages <i className="fa fa-angle-down" /></a>
                     <ul className="megamenu dropdown">
                       <li className="mega-title"><a href="#">column 01</a>
                         <ul>
@@ -302,9 +302,7 @@ export default function Header() {
                       <li className="mega-title"><a href="#">column 02</a>
                         <ul>
                           <li><NavLink to="/ProductDetail">product details</NavLink></li>
-                          {/* <li><NavLink to="/product-details-affiliate">product
-                              details
-                              affiliate</NavLink></li> */}
+                      
                           <li><NavLink to="/product-details-variable">product details
                               variable</NavLink></li>
                           <li><NavLink to="/ProductDetailGroup">product details
@@ -328,49 +326,9 @@ export default function Header() {
                         </ul>
                       </li>
                     </ul>
-                  </li>
-                  <li><a href="#">shop <i className="fa fa-angle-down" /></a>
-                    <ul className="dropdown">
-                      <li><NavLink to="#">shop grid layout <i className="fa fa-angle-right" /></NavLink>
-                        <ul className="dropdown">
-                          <li><NavLink to="/ShopGirdLeftSidebar">shop grid left
-                              sidebar</NavLink></li>
-                          {/* <li><NavLink to="/ShopGirdRightSidebar">left
-                              sidebar 3 col</NavLink></li> */}
-                          <li><NavLink to="/ShopGirdRightSidebar">shop grid right
-                              sidebar</NavLink></li>
-                          
-                          {/* <li><NavLink to="/ShopGirdFullCol3">shop grid full 3
-                              column</NavLink></li> */}
-                          <li><NavLink to="/ShopGirdFullCol4">shop grid full 4
-                              column</NavLink></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">shop list layout <i className="fa fa-angle-right" /></a>
-                        <ul className="dropdown">
-                        <li><NavLink to="/ShopLeftList">shop list left
-                              sidebar</NavLink></li>
-                          <li><NavLink to="/ShopRightList">shop list right
-                              sidebar</NavLink></li>
-                          <li><NavLink to="/ShopListFullWidth">shop list full width</NavLink></li>
-                        </ul>
-                      </li>
-                      <li><NavLink to="#">products details <i className="fa fa-angle-right" /></NavLink>
-                        <ul className="dropdown">
-                          <li><NavLink to="/ProductDetail">product details</NavLink></li>
-                          {/* <li><NavLink to="/product-details-affiliate">product
-                              details
-                              affiliate</NavLink></li> */}
-                          <li><NavLink to="/product-details-variable">product details
-                              variable</NavLink></li>
-                          <li><NavLink to="/ProductDetailGroup">product details
-                              group</NavLink></li>
-                          {/* <li><NavLink to="/ProductDetailBox">product details box
-                              slider</NavLink></li> */}
-                        </ul>
-                      </li>
-                  </ul>
-                  </li>
+                  </li> */}
+                  <li><NavLink to="/ShopGirdLeftSidebar">Shop</NavLink></li>
+
                   {/* <li><a href="#">Blog <i className="fa fa-angle-down" /></a>
                     <ul className="dropdown">
                       <li><a href="blog-left-sidebar.html">blog left sidebar</a></li>
@@ -386,7 +344,10 @@ export default function Header() {
                   </li> */}
                   <li><NavLink to="/AboutUs">About Us</NavLink></li>
                   <li><NavLink to="/ContactUs">Contact us</NavLink></li>
-
+                          <li><NavLink to="/Compare">compare</NavLink></li>
+                          <li><NavLink to="/Whislist">wishlist</NavLink></li>
+                      <li><NavLink to="/product-details-variable">products details </NavLink></li>
+                          
                 </ul>
               </nav>
             </div>
@@ -408,127 +369,27 @@ export default function Header() {
       </div>
       <div className="offcanvas-body">
         <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-        {/* <li className="nav-item dropdown ">
-            <NavLink className="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Home
-            </NavLink>
-            <ul className="dropdown-menu dropdown-menu-light justify-content-center">
-              <li><NavLink className="dropdown-item" to="/">Home Version 1</NavLink></li>
-              <li><NavLink className="dropdown-item" to="/home2">Home Version 2</NavLink></li>
-              <li><NavLink className="dropdown-item" to="/home3">Home Version 3</NavLink></li>
-
-             
-            </ul>
-          </li> */}
+   
           <li classname="nav-item">
             <NavLink className="nav-link text-dark"  to="/">Home</NavLink>
           </li>
-          <li className="nav-item dropdown">
-            <NavLink className="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Pages
-            </NavLink>
-            <ul className="dropdown-menu dropdown-menu-light justify-content-center">
-              
+          <li classname="nav-item"><NavLink className="nav-link" to="/Cart">cart</NavLink></li>
+                          <li classname="nav-item"><NavLink className="nav-link" to="/Checkout">checkout</NavLink></li>
+                          <li classname="nav-item"><NavLink className="nav-link" to="/Compare">compare</NavLink></li>
+                          <li classname="nav-item"><NavLink className="nav-link" to="/Whislist">wishlist</NavLink></li>
+                          <li classname="nav-item"><NavLink className="nav-link" to="/product-details-variable">product details
+                              </NavLink></li>
+                          <li classname="nav-item"><NavLink className="nav-link" to="/ShopGirdLeftSidebar">Shop</NavLink></li>
+                          <li classname="nav-item"><NavLink className="nav-link" to="/Cart">Cart</NavLink></li>
+                          <li classname="nav-item"><NavLink className="nav-link" to="/Checkout">Checkout</NavLink></li>
 
-
-              <li ><NavLink className="dropdown-item" to="/ShopGirdLeftSidebar">shop grid left
-                              sidebar</NavLink></li>
-                          <li ><NavLink className="dropdown-item" to="/ShopGirdRightSidebar">shop grid right
-                              sidebar</NavLink></li>
-                          <li ><NavLink className="dropdown-item" to="/ShopGirdFullCol3">shop grid full 3
-                              column</NavLink></li>
-                          <li ><NavLink className="dropdown-item" to="/ShopGirdFullCol4">shop grid full 4
-                              column</NavLink></li>
-               
-
-
-                              <li ><NavLink className="dropdown-item" to="/ProductDetail">product details</NavLink></li>
-                          {/* <li ><NavLink className="dropdown-item" to="/product-details-affiliate">product
-                              details
-                              affiliate</NavLink></li> */}
-                          <li ><NavLink className="dropdown-item" to="/product-details-variable">product details
-                              variable</NavLink></li>
-                          <li ><NavLink className="dropdown-item" to="/ProductDetailGroup">product details
-                              group</NavLink></li>
-
-
-
-
-                              <li ><NavLink className="dropdown-item" to="/Cart">cart</NavLink></li>
-                          <li ><NavLink className="dropdown-item" to="/Checkout">checkout</NavLink></li>
-                          <li ><NavLink className="dropdown-item" to="/Compare">compare</NavLink></li>
-                          <li ><NavLink className="dropdown-item" to="/Whislist">wishlist</NavLink></li>
-
-
-
-
-                          <li ><NavLink className="dropdown-item" to="/MyAcccount">my-account</NavLink></li>
-                          <li ><NavLink className="dropdown-item" to="/LoginRegister">login-register</NavLink></li>
-                          <li ><NavLink className="dropdown-item" to="/AboutUs">about us</NavLink></li>
-                          <li ><NavLink className="dropdown-item" to="/ContactUs">contact us</NavLink></li>
+                              <li classname="nav-item"><NavLink className="nav-link" to="/MyAcccount">my-account</NavLink></li>
+                          <li classname="nav-item"><NavLink className="nav-link" to="/LoginRegister">login-register</NavLink></li>
+                          <li classname="nav-item"><NavLink className="nav-link" to="/AboutUs">about us</NavLink></li>
+                          <li classname="nav-item"><NavLink className="nav-link" to="/ContactUs">contact us</NavLink></li>
  
- 
- 
-            </ul>
-          </li>
+
           
-          <li className="nav-item dropdown ">
-            <NavLink className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Shop grid layout
-            </NavLink>
-            <ul className="dropdown-menu dropdown-menu-light justify-content-center">
-            <li><NavLink className="dropdown-item" to="/ShopGirdLeftSidebar">shop grid left
-                              sidebar</NavLink></li>
-                          
-                          <li><NavLink className="dropdown-item" to="/ShopGirdRightSidebar">shop grid right
-                              sidebar</NavLink></li>
-                   
-                          <li><NavLink className="dropdown-item" to="/ShopGirdFullCol3">shop grid full 3
-                              column</NavLink></li>
-                          <li><NavLink className="dropdown-item" to="/ShopGirdFullCol4">shop grid full 4
-                              column</NavLink></li>
-             
-            </ul>
-          </li>
-
-          <li className="nav-item dropdown ">
-            <NavLink className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Shop list layout
-            </NavLink>
-            <ul className="dropdown-menu dropdown-menu-light justify-content-center">
-            <li><NavLink className="dropdown-item" to="/ShopLeftList">shop list left
-                              sidebar</NavLink></li>
-                          <li><NavLink className="dropdown-item" to="/ShopRightList">shop list right
-                              sidebar</NavLink></li>
-                          <li><NavLink className="dropdown-item" to="/ShopListFullWidth">shop list full width</NavLink></li>
-             
-            </ul>
-          </li>
-
-
-          <li className="nav-item dropdown ">
-            <NavLink className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            products details
-            </NavLink>
-            <ul className="dropdown-menu dropdown-menu-light justify-content-center">
-            <li><NavLink className="dropdown-item" to="/ProductDetail">product details</NavLink></li>
-                          {/* <li><NavLink className="dropdown-item" to="/product-details-affiliate">product
-                              details
-                              affiliate</NavLink></li> */}
-                          <li><NavLink className="dropdown-item" to="/product-details-variable">product details
-                              variable</NavLink></li>
-                          <li><NavLink className="dropdown-item" to="/ProductDetailGroup">product details
-                              group</NavLink></li>
-                          {/* <li><NavLink className="dropdown-item" to="/ProductDetailBox">product details box
-                              slider</NavLink></li> */}
-            </ul>
-          </li>
-          <li className="nav-item">
-            <NavLink className="nav-link" to="/AboutUs">About Us</NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink className="nav-link" to="/ContactUs">Contact Us</NavLink>
-          </li>
         </ul>
     
       </div>

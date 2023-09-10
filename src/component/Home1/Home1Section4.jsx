@@ -417,12 +417,12 @@ export default function Home1Section4() {
 
               <div className="blog-item">
                 <div className="blog-thumb img-full fix">
-                  <a href="blog-details.html">
+                  <Link to="#">
                     <img src="assets/img/blog/img_blog1.jpg" alt />
-                  </a>
+                  </Link>
                 </div>
                 <div className="blog-content">
-                  <h3><a href="blog-details.html">post format audio</a></h3>
+                  <h3><Link to="#">post format audio</Link></h3>
                   <div className="blog-meta">
                     <span className="posted-author">by: admin</span>
                     <span className="post-date">25 Nov, 2018</span>
@@ -430,18 +430,18 @@ export default function Home1Section4() {
                   <p>Curabitur sed diam enim. Sed varius faucibus lectus, a scelerisque massa
                     posuere ac. Quisque dapibus, est ac...</p>
                 </div>
-                <a href="blog-details.html">read more <i className="fa fa-long-arrow-right" /></a>
+                <Link to="#">read more <i className="fa fa-long-arrow-right" /></Link>
               </div> {/* end single blog item */}
               </SwiperSlide>
               <SwiperSlide>
               <div className="blog-item">
                 <div className="blog-thumb img-full fix">
-                  <a href="blog-details.html">
+                  <Link to="#">
                     <img src="assets/img/blog/img_blog2.jpg" alt />
-                  </a>
+                  </Link>
                 </div>
                 <div className="blog-content">
-                  <h3><a href="blog-details.html">post format image</a></h3>
+                  <h3><Link to="#">post format image</Link></h3>
                   <div className="blog-meta">
                     <span className="posted-author">by: admin</span>
                     <span className="post-date">25 Nov, 2018</span>
@@ -449,7 +449,7 @@ export default function Home1Section4() {
                   <p>Curabitur sed diam enim. Sed varius faucibus lectus, a scelerisque massa
                     posuere ac. Quisque dapibus, est ac...</p>
                 </div>
-                <a href="blog-details.html">read more <i className="fa fa-long-arrow-right" /></a>
+                <Link to="#">read more <i className="fa fa-long-arrow-right" /></Link>
               </div> {/* end single blog item */}
 
               </SwiperSlide>

@@ -42,7 +42,7 @@ function App() {
         <Route exact path="/ShopGirdFullCol4" element={<  ShopGirdFullCol4/>}></Route>
         <Route exact path="/ProductDetail" element={<  ProductDetail/>}></Route>
         <Route exact path="/product-details-affiliate" element={<  ProductDetailAffiliate/>}></Route>
-        <Route exact path="/product-details-variable" element={<  ProductDetailVariable/>}></Route>
+        <Route exact path="/product-details" element={<  ProductDetailVariable/>}></Route>
         <Route exact path="/ProductDetailGroup" element={<  ProductDetailGroup/>}></Route>
         <Route exact path="/Cart" element={<  Cart/>}></Route>
       <Route exact path="/Checkout" element={< Checkout/>}></Route>

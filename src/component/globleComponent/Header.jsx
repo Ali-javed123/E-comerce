@@ -278,7 +278,7 @@ export default function Header() {
             <div className="main-menu d-sm-block d-none" >
               <nav id="mobile-menu">
                 <ul>
-                  <li className={"text-start"}><NavLink  to="/"><i className="fa fa-home" />Home </NavLink>
+                  <li className={"text-start"}><NavLink className="text-lights"  to="/"><i className="fa fa-home" />Home </NavLink>
                     {/* <ul className="dropdown">
                       <li><NavLink to="/">Home version 01</NavLink></li>
                       <li><NavLink to="/home2">Home version 02</NavLink></li>
@@ -327,7 +327,7 @@ export default function Header() {
                       </li>
                     </ul>
                   </li> */}
-                  <li><NavLink to="/ShopGirdLeftSidebar">Shop</NavLink></li>
+                  <li><NavLink className="text-lights" to="/ShopGirdLeftSidebar">Shop</NavLink></li>
 
                   {/* <li><a href="#">Blog <i className="fa fa-angle-down" /></a>
                     <ul className="dropdown">
@@ -342,11 +342,11 @@ export default function Header() {
                       <li><a href="blog-details-image.html">blog details image</a></li>
                     </ul>
                   </li> */}
-                  <li><NavLink to="/AboutUs">About Us</NavLink></li>
-                  <li><NavLink to="/ContactUs">Contact us</NavLink></li>
-                          <li><NavLink to="/Compare">compare</NavLink></li>
-                          <li><NavLink to="/Whislist">wishlist</NavLink></li>
-                      <li><NavLink to="/product-details-variable">products details </NavLink></li>
+                  <li><NavLink className="text-lights" to="/AboutUs">About Us</NavLink></li>
+                  <li><NavLink className="text-lights" to="/ContactUs">Contact us</NavLink></li>
+                          <li><NavLink className="text-lights" to="/Compare">compare</NavLink></li>
+                          <li><NavLink className="text-lights" to="/Whislist">wishlist</NavLink></li>
+                      <li><NavLink className="text-lights" to="/product-details">products</NavLink></li>
                           
                 </ul>
               </nav>
@@ -377,7 +377,7 @@ export default function Header() {
                           <li classname="nav-item"><NavLink className="nav-link" to="/Checkout">checkout</NavLink></li>
                           <li classname="nav-item"><NavLink className="nav-link" to="/Compare">compare</NavLink></li>
                           <li classname="nav-item"><NavLink className="nav-link" to="/Whislist">wishlist</NavLink></li>
-                          <li classname="nav-item"><NavLink className="nav-link" to="/product-details-variable">product details
+                          <li classname="nav-item"><NavLink className="nav-link" to="/product-details">product details
                               </NavLink></li>
                           <li classname="nav-item"><NavLink className="nav-link" to="/ShopGirdLeftSidebar">Shop</NavLink></li>
                           <li classname="nav-item"><NavLink className="nav-link" to="/Cart">Cart</NavLink></li>

@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <>
 {/* footer area start */}
-<footer>
+<footer className='mt-4'>
   {/* footer top start */}
   <div className="footer-top bg-black pt-14 pb-14 justify-content-center">
     <div className="container">

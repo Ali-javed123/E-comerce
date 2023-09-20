@@ -7587,7 +7587,7 @@ body.image-bg .wrapper {
     outline: none;
     width: 75px;
     /* background-color: hsl(210, 100%, 50%); */
-    background:maroon;
+    background:#d8373e !important;
     color: #fff;
     margin: 0px 0.5rem;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
@@ -7596,7 +7596,7 @@ body.image-bg .wrapper {
   }
   
   .swiper-nav-btns button:hover {
-    background-color: maroon;
+    background-color: #d8373e !important;
     cursor: pointer;
   }
 #mobile-menu ul{

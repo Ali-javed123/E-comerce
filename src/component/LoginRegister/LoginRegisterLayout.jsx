@@ -91,7 +91,7 @@ export default function LoginRegisterLayout() {
  
 </div>
 {show=='sign In'?
-<div className="row justify-content-center">
+<div className="row justify-content-center mt-3">
 
       <div className="col-md-6">
         <div className="card py-2">
@@ -125,7 +125,7 @@ export default function LoginRegisterLayout() {
 
       </div>
 </div>:show=='sign Up'?
-    <div className="row justify-content-center">
+    <div className="row justify-content-center mb-3">
       <div className="col-md-6">
       <div className="card ">
           <div className="card-body">
